@@ -124,10 +124,13 @@ def publish_video(
             except Exception as e:
                 print(f"⚠️ [Deduplication Kontrol Uyarısı]: {e}")
 
+        # YouTube Data API v3 strictly forbids '<' and '>' characters in video descriptions
+        safe_description = description.replace("<", "‹").replace(">", "›")
+
         body = {
             "snippet": {
-                "title": title[:100],
-                "description": description,
+                "title": title.replace("<", "").replace(">", "")[:100],
+                "description": safe_description,
                 "tags": tags,
                 "categoryId": "28",  # Science & Technology
                 "defaultLanguage": "en-US",

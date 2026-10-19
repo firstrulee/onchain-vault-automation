@@ -1,0 +1,634 @@
+{
+  "episodeNumber": "03",
+  "voFile": "ep03_vo_raw.mp3",
+  "bedFile": "ep03_bed.wav",
+  "brollFile": "ep03_flow_broll.mp4",
+  "durationInFrames": 1436,
+  "phaseTimes": {
+    "phase1Start": 0.0,
+    "phase2Start": 6.221,
+    "phase3Start": 20.05,
+    "phase4Start": 41.67,
+    "rule1Start": 23.25,
+    "rule2Start": 29.511,
+    "rule3Start": 35.83
+  },
+  "hudData": {
+    "stage1Header": "01 // PLAY-TO-AIRDROP FORENSICS",
+    "stage1Badge": "\u25b2 DILUTION WARNING",
+    "walletLabel": "TIER-1 P2A ALLOCATION AUDIT",
+    "walletAddress": "0x38F...C90B",
+    "tag1": "QUEST GRINDER: $11.40",
+    "tag2": "ONCHAIN SINK LP: $4,200",
+    "nodeLeftTitle": "FREE QUEST BOTS",
+    "nodeLeftValue": "840,000 WALLETS",
+    "flowLabel": "92% SYBIL SLASHED \u2192",
+    "nodeRightTitle": "ON-CHAIN SINK TIER",
+    "nodeRightValue": "+$4,200 / WALLET",
+    "stage2Header": "02 // TGE ALLOCATION DISTRIBUTION",
+    "stage2Badge": "TOP 4% TAKE 80% POOL",
+    "metricLeftLabel": "SOCIAL / DAILY QUESTS",
+    "metricLeftValue": "$11.40 AVG",
+    "metricLeftSub": "Diluted by 800K+ Bot Accounts",
+    "metricRightLabel": "ON-CHAIN SINK / VOLUME",
+    "metricRightValue": "$4,200 AVG",
+    "metricRightSub": "Weighted by Token Burn & Marketplace Fee",
+    "chartLeftLabel": "TGE HOUR 1-4 LIQUIDITY PEAK",
+    "chartRightLabel": "\u25bc FARMER SELL-OFF (-58%)",
+    "barLeftLabel": "ON-CHAIN SINK REWARD POOL: 80%",
+    "barLeftPct": 80,
+    "barRightLabel": "FREE SOCIAL QUEST POOL: 20%",
+    "stage3Header": "03 // THE P2A PROFIT FORMULA",
+    "rule1Tag": "RULE #01 // DILUTION FLOOR MATH",
+    "rule1Badge": "AIRDROP POOL \u00f7 ACTIVE WALLETS",
+    "rule1Text": "Divide Airdrop Pool Value by Active Daily Wallets",
+    "rule2Tag": "RULE #02 // ON-CHAIN SINK WEIGHT",
+    "rule2Badge": "BURN & MARKETPLACE FEES > QUESTS",
+    "rule2Text": "Farm On-Chain Token Sinks Instead of Social Quests",
+    "rule3Tag": "RULE #03 // TGE EXECUTION WINDOW",
+    "rule3Badge": "SELL 70% IN FIRST 4 HOURS",
+    "rule3Text": "Realize 70% of Airdrop Allocation in Hour 1 to 4 of TGE",
+    "verdictPills": [
+      "\u2713 POOL/WALLET MATH",
+      "\u2713 ONCHAIN SINKS",
+      "\u2713 4H TGE EXIT"
+    ]
+  },
+  "words": [
+    {
+      "word": "Ninety",
+      "start": 0.095,
+      "end": 0.448
+    },
+    {
+      "word": "percent",
+      "start": 0.459,
+      "end": 0.834
+    },
+    {
+      "word": "of",
+      "start": 0.845,
+      "end": 0.965
+    },
+    {
+      "word": "Play-to-Airdrop",
+      "start": 0.936,
+      "end": 1.709
+    },
+    {
+      "word": "gamers",
+      "start": 1.72,
+      "end": 2.107
+    },
+    {
+      "word": "farm",
+      "start": 2.118,
+      "end": 2.38
+    },
+    {
+      "word": "the",
+      "start": 2.391,
+      "end": 2.511
+    },
+    {
+      "word": "wrong",
+      "start": 2.493,
+      "end": 2.755
+    },
+    {
+      "word": "metric",
+      "start": 2.766,
+      "end": 3.152
+    },
+    {
+      "word": "and",
+      "start": 3.164,
+      "end": 3.284
+    },
+    {
+      "word": "walk",
+      "start": 3.277,
+      "end": 3.493
+    },
+    {
+      "word": "away",
+      "start": 3.505,
+      "end": 3.766
+    },
+    {
+      "word": "with",
+      "start": 3.777,
+      "end": 3.936
+    },
+    {
+      "word": "dust",
+      "start": 3.948,
+      "end": 4.414
+    },
+    {
+      "word": "In",
+      "start": 5.193,
+      "end": 5.318
+    },
+    {
+      "word": "the",
+      "start": 5.33,
+      "end": 5.45
+    },
+    {
+      "word": "last",
+      "start": 5.42,
+      "end": 5.739
+    },
+    {
+      "word": "three",
+      "start": 5.75,
+      "end": 5.989
+    },
+    {
+      "word": "major",
+      "start": 6.0,
+      "end": 6.352
+    },
+    {
+      "word": "Web3",
+      "start": 6.364,
+      "end": 6.875
+    },
+    {
+      "word": "game",
+      "start": 6.886,
+      "end": 7.125
+    },
+    {
+      "word": "launches",
+      "start": 7.136,
+      "end": 7.614
+    },
+    {
+      "word": "accounts",
+      "start": 7.807,
+      "end": 8.17
+    },
+    {
+      "word": "grinding",
+      "start": 8.182,
+      "end": 8.568
+    },
+    {
+      "word": "free",
+      "start": 8.58,
+      "end": 8.83
+    },
+    {
+      "word": "daily",
+      "start": 8.841,
+      "end": 9.125
+    },
+    {
+      "word": "quests",
+      "start": 9.136,
+      "end": 9.5
+    },
+    {
+      "word": "earned",
+      "start": 9.511,
+      "end": 9.773
+    },
+    {
+      "word": "less",
+      "start": 9.784,
+      "end": 9.989
+    },
+    {
+      "word": "than",
+      "start": 10.0,
+      "end": 10.125
+    },
+    {
+      "word": "twelve",
+      "start": 10.136,
+      "end": 10.42
+    },
+    {
+      "word": "dollars",
+      "start": 10.432,
+      "end": 10.852
+    },
+    {
+      "word": "while",
+      "start": 11.102,
+      "end": 11.284
+    },
+    {
+      "word": "wallets",
+      "start": 11.295,
+      "end": 11.614
+    },
+    {
+      "word": "providing",
+      "start": 11.625,
+      "end": 12.091
+    },
+    {
+      "word": "in-game",
+      "start": 12.102,
+      "end": 12.443
+    },
+    {
+      "word": "marketplace",
+      "start": 12.455,
+      "end": 12.966
+    },
+    {
+      "word": "liquidity",
+      "start": 12.977,
+      "end": 13.455
+    },
+    {
+      "word": "averaged",
+      "start": 13.466,
+      "end": 13.83
+    },
+    {
+      "word": "four",
+      "start": 13.841,
+      "end": 14.068
+    },
+    {
+      "word": "thousand",
+      "start": 14.08,
+      "end": 14.477
+    },
+    {
+      "word": "two",
+      "start": 14.489,
+      "end": 14.636
+    },
+    {
+      "word": "hundred",
+      "start": 14.648,
+      "end": 14.886
+    },
+    {
+      "word": "dollars",
+      "start": 14.898,
+      "end": 15.239
+    },
+    {
+      "word": "per",
+      "start": 15.25,
+      "end": 15.42
+    },
+    {
+      "word": "allocation",
+      "start": 15.432,
+      "end": 16.091
+    },
+    {
+      "word": "Game",
+      "start": 16.875,
+      "end": 17.159
+    },
+    {
+      "word": "studios",
+      "start": 17.17,
+      "end": 17.682
+    },
+    {
+      "word": "reward",
+      "start": 17.693,
+      "end": 18.057
+    },
+    {
+      "word": "capital",
+      "start": 18.068,
+      "end": 18.409
+    },
+    {
+      "word": "velocity",
+      "start": 18.42,
+      "end": 19.0
+    },
+    {
+      "word": "not",
+      "start": 19.227,
+      "end": 19.432
+    },
+    {
+      "word": "screen",
+      "start": 19.443,
+      "end": 19.761
+    },
+    {
+      "word": "time",
+      "start": 19.773,
+      "end": 20.182
+    },
+    {
+      "word": "Follow",
+      "start": 20.966,
+      "end": 21.364
+    },
+    {
+      "word": "these",
+      "start": 21.375,
+      "end": 21.636
+    },
+    {
+      "word": "three",
+      "start": 21.648,
+      "end": 21.909
+    },
+    {
+      "word": "rules",
+      "start": 21.92,
+      "end": 22.466
+    },
+    {
+      "word": "Rule",
+      "start": 23.25,
+      "end": 23.58
+    },
+    {
+      "word": "one",
+      "start": 23.591,
+      "end": 23.83
+    },
+    {
+      "word": "divide",
+      "start": 24.125,
+      "end": 24.523
+    },
+    {
+      "word": "total",
+      "start": 24.534,
+      "end": 24.864
+    },
+    {
+      "word": "airdrop",
+      "start": 24.875,
+      "end": 25.295
+    },
+    {
+      "word": "allocation",
+      "start": 25.307,
+      "end": 25.909
+    },
+    {
+      "word": "by",
+      "start": 25.92,
+      "end": 26.057
+    },
+    {
+      "word": "active",
+      "start": 26.068,
+      "end": 26.409
+    },
+    {
+      "word": "daily",
+      "start": 26.42,
+      "end": 26.716
+    },
+    {
+      "word": "wallets",
+      "start": 26.727,
+      "end": 27.125
+    },
+    {
+      "word": "to",
+      "start": 27.136,
+      "end": 27.256
+    },
+    {
+      "word": "find",
+      "start": 27.239,
+      "end": 27.511
+    },
+    {
+      "word": "the",
+      "start": 27.523,
+      "end": 27.643
+    },
+    {
+      "word": "real",
+      "start": 27.602,
+      "end": 27.841
+    },
+    {
+      "word": "dilution",
+      "start": 27.852,
+      "end": 28.284
+    },
+    {
+      "word": "floor",
+      "start": 28.295,
+      "end": 28.727
+    },
+    {
+      "word": "Rule",
+      "start": 29.511,
+      "end": 29.83
+    },
+    {
+      "word": "two",
+      "start": 29.841,
+      "end": 30.148
+    },
+    {
+      "word": "prioritize",
+      "start": 30.432,
+      "end": 31.125
+    },
+    {
+      "word": "on-chain",
+      "start": 31.136,
+      "end": 31.568
+    },
+    {
+      "word": "transaction",
+      "start": 31.58,
+      "end": 32.182
+    },
+    {
+      "word": "volume",
+      "start": 32.193,
+      "end": 32.568
+    },
+    {
+      "word": "and",
+      "start": 32.58,
+      "end": 32.773
+    },
+    {
+      "word": "NFT",
+      "start": 32.784,
+      "end": 33.182
+    },
+    {
+      "word": "sink",
+      "start": 33.193,
+      "end": 33.443
+    },
+    {
+      "word": "mechanics",
+      "start": 33.455,
+      "end": 33.943
+    },
+    {
+      "word": "over",
+      "start": 33.955,
+      "end": 34.159
+    },
+    {
+      "word": "social",
+      "start": 34.17,
+      "end": 34.5
+    },
+    {
+      "word": "quests",
+      "start": 34.511,
+      "end": 35.045
+    },
+    {
+      "word": "Rule",
+      "start": 35.83,
+      "end": 36.136
+    },
+    {
+      "word": "three",
+      "start": 36.148,
+      "end": 36.5
+    },
+    {
+      "word": "exit",
+      "start": 36.693,
+      "end": 37.011
+    },
+    {
+      "word": "seventy",
+      "start": 37.023,
+      "end": 37.352
+    },
+    {
+      "word": "percent",
+      "start": 37.364,
+      "end": 37.727
+    },
+    {
+      "word": "of",
+      "start": 37.739,
+      "end": 37.859
+    },
+    {
+      "word": "your",
+      "start": 37.807,
+      "end": 37.955
+    },
+    {
+      "word": "airdrop",
+      "start": 37.966,
+      "end": 38.409
+    },
+    {
+      "word": "within",
+      "start": 38.42,
+      "end": 38.659
+    },
+    {
+      "word": "the",
+      "start": 38.67,
+      "end": 38.79
+    },
+    {
+      "word": "first",
+      "start": 38.761,
+      "end": 39.08
+    },
+    {
+      "word": "four",
+      "start": 39.091,
+      "end": 39.318
+    },
+    {
+      "word": "hours",
+      "start": 39.33,
+      "end": 39.659
+    },
+    {
+      "word": "of",
+      "start": 39.67,
+      "end": 39.79
+    },
+    {
+      "word": "TGE",
+      "start": 39.784,
+      "end": 40.307
+    },
+    {
+      "word": "liquidity",
+      "start": 40.318,
+      "end": 40.886
+    },
+    {
+      "word": "Save",
+      "start": 41.67,
+      "end": 42.045
+    },
+    {
+      "word": "this",
+      "start": 42.057,
+      "end": 42.227
+    },
+    {
+      "word": "P2A",
+      "start": 42.239,
+      "end": 42.932
+    },
+    {
+      "word": "playbook",
+      "start": 42.943,
+      "end": 43.409
+    },
+    {
+      "word": "and",
+      "start": 43.42,
+      "end": 43.54
+    },
+    {
+      "word": "subscribe",
+      "start": 43.534,
+      "end": 44.08
+    },
+    {
+      "word": "for",
+      "start": 44.091,
+      "end": 44.295
+    },
+    {
+      "word": "real",
+      "start": 44.307,
+      "end": 44.545
+    },
+    {
+      "word": "Web3",
+      "start": 44.557,
+      "end": 45.091
+    },
+    {
+      "word": "gaming",
+      "start": 45.102,
+      "end": 45.432
+    },
+    {
+      "word": "math",
+      "start": 45.443,
+      "end": 45.83
+    },
+    {
+      "word": "because",
+      "start": 46.0,
+      "end": 46.614
+    }
+  ]
+}

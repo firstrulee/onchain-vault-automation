@@ -6,3 +6,6 @@ youtube_credentials.json
 auth_url.txt
 out/
 *.pyc
+public/*.mp4
+public/*.wav
+public/*.mp3

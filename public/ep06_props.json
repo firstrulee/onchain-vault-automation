@@ -1,0 +1,644 @@
+{
+  "episodeNumber": "06",
+  "voFile": "ep06_vo_raw.mp3",
+  "bedFile": "ep06_bed.wav",
+  "brollFile": "ep06_flow_broll.mp4",
+  "durationInFrames": 1497,
+  "phaseTimes": {
+    "phase1Start": 0.0,
+    "phase2Start": 6.486,
+    "phase3Start": 18.914,
+    "phase4Start": 43.602,
+    "rule1Start": 22.114,
+    "rule2Start": 30.818,
+    "rule3Start": 38.33
+  },
+  "hudData": {
+    "stage1Header": "01 // GAMEFI TOKENOMICS AUDIT",
+    "stage1Badge": "\u25b2 HYPERINFLATION ALERT",
+    "walletLabel": "REWARD EMISSION CONTRACT",
+    "walletAddress": "0x82D...19A4",
+    "tag1": "MINTED: 4.8M / DAY",
+    "tag2": "BURNED: 1.1M / DAY",
+    "nodeLeftTitle": "DAILY FAUCET (MINT)",
+    "nodeLeftValue": "+4,800,000 TKN",
+    "flowLabel": "4.3x NET INFLATION \u2192",
+    "nodeRightTitle": "IN-GAME SINK (BURN)",
+    "nodeRightValue": "-1,100,000 TKN",
+    "stage2Header": "02 // SINK-TO-FAUCET DEATH SPIRAL",
+    "stage2Badge": "RATIO: 0.23 (CRITICAL)",
+    "metricLeftLabel": "HEALTHY GAME ECONOMY",
+    "metricLeftValue": "BURN > MINT",
+    "metricLeftSub": "Sink-to-Faucet Ratio Above 1.05",
+    "metricRightLabel": "FAILING GAME ECONOMY",
+    "metricRightValue": "4.3x SURPLUS",
+    "metricRightSub": "Farmers Dump Daily Rewards on DEX",
+    "chartLeftLabel": "NEW PLAYER INFLOW PEAK",
+    "chartRightLabel": "\u25bc EMISSION DEATH SPIRAL (-95%)",
+    "barLeftLabel": "BURNED IN-GAME (SINKS): 19%",
+    "barLeftPct": 19,
+    "barRightLabel": "UNABSORBED FARMER EMISSIONS: 81%",
+    "stage3Header": "03 // WEB3 GAME ECONOMY SURVIVAL RULES",
+    "rule1Tag": "RULE #01 // BURN-TO-MINT RATIO",
+    "rule1Badge": "EXIT IF MINT > BURN FOR 5 DAYS",
+    "rule1Text": "Track Daily On-Chain Burn vs Mint\u2014Exit If Below 1.0",
+    "rule2Tag": "RULE #02 // DUAL-TOKEN SEPARATION",
+    "rule2Badge": "NEVER HOLD UNCAPPED REWARD TOKEN",
+    "rule2Text": "Never Hold Uncapped Utility Reward Tokens Long-Term",
+    "rule3Tag": "RULE #03 // DAU GROWTH VELOCITY",
+    "rule3Badge": "NEW WALLETS MUST OUTPACE EMISSIONS",
+    "rule3Text": "Exit Immediately When New Wallet Growth flattens",
+    "verdictPills": [
+      "\u2713 BURN/MINT > 1",
+      "\u2713 AVOID UTILITY",
+      "\u2713 DAU GROWTH"
+    ]
+  },
+  "words": [
+    {
+      "word": "Every",
+      "start": 0.095,
+      "end": 0.38
+    },
+    {
+      "word": "Web3",
+      "start": 0.391,
+      "end": 0.948
+    },
+    {
+      "word": "game",
+      "start": 0.959,
+      "end": 1.198
+    },
+    {
+      "word": "economy",
+      "start": 1.209,
+      "end": 1.709
+    },
+    {
+      "word": "that",
+      "start": 1.72,
+      "end": 1.88
+    },
+    {
+      "word": "crashed",
+      "start": 1.891,
+      "end": 2.289
+    },
+    {
+      "word": "ninety-five",
+      "start": 2.3,
+      "end": 2.857
+    },
+    {
+      "word": "percent",
+      "start": 2.868,
+      "end": 3.243
+    },
+    {
+      "word": "failed",
+      "start": 3.255,
+      "end": 3.561
+    },
+    {
+      "word": "the",
+      "start": 3.573,
+      "end": 3.693
+    },
+    {
+      "word": "exact",
+      "start": 3.618,
+      "end": 4.095
+    },
+    {
+      "word": "same",
+      "start": 4.107,
+      "end": 4.345
+    },
+    {
+      "word": "mathematical",
+      "start": 4.357,
+      "end": 4.925
+    },
+    {
+      "word": "test",
+      "start": 4.936,
+      "end": 5.357
+    },
+    {
+      "word": "the",
+      "start": 5.595,
+      "end": 5.715
+    },
+    {
+      "word": "Sink-to-Faucet",
+      "start": 5.709,
+      "end": 6.357
+    },
+    {
+      "word": "Ratio",
+      "start": 6.368,
+      "end": 6.891
+    },
+    {
+      "word": "When",
+      "start": 7.67,
+      "end": 7.83
+    },
+    {
+      "word": "a",
+      "start": 7.841,
+      "end": 7.961
+    },
+    {
+      "word": "game",
+      "start": 7.909,
+      "end": 8.17
+    },
+    {
+      "word": "prints",
+      "start": 8.182,
+      "end": 8.477
+    },
+    {
+      "word": "reward",
+      "start": 8.489,
+      "end": 8.864
+    },
+    {
+      "word": "tokens",
+      "start": 8.875,
+      "end": 9.284
+    },
+    {
+      "word": "faster",
+      "start": 9.295,
+      "end": 9.67
+    },
+    {
+      "word": "than",
+      "start": 9.682,
+      "end": 9.807
+    },
+    {
+      "word": "players",
+      "start": 9.818,
+      "end": 10.182
+    },
+    {
+      "word": "burn",
+      "start": 10.193,
+      "end": 10.409
+    },
+    {
+      "word": "them",
+      "start": 10.42,
+      "end": 10.58
+    },
+    {
+      "word": "for",
+      "start": 10.591,
+      "end": 10.773
+    },
+    {
+      "word": "upgrades",
+      "start": 10.784,
+      "end": 11.352
+    },
+    {
+      "word": "crafting",
+      "start": 11.511,
+      "end": 12.011
+    },
+    {
+      "word": "or",
+      "start": 12.227,
+      "end": 12.352
+    },
+    {
+      "word": "tournament",
+      "start": 12.364,
+      "end": 12.739
+    },
+    {
+      "word": "fees",
+      "start": 12.75,
+      "end": 13.159
+    },
+    {
+      "word": "hyperinflation",
+      "start": 13.432,
+      "end": 14.159
+    },
+    {
+      "word": "is",
+      "start": 14.17,
+      "end": 14.295
+    },
+    {
+      "word": "guaranteed",
+      "start": 14.307,
+      "end": 14.875
+    },
+    {
+      "word": "within",
+      "start": 14.886,
+      "end": 15.148
+    },
+    {
+      "word": "thirty",
+      "start": 15.159,
+      "end": 15.455
+    },
+    {
+      "word": "days",
+      "start": 15.466,
+      "end": 15.943
+    },
+    {
+      "word": "Before",
+      "start": 16.727,
+      "end": 17.102
+    },
+    {
+      "word": "you",
+      "start": 17.114,
+      "end": 17.234
+    },
+    {
+      "word": "buy",
+      "start": 17.216,
+      "end": 17.42
+    },
+    {
+      "word": "any",
+      "start": 17.432,
+      "end": 17.648
+    },
+    {
+      "word": "gaming",
+      "start": 17.659,
+      "end": 17.989
+    },
+    {
+      "word": "token",
+      "start": 18.0,
+      "end": 18.375
+    },
+    {
+      "word": "or",
+      "start": 18.386,
+      "end": 18.511
+    },
+    {
+      "word": "guild",
+      "start": 18.523,
+      "end": 18.83
+    },
+    {
+      "word": "NFT",
+      "start": 18.841,
+      "end": 19.273
+    },
+    {
+      "word": "run",
+      "start": 19.5,
+      "end": 19.682
+    },
+    {
+      "word": "this",
+      "start": 19.693,
+      "end": 19.875
+    },
+    {
+      "word": "three-step",
+      "start": 19.886,
+      "end": 20.375
+    },
+    {
+      "word": "tokenomics",
+      "start": 20.386,
+      "end": 20.943
+    },
+    {
+      "word": "audit",
+      "start": 20.955,
+      "end": 21.33
+    },
+    {
+      "word": "Rule",
+      "start": 22.114,
+      "end": 22.443
+    },
+    {
+      "word": "one",
+      "start": 22.455,
+      "end": 22.716
+    },
+    {
+      "word": "track",
+      "start": 22.955,
+      "end": 23.25
+    },
+    {
+      "word": "the",
+      "start": 23.261,
+      "end": 23.381
+    },
+    {
+      "word": "daily",
+      "start": 23.375,
+      "end": 23.659
+    },
+    {
+      "word": "Burn-to-Mint",
+      "start": 23.67,
+      "end": 24.205
+    },
+    {
+      "word": "ratio",
+      "start": 24.216,
+      "end": 24.659
+    },
+    {
+      "word": "on-chain",
+      "start": 24.67,
+      "end": 25.205
+    },
+    {
+      "word": "if",
+      "start": 25.511,
+      "end": 25.648
+    },
+    {
+      "word": "minted",
+      "start": 25.659,
+      "end": 25.955
+    },
+    {
+      "word": "rewards",
+      "start": 25.966,
+      "end": 26.398
+    },
+    {
+      "word": "exceed",
+      "start": 26.409,
+      "end": 26.841
+    },
+    {
+      "word": "burned",
+      "start": 26.852,
+      "end": 27.125
+    },
+    {
+      "word": "tokens",
+      "start": 27.136,
+      "end": 27.523
+    },
+    {
+      "word": "for",
+      "start": 27.534,
+      "end": 27.659
+    },
+    {
+      "word": "five",
+      "start": 27.67,
+      "end": 27.989
+    },
+    {
+      "word": "consecutive",
+      "start": 28.0,
+      "end": 28.545
+    },
+    {
+      "word": "days",
+      "start": 28.557,
+      "end": 28.943
+    },
+    {
+      "word": "exit",
+      "start": 29.125,
+      "end": 29.386
+    },
+    {
+      "word": "immediately",
+      "start": 29.398,
+      "end": 30.034
+    },
+    {
+      "word": "Rule",
+      "start": 30.818,
+      "end": 31.136
+    },
+    {
+      "word": "two",
+      "start": 31.148,
+      "end": 31.443
+    },
+    {
+      "word": "separate",
+      "start": 31.739,
+      "end": 32.205
+    },
+    {
+      "word": "governance",
+      "start": 32.216,
+      "end": 32.602
+    },
+    {
+      "word": "tokens",
+      "start": 32.614,
+      "end": 33.011
+    },
+    {
+      "word": "from",
+      "start": 33.023,
+      "end": 33.148
+    },
+    {
+      "word": "uncapped",
+      "start": 33.159,
+      "end": 33.614
+    },
+    {
+      "word": "utility",
+      "start": 33.625,
+      "end": 34.068
+    },
+    {
+      "word": "tokens",
+      "start": 34.08,
+      "end": 34.614
+    },
+    {
+      "word": "never",
+      "start": 34.92,
+      "end": 35.216
+    },
+    {
+      "word": "hold",
+      "start": 35.227,
+      "end": 35.443
+    },
+    {
+      "word": "the",
+      "start": 35.455,
+      "end": 35.575
+    },
+    {
+      "word": "inflationary",
+      "start": 35.511,
+      "end": 36.182
+    },
+    {
+      "word": "reward",
+      "start": 36.193,
+      "end": 36.58
+    },
+    {
+      "word": "token",
+      "start": 36.591,
+      "end": 36.92
+    },
+    {
+      "word": "long",
+      "start": 36.932,
+      "end": 37.159
+    },
+    {
+      "word": "term",
+      "start": 37.17,
+      "end": 37.545
+    },
+    {
+      "word": "Rule",
+      "start": 38.33,
+      "end": 38.636
+    },
+    {
+      "word": "three",
+      "start": 38.648,
+      "end": 38.977
+    },
+    {
+      "word": "check",
+      "start": 39.239,
+      "end": 39.523
+    },
+    {
+      "word": "if",
+      "start": 39.534,
+      "end": 39.654
+    },
+    {
+      "word": "new",
+      "start": 39.659,
+      "end": 39.818
+    },
+    {
+      "word": "player",
+      "start": 39.83,
+      "end": 40.159
+    },
+    {
+      "word": "wallet",
+      "start": 40.17,
+      "end": 40.455
+    },
+    {
+      "word": "growth",
+      "start": 40.466,
+      "end": 40.795
+    },
+    {
+      "word": "is",
+      "start": 40.807,
+      "end": 40.927
+    },
+    {
+      "word": "slowing",
+      "start": 40.932,
+      "end": 41.33
+    },
+    {
+      "word": "while",
+      "start": 41.341,
+      "end": 41.511
+    },
+    {
+      "word": "reward",
+      "start": 41.523,
+      "end": 41.864
+    },
+    {
+      "word": "emissions",
+      "start": 41.875,
+      "end": 42.295
+    },
+    {
+      "word": "rise",
+      "start": 42.307,
+      "end": 42.818
+    },
+    {
+      "word": "Save",
+      "start": 43.602,
+      "end": 43.977
+    },
+    {
+      "word": "this",
+      "start": 43.989,
+      "end": 44.159
+    },
+    {
+      "word": "GameFi",
+      "start": 44.17,
+      "end": 44.705
+    },
+    {
+      "word": "audit",
+      "start": 44.716,
+      "end": 45.034
+    },
+    {
+      "word": "and",
+      "start": 45.045,
+      "end": 45.165
+    },
+    {
+      "word": "subscribe",
+      "start": 45.159,
+      "end": 45.693
+    },
+    {
+      "word": "for",
+      "start": 45.705,
+      "end": 45.83
+    },
+    {
+      "word": "daily",
+      "start": 45.841,
+      "end": 46.17
+    },
+    {
+      "word": "Web3",
+      "start": 46.182,
+      "end": 46.682
+    },
+    {
+      "word": "economy",
+      "start": 46.693,
+      "end": 47.148
+    },
+    {
+      "word": "breakdowns",
+      "start": 47.159,
+      "end": 47.83
+    },
+    {
+      "word": "because",
+      "start": 48.023,
+      "end": 48.648
+    }
+  ]
+}

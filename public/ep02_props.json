@@ -1,0 +1,594 @@
+{
+  "episodeNumber": "02",
+  "voFile": "ep02_vo_raw.mp3",
+  "bedFile": "ep02_bed.wav",
+  "brollFile": "ep02_flow_broll.mp4",
+  "durationInFrames": 1260,
+  "phaseTimes": {
+    "phase1Start": 0.0,
+    "phase2Start": 5.456,
+    "phase3Start": 16.3,
+    "phase4Start": 36.477,
+    "rule1Start": 19.5,
+    "rule2Start": 26.216,
+    "rule3Start": 31.443
+  },
+  "hudData": {
+    "stage1Header": "01 // FRESH WALLET CLUSTER",
+    "stage1Badge": "\u25cf STEALTH ACCUMULATION",
+    "walletLabel": "CLUSTER OF 5 FRESH WALLETS",
+    "walletAddress": "0x94A...3F1C",
+    "tag1": "SOURCE: COINBASE PRIME",
+    "tag2": "INFLOW: +$12.4M",
+    "nodeLeftTitle": "CUSTODY COLD WALLET",
+    "nodeLeftValue": "COINBASE PRIME",
+    "flowLabel": "+$12.4M WITHDRAWAL \u2192",
+    "nodeRightTitle": "STEALTH CLUSTER (5x)",
+    "nodeRightValue": "0x94A...3F1C",
+    "stage2Header": "02 // PRE-RALLY TELEMETRY (T-72 HOURS)",
+    "stage2Badge": "BREAKOUT: +210.0%",
+    "metricLeftLabel": "RETAIL SENTIMENT",
+    "metricLeftValue": "FLAT / BORED",
+    "metricLeftSub": "Zero Social Mentions Before Move",
+    "metricRightLabel": "INSTITUTIONAL FLOW",
+    "metricRightValue": "-18% CEX SUPPLY",
+    "metricRightSub": "12.4M Tokens Absorbed Off-Exchange",
+    "chartLeftLabel": "STEALTH ACCUMULATION ZONE",
+    "chartRightLabel": "\u25b2 SUPPLY SQUEEZE (+210%)",
+    "barLeftLabel": "OFF-EXCHANGE WHALE CUSTODY: 68%",
+    "barLeftPct": 68,
+    "barRightLabel": "REMAINING CEX LIQUIDITY: 32%",
+    "stage3Header": "03 // WHALE CLUSTER DETECTION RULES",
+    "rule1Tag": "RULE #01 // FRESH WALLET FILTER",
+    "rule1Badge": "CUSTODY \u2192 NEW WALLET > $250K",
+    "rule1Text": "Track New Wallets Funded by Institutional Custody",
+    "rule2Tag": "RULE #02 // ZERO MM DUMP CHECK",
+    "rule2Badge": "NO MARKET-MAKER RETURN",
+    "rule2Text": "Verify Zero Tokens Route Back to Market Makers",
+    "rule3Tag": "RULE #03 // FUNDING DIVERGENCE",
+    "rule3Badge": "CEX SUPPLY \u2193 + FLAT FUNDING",
+    "rule3Text": "Confirm Exchange Reserves Drop While Funding Stays Flat",
+    "verdictPills": [
+      "\u2713 FRESH >$250K",
+      "\u2713 ZERO MM FLOW",
+      "\u2713 CEX DRAIN"
+    ]
+  },
+  "words": [
+    {
+      "word": "Stop",
+      "start": 0.095,
+      "end": 0.505
+    },
+    {
+      "word": "looking",
+      "start": 0.516,
+      "end": 0.789
+    },
+    {
+      "word": "at",
+      "start": 0.8,
+      "end": 0.92
+    },
+    {
+      "word": "price",
+      "start": 0.891,
+      "end": 1.186
+    },
+    {
+      "word": "charts",
+      "start": 1.198,
+      "end": 1.55
+    },
+    {
+      "word": "and",
+      "start": 1.561,
+      "end": 1.681
+    },
+    {
+      "word": "start",
+      "start": 1.675,
+      "end": 1.936
+    },
+    {
+      "word": "watching",
+      "start": 1.948,
+      "end": 2.3
+    },
+    {
+      "word": "fresh",
+      "start": 2.311,
+      "end": 2.595
+    },
+    {
+      "word": "wallet",
+      "start": 2.607,
+      "end": 2.914
+    },
+    {
+      "word": "clusters",
+      "start": 2.925,
+      "end": 3.573
+    },
+    {
+      "word": "Seventy-two",
+      "start": 4.352,
+      "end": 5.045
+    },
+    {
+      "word": "hours",
+      "start": 5.057,
+      "end": 5.409
+    },
+    {
+      "word": "before",
+      "start": 5.42,
+      "end": 5.75
+    },
+    {
+      "word": "a",
+      "start": 5.761,
+      "end": 5.881
+    },
+    {
+      "word": "mid-cap",
+      "start": 5.807,
+      "end": 6.307
+    },
+    {
+      "word": "gaming",
+      "start": 6.318,
+      "end": 6.67
+    },
+    {
+      "word": "infrastructure",
+      "start": 6.682,
+      "end": 7.273
+    },
+    {
+      "word": "token",
+      "start": 7.284,
+      "end": 7.648
+    },
+    {
+      "word": "rallied",
+      "start": 7.659,
+      "end": 8.023
+    },
+    {
+      "word": "two",
+      "start": 8.034,
+      "end": 8.216
+    },
+    {
+      "word": "hundred",
+      "start": 8.227,
+      "end": 8.443
+    },
+    {
+      "word": "and",
+      "start": 8.455,
+      "end": 8.575
+    },
+    {
+      "word": "ten",
+      "start": 8.557,
+      "end": 8.739
+    },
+    {
+      "word": "percent",
+      "start": 8.75,
+      "end": 9.182
+    },
+    {
+      "word": "five",
+      "start": 9.477,
+      "end": 9.795
+    },
+    {
+      "word": "brand-new",
+      "start": 9.807,
+      "end": 10.205
+    },
+    {
+      "word": "wallets",
+      "start": 10.216,
+      "end": 10.568
+    },
+    {
+      "word": "withdrew",
+      "start": 10.58,
+      "end": 10.955
+    },
+    {
+      "word": "twelve",
+      "start": 10.966,
+      "end": 11.25
+    },
+    {
+      "word": "million",
+      "start": 11.261,
+      "end": 11.58
+    },
+    {
+      "word": "dollars",
+      "start": 11.591,
+      "end": 11.932
+    },
+    {
+      "word": "from",
+      "start": 11.943,
+      "end": 12.091
+    },
+    {
+      "word": "Coinbase",
+      "start": 12.102,
+      "end": 12.545
+    },
+    {
+      "word": "Prime",
+      "start": 12.557,
+      "end": 12.977
+    },
+    {
+      "word": "Smart",
+      "start": 13.761,
+      "end": 14.159
+    },
+    {
+      "word": "money",
+      "start": 14.17,
+      "end": 14.42
+    },
+    {
+      "word": "never",
+      "start": 14.432,
+      "end": 14.705
+    },
+    {
+      "word": "buys",
+      "start": 14.716,
+      "end": 15.057
+    },
+    {
+      "word": "in",
+      "start": 15.068,
+      "end": 15.188
+    },
+    {
+      "word": "a",
+      "start": 15.17,
+      "end": 15.29
+    },
+    {
+      "word": "single",
+      "start": 15.239,
+      "end": 15.591
+    },
+    {
+      "word": "clip",
+      "start": 15.602,
+      "end": 15.955
+    },
+    {
+      "word": "Here",
+      "start": 16.739,
+      "end": 16.955
+    },
+    {
+      "word": "is",
+      "start": 16.966,
+      "end": 17.086
+    },
+    {
+      "word": "how",
+      "start": 17.08,
+      "end": 17.205
+    },
+    {
+      "word": "to",
+      "start": 17.216,
+      "end": 17.336
+    },
+    {
+      "word": "catch",
+      "start": 17.341,
+      "end": 17.625
+    },
+    {
+      "word": "them",
+      "start": 17.636,
+      "end": 17.773
+    },
+    {
+      "word": "in",
+      "start": 17.784,
+      "end": 17.904
+    },
+    {
+      "word": "three",
+      "start": 17.909,
+      "end": 18.159
+    },
+    {
+      "word": "steps",
+      "start": 18.17,
+      "end": 18.716
+    },
+    {
+      "word": "Rule",
+      "start": 19.5,
+      "end": 19.83
+    },
+    {
+      "word": "one",
+      "start": 19.841,
+      "end": 20.114
+    },
+    {
+      "word": "filter",
+      "start": 20.352,
+      "end": 20.739
+    },
+    {
+      "word": "for",
+      "start": 20.75,
+      "end": 20.87
+    },
+    {
+      "word": "newly",
+      "start": 20.875,
+      "end": 21.182
+    },
+    {
+      "word": "funded",
+      "start": 21.193,
+      "end": 21.523
+    },
+    {
+      "word": "wallets",
+      "start": 21.534,
+      "end": 21.875
+    },
+    {
+      "word": "receiving",
+      "start": 21.886,
+      "end": 22.364
+    },
+    {
+      "word": "over",
+      "start": 22.375,
+      "end": 22.557
+    },
+    {
+      "word": "two",
+      "start": 22.568,
+      "end": 22.75
+    },
+    {
+      "word": "hundred",
+      "start": 22.761,
+      "end": 22.989
+    },
+    {
+      "word": "and",
+      "start": 23.0,
+      "end": 23.12
+    },
+    {
+      "word": "fifty",
+      "start": 23.091,
+      "end": 23.398
+    },
+    {
+      "word": "thousand",
+      "start": 23.409,
+      "end": 23.807
+    },
+    {
+      "word": "dollars",
+      "start": 23.818,
+      "end": 24.148
+    },
+    {
+      "word": "from",
+      "start": 24.159,
+      "end": 24.279
+    },
+    {
+      "word": "institutional",
+      "start": 24.284,
+      "end": 24.898
+    },
+    {
+      "word": "custody",
+      "start": 24.909,
+      "end": 25.432
+    },
+    {
+      "word": "Rule",
+      "start": 26.216,
+      "end": 26.534
+    },
+    {
+      "word": "two",
+      "start": 26.545,
+      "end": 26.875
+    },
+    {
+      "word": "verify",
+      "start": 27.136,
+      "end": 27.614
+    },
+    {
+      "word": "that",
+      "start": 27.625,
+      "end": 27.795
+    },
+    {
+      "word": "zero",
+      "start": 27.807,
+      "end": 28.148
+    },
+    {
+      "word": "tokens",
+      "start": 28.159,
+      "end": 28.58
+    },
+    {
+      "word": "are",
+      "start": 28.591,
+      "end": 28.711
+    },
+    {
+      "word": "being",
+      "start": 28.682,
+      "end": 28.898
+    },
+    {
+      "word": "sent",
+      "start": 28.909,
+      "end": 29.148
+    },
+    {
+      "word": "back",
+      "start": 29.159,
+      "end": 29.375
+    },
+    {
+      "word": "to",
+      "start": 29.386,
+      "end": 29.506
+    },
+    {
+      "word": "market-maker",
+      "start": 29.477,
+      "end": 30.057
+    },
+    {
+      "word": "addresses",
+      "start": 30.068,
+      "end": 30.659
+    },
+    {
+      "word": "Rule",
+      "start": 31.443,
+      "end": 31.75
+    },
+    {
+      "word": "three",
+      "start": 31.761,
+      "end": 32.102
+    },
+    {
+      "word": "confirm",
+      "start": 32.364,
+      "end": 32.795
+    },
+    {
+      "word": "exchange",
+      "start": 32.807,
+      "end": 33.261
+    },
+    {
+      "word": "supply",
+      "start": 33.273,
+      "end": 33.659
+    },
+    {
+      "word": "is",
+      "start": 33.67,
+      "end": 33.807
+    },
+    {
+      "word": "dropping",
+      "start": 33.818,
+      "end": 34.239
+    },
+    {
+      "word": "while",
+      "start": 34.25,
+      "end": 34.398
+    },
+    {
+      "word": "funding",
+      "start": 34.409,
+      "end": 34.795
+    },
+    {
+      "word": "rates",
+      "start": 34.807,
+      "end": 35.045
+    },
+    {
+      "word": "stay",
+      "start": 35.057,
+      "end": 35.25
+    },
+    {
+      "word": "flat",
+      "start": 35.261,
+      "end": 35.693
+    },
+    {
+      "word": "Save",
+      "start": 36.477,
+      "end": 36.875
+    },
+    {
+      "word": "this",
+      "start": 36.886,
+      "end": 37.057
+    },
+    {
+      "word": "radar",
+      "start": 37.068,
+      "end": 37.443
+    },
+    {
+      "word": "setup",
+      "start": 37.455,
+      "end": 37.841
+    },
+    {
+      "word": "and",
+      "start": 37.852,
+      "end": 37.972
+    },
+    {
+      "word": "subscribe",
+      "start": 37.977,
+      "end": 38.523
+    },
+    {
+      "word": "for",
+      "start": 38.534,
+      "end": 38.67
+    },
+    {
+      "word": "daily",
+      "start": 38.682,
+      "end": 38.977
+    },
+    {
+      "word": "wallet",
+      "start": 38.989,
+      "end": 39.284
+    },
+    {
+      "word": "forensics",
+      "start": 39.295,
+      "end": 39.92
+    },
+    {
+      "word": "and",
+      "start": 40.08,
+      "end": 40.227
+    },
+    {
+      "word": "remember",
+      "start": 40.239,
+      "end": 40.739
+    }
+  ]
+}

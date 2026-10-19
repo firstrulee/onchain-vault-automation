@@ -1,0 +1,754 @@
+{
+  "episodeNumber": "10",
+  "voFile": "ep10_vo_raw.mp3",
+  "bedFile": "ep10_bed.wav",
+  "brollFile": "ep10_flow_broll.mp4",
+  "durationInFrames": 1705,
+  "phaseTimes": {
+    "phase1Start": 0.0,
+    "phase2Start": 7.387,
+    "phase3Start": 27.459,
+    "phase4Start": 50.83,
+    "rule1Start": 30.659,
+    "rule2Start": 36.352,
+    "rule3Start": 44.261
+  },
+  "hudData": {
+    "stage1Header": "01 // CROSS-CHAIN BRIDGE TELEMETRY",
+    "stage1Badge": "\u25cf SMART MONEY INFLOW",
+    "walletLabel": "L2 CANONICAL BRIDGE VAULT",
+    "walletAddress": "0x19B...77F4",
+    "tag1": "48H INFLOW: +$28.4M",
+    "tag2": "SECTOR: GAMING L2",
+    "nodeLeftTitle": "ETHEREUM MAINNET",
+    "nodeLeftValue": "USDC / ETH WHALES",
+    "flowLabel": "+$28.4M BRIDGED \u2192",
+    "nodeRightTitle": "GAMING L2 ECOSYSTEM",
+    "nodeRightValue": "TVL +34.2%",
+    "stage2Header": "02 // BRIDGE INFLOW VS PRICE LAG",
+    "stage2Badge": "10-DAY FRONT-RUN EDGE",
+    "metricLeftLabel": "BRIDGE NETFLOW (DAY 1-3)",
+    "metricLeftValue": "+$28.4M SURGE",
+    "metricLeftSub": "Whales Positioning Quietly On-Chain",
+    "metricRightLabel": "ECOSYSTEM TOKENS (DAY 10)",
+    "metricRightValue": "+145% RALLY",
+    "metricRightSub": "Price Reacts Days After Bridge Surge",
+    "chartLeftLabel": "BRIDGE INFLOW ACCUMULATION",
+    "chartRightLabel": "\u25b2 ECOSYSTEM REPRICING (+145%)",
+    "barLeftLabel": "STICKY ECOSYSTEM TVL DEPLOYED: 74%",
+    "barLeftPct": 74,
+    "barRightLabel": "MERCENARY BRIDGE FARMERS: 26%",
+    "stage3Header": "03 // CROSS-CHAIN ROTATION PLAYBOOK",
+    "rule1Tag": "RULE #01 // 7-DAY BRIDGE VELOCITY",
+    "rule1Badge": "TRACK >15% TVL GROWTH IN 7 DAYS",
+    "rule1Text": "Scan for Chains With >15% Net Bridge Inflows in 7 Days",
+    "rule2Tag": "RULE #02 // STICKY LIQUIDITY CHECK",
+    "rule2Badge": "VERIFY DEX & GAME TREASURY DEPLOY",
+    "rule2Text": "Confirm Bridged Stablecoins Enter Active DEX & Game Pools",
+    "rule3Tag": "RULE #03 // INFRASTRUCTURE FIRST",
+    "rule3Badge": "LEAD L2 TOKEN \u2192 ECOSYSTEM BETA",
+    "rule3Text": "Position in the Core L2 Token Before High-Beta Game Tokens",
+    "verdictPills": [
+      "\u2713 7D BRIDGE >15%",
+      "\u2713 STICKY TVL",
+      "\u2713 INFRA FIRST"
+    ]
+  },
+  "words": [
+    {
+      "word": "By",
+      "start": 0.095,
+      "end": 0.255
+    },
+    {
+      "word": "the",
+      "start": 0.266,
+      "end": 0.386
+    },
+    {
+      "word": "time",
+      "start": 0.38,
+      "end": 0.641
+    },
+    {
+      "word": "a",
+      "start": 0.652,
+      "end": 0.772
+    },
+    {
+      "word": "Gaming",
+      "start": 0.732,
+      "end": 1.084
+    },
+    {
+      "word": "Layer-2",
+      "start": 1.095,
+      "end": 1.811
+    },
+    {
+      "word": "ecosystem",
+      "start": 1.823,
+      "end": 2.47
+    },
+    {
+      "word": "is",
+      "start": 2.482,
+      "end": 2.602
+    },
+    {
+      "word": "trending",
+      "start": 2.607,
+      "end": 2.982
+    },
+    {
+      "word": "on",
+      "start": 2.993,
+      "end": 3.113
+    },
+    {
+      "word": "YouTube",
+      "start": 3.107,
+      "end": 3.527
+    },
+    {
+      "word": "smart",
+      "start": 3.789,
+      "end": 4.118
+    },
+    {
+      "word": "money",
+      "start": 4.13,
+      "end": 4.38
+    },
+    {
+      "word": "has",
+      "start": 4.391,
+      "end": 4.573
+    },
+    {
+      "word": "already",
+      "start": 4.584,
+      "end": 4.914
+    },
+    {
+      "word": "been",
+      "start": 4.925,
+      "end": 5.073
+    },
+    {
+      "word": "positioned",
+      "start": 5.084,
+      "end": 5.539
+    },
+    {
+      "word": "for",
+      "start": 5.55,
+      "end": 5.675
+    },
+    {
+      "word": "two",
+      "start": 5.686,
+      "end": 5.868
+    },
+    {
+      "word": "weeks",
+      "start": 5.88,
+      "end": 6.357
+    },
+    {
+      "word": "How",
+      "start": 7.136,
+      "end": 7.318
+    },
+    {
+      "word": "do",
+      "start": 7.33,
+      "end": 7.45
+    },
+    {
+      "word": "they",
+      "start": 7.42,
+      "end": 7.54
+    },
+    {
+      "word": "know",
+      "start": 7.545,
+      "end": 7.773
+    },
+    {
+      "word": "which",
+      "start": 7.784,
+      "end": 8.0
+    },
+    {
+      "word": "chain",
+      "start": 8.011,
+      "end": 8.318
+    },
+    {
+      "word": "is",
+      "start": 8.33,
+      "end": 8.45
+    },
+    {
+      "word": "pumping",
+      "start": 8.443,
+      "end": 8.773
+    },
+    {
+      "word": "next",
+      "start": 8.784,
+      "end": 9.227
+    },
+    {
+      "word": "They",
+      "start": 10.011,
+      "end": 10.17
+    },
+    {
+      "word": "track",
+      "start": 10.182,
+      "end": 10.534
+    },
+    {
+      "word": "cross-chain",
+      "start": 10.545,
+      "end": 11.114
+    },
+    {
+      "word": "canonical",
+      "start": 11.125,
+      "end": 11.648
+    },
+    {
+      "word": "bridge",
+      "start": 11.659,
+      "end": 11.898
+    },
+    {
+      "word": "inflows",
+      "start": 11.909,
+      "end": 12.466
+    },
+    {
+      "word": "and",
+      "start": 12.477,
+      "end": 12.602
+    },
+    {
+      "word": "stablecoin",
+      "start": 12.614,
+      "end": 13.227
+    },
+    {
+      "word": "mints",
+      "start": 13.239,
+      "end": 13.67
+    },
+    {
+      "word": "When",
+      "start": 14.455,
+      "end": 14.682
+    },
+    {
+      "word": "bridge",
+      "start": 14.693,
+      "end": 14.955
+    },
+    {
+      "word": "netflows",
+      "start": 14.966,
+      "end": 15.466
+    },
+    {
+      "word": "into",
+      "start": 15.477,
+      "end": 15.659
+    },
+    {
+      "word": "chains",
+      "start": 15.67,
+      "end": 16.045
+    },
+    {
+      "word": "like",
+      "start": 16.057,
+      "end": 16.216
+    },
+    {
+      "word": "Immutable",
+      "start": 16.227,
+      "end": 16.682
+    },
+    {
+      "word": "Ronin",
+      "start": 16.932,
+      "end": 17.25
+    },
+    {
+      "word": "or",
+      "start": 17.511,
+      "end": 17.67
+    },
+    {
+      "word": "Base",
+      "start": 17.682,
+      "end": 17.92
+    },
+    {
+      "word": "spike",
+      "start": 17.932,
+      "end": 18.273
+    },
+    {
+      "word": "by",
+      "start": 18.284,
+      "end": 18.432
+    },
+    {
+      "word": "over",
+      "start": 18.443,
+      "end": 18.648
+    },
+    {
+      "word": "twenty-five",
+      "start": 18.659,
+      "end": 19.193
+    },
+    {
+      "word": "million",
+      "start": 19.205,
+      "end": 19.523
+    },
+    {
+      "word": "dollars",
+      "start": 19.534,
+      "end": 19.886
+    },
+    {
+      "word": "in",
+      "start": 19.898,
+      "end": 20.018
+    },
+    {
+      "word": "forty-eight",
+      "start": 20.011,
+      "end": 20.443
+    },
+    {
+      "word": "hours",
+      "start": 20.455,
+      "end": 20.807
+    },
+    {
+      "word": "while",
+      "start": 20.818,
+      "end": 20.977
+    },
+    {
+      "word": "token",
+      "start": 20.989,
+      "end": 21.295
+    },
+    {
+      "word": "prices",
+      "start": 21.307,
+      "end": 21.716
+    },
+    {
+      "word": "are",
+      "start": 21.727,
+      "end": 21.847
+    },
+    {
+      "word": "still",
+      "start": 21.852,
+      "end": 22.102
+    },
+    {
+      "word": "flat",
+      "start": 22.114,
+      "end": 22.489
+    },
+    {
+      "word": "institutional",
+      "start": 22.716,
+      "end": 23.341
+    },
+    {
+      "word": "capital",
+      "start": 23.352,
+      "end": 23.75
+    },
+    {
+      "word": "is",
+      "start": 23.761,
+      "end": 23.898
+    },
+    {
+      "word": "rotating",
+      "start": 23.909,
+      "end": 24.364
+    },
+    {
+      "word": "before",
+      "start": 24.375,
+      "end": 24.67
+    },
+    {
+      "word": "ecosystem",
+      "start": 24.682,
+      "end": 25.307
+    },
+    {
+      "word": "catalysts",
+      "start": 25.318,
+      "end": 25.818
+    },
+    {
+      "word": "drop",
+      "start": 25.83,
+      "end": 26.216
+    },
+    {
+      "word": "Catch",
+      "start": 27.0,
+      "end": 27.318
+    },
+    {
+      "word": "the",
+      "start": 27.33,
+      "end": 27.45
+    },
+    {
+      "word": "rotation",
+      "start": 27.42,
+      "end": 27.955
+    },
+    {
+      "word": "early",
+      "start": 27.966,
+      "end": 28.261
+    },
+    {
+      "word": "with",
+      "start": 28.273,
+      "end": 28.409
+    },
+    {
+      "word": "this",
+      "start": 28.42,
+      "end": 28.602
+    },
+    {
+      "word": "three-step",
+      "start": 28.614,
+      "end": 29.102
+    },
+    {
+      "word": "bridge",
+      "start": 29.114,
+      "end": 29.375
+    },
+    {
+      "word": "radar",
+      "start": 29.386,
+      "end": 29.875
+    },
+    {
+      "word": "Rule",
+      "start": 30.659,
+      "end": 30.989
+    },
+    {
+      "word": "one",
+      "start": 31.0,
+      "end": 31.227
+    },
+    {
+      "word": "monitor",
+      "start": 31.432,
+      "end": 31.807
+    },
+    {
+      "word": "seven-day",
+      "start": 31.818,
+      "end": 32.341
+    },
+    {
+      "word": "canonical",
+      "start": 32.352,
+      "end": 32.886
+    },
+    {
+      "word": "bridge",
+      "start": 32.898,
+      "end": 33.159
+    },
+    {
+      "word": "netflows",
+      "start": 33.17,
+      "end": 33.693
+    },
+    {
+      "word": "relative",
+      "start": 33.705,
+      "end": 34.182
+    },
+    {
+      "word": "to",
+      "start": 34.193,
+      "end": 34.313
+    },
+    {
+      "word": "total",
+      "start": 34.295,
+      "end": 34.636
+    },
+    {
+      "word": "chain",
+      "start": 34.648,
+      "end": 34.932
+    },
+    {
+      "word": "TVL",
+      "start": 34.943,
+      "end": 35.568
+    },
+    {
+      "word": "Rule",
+      "start": 36.352,
+      "end": 36.67
+    },
+    {
+      "word": "two",
+      "start": 36.682,
+      "end": 37.0
+    },
+    {
+      "word": "verify",
+      "start": 37.261,
+      "end": 37.727
+    },
+    {
+      "word": "that",
+      "start": 37.739,
+      "end": 37.909
+    },
+    {
+      "word": "bridged",
+      "start": 37.92,
+      "end": 38.25
+    },
+    {
+      "word": "capital",
+      "start": 38.261,
+      "end": 38.682
+    },
+    {
+      "word": "is",
+      "start": 38.693,
+      "end": 38.813
+    },
+    {
+      "word": "deploying",
+      "start": 38.818,
+      "end": 39.295
+    },
+    {
+      "word": "into",
+      "start": 39.307,
+      "end": 39.477
+    },
+    {
+      "word": "active",
+      "start": 39.489,
+      "end": 39.852
+    },
+    {
+      "word": "DEX",
+      "start": 39.864,
+      "end": 40.227
+    },
+    {
+      "word": "pools",
+      "start": 40.239,
+      "end": 40.614
+    },
+    {
+      "word": "and",
+      "start": 40.625,
+      "end": 40.745
+    },
+    {
+      "word": "gaming",
+      "start": 40.739,
+      "end": 41.068
+    },
+    {
+      "word": "treasuries",
+      "start": 41.08,
+      "end": 41.636
+    },
+    {
+      "word": "not",
+      "start": 41.898,
+      "end": 42.114
+    },
+    {
+      "word": "just",
+      "start": 42.125,
+      "end": 42.352
+    },
+    {
+      "word": "farming",
+      "start": 42.364,
+      "end": 42.705
+    },
+    {
+      "word": "bridge",
+      "start": 42.716,
+      "end": 42.966
+    },
+    {
+      "word": "points",
+      "start": 42.977,
+      "end": 43.477
+    },
+    {
+      "word": "Rule",
+      "start": 44.261,
+      "end": 44.568
+    },
+    {
+      "word": "three",
+      "start": 44.58,
+      "end": 44.943
+    },
+    {
+      "word": "buy",
+      "start": 45.182,
+      "end": 45.341
+    },
+    {
+      "word": "the",
+      "start": 45.352,
+      "end": 45.472
+    },
+    {
+      "word": "leading",
+      "start": 45.477,
+      "end": 45.773
+    },
+    {
+      "word": "liquid",
+      "start": 45.784,
+      "end": 46.091
+    },
+    {
+      "word": "ecosystem",
+      "start": 46.102,
+      "end": 46.693
+    },
+    {
+      "word": "infrastructure",
+      "start": 46.705,
+      "end": 47.375
+    },
+    {
+      "word": "token",
+      "start": 47.386,
+      "end": 47.739
+    },
+    {
+      "word": "before",
+      "start": 47.75,
+      "end": 48.057
+    },
+    {
+      "word": "rotating",
+      "start": 48.068,
+      "end": 48.557
+    },
+    {
+      "word": "into",
+      "start": 48.568,
+      "end": 48.75
+    },
+    {
+      "word": "smaller",
+      "start": 48.761,
+      "end": 49.182
+    },
+    {
+      "word": "game",
+      "start": 49.193,
+      "end": 49.432
+    },
+    {
+      "word": "tokens",
+      "start": 49.443,
+      "end": 50.045
+    },
+    {
+      "word": "Save",
+      "start": 50.83,
+      "end": 51.216
+    },
+    {
+      "word": "this",
+      "start": 51.227,
+      "end": 51.398
+    },
+    {
+      "word": "rotation",
+      "start": 51.409,
+      "end": 51.943
+    },
+    {
+      "word": "radar",
+      "start": 51.955,
+      "end": 52.364
+    },
+    {
+      "word": "and",
+      "start": 52.375,
+      "end": 52.495
+    },
+    {
+      "word": "subscribe",
+      "start": 52.489,
+      "end": 53.023
+    },
+    {
+      "word": "for",
+      "start": 53.034,
+      "end": 53.159
+    },
+    {
+      "word": "daily",
+      "start": 53.17,
+      "end": 53.523
+    },
+    {
+      "word": "on-chain",
+      "start": 53.534,
+      "end": 53.989
+    },
+    {
+      "word": "flow",
+      "start": 54.0,
+      "end": 54.295
+    },
+    {
+      "word": "alerts",
+      "start": 54.307,
+      "end": 54.75
+    },
+    {
+      "word": "because",
+      "start": 54.955,
+      "end": 55.58
+    }
+  ]
+}

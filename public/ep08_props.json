@@ -1,0 +1,799 @@
+{
+  "episodeNumber": "08",
+  "voFile": "ep08_vo_raw.mp3",
+  "bedFile": "ep08_bed.wav",
+  "brollFile": "ep08_flow_broll.mp4",
+  "durationInFrames": 1621,
+  "phaseTimes": {
+    "phase1Start": 0.0,
+    "phase2Start": 7.022,
+    "phase3Start": 25.607,
+    "phase4Start": 48.295,
+    "rule1Start": 28.807,
+    "rule2Start": 36.023,
+    "rule3Start": 41.625
+  },
+  "hudData": {
+    "stage1Header": "01 // LOW-FLOAT / HIGH-FDV AUDIT",
+    "stage1Badge": "\u25b2 20x DILUTION OVERHANG",
+    "walletLabel": "VESTING ESCROW CONTRACT",
+    "walletAddress": "0x44A...90E3",
+    "tag1": "MCAP: $200M (5%)",
+    "tag2": "FDV: $4.0B (100%)",
+    "nodeLeftTitle": "CIRCULATING FLOAT",
+    "nodeLeftValue": "5% ($200M)",
+    "flowLabel": "+1,900% SUPPLY INCOMING \u2192",
+    "nodeRightTitle": "LOCKED VC VESTING",
+    "nodeRightValue": "95% ($3.8B)",
+    "stage2Header": "02 // 36-MONTH SUPPLY DILUTION CURVE",
+    "stage2Badge": "VC COST BASIS: -92%",
+    "metricLeftLabel": "LAUNCH CIRCULATING",
+    "metricLeftValue": "5% SUPPLY",
+    "metricLeftSub": "Artificial Scarcity Creates High Price",
+    "metricRightLabel": "MONTHLY VC EMISSION",
+    "metricRightValue": "$85M / MONTH",
+    "metricRightSub": "Relentless Sell Pressure Regardless of News",
+    "chartLeftLabel": "TGE ARTIFICIAL SCARCITY PEAK",
+    "chartRightLabel": "\u25bc 36-MONTH VESTING BLEED",
+    "barLeftLabel": "UNLOCKED AT LAUNCH: 5%",
+    "barLeftPct": 8,
+    "barRightLabel": "LOCKED INSIDER / TREASURY OVERHANG: 95%",
+    "stage3Header": "03 // THE FDV VALUATION FILTER",
+    "rule1Tag": "RULE #01 // MINIMUM FLOAT THRESHOLD",
+    "rule1Badge": "CIRCULATING SUPPLY MUST BE > 25%",
+    "rule1Text": "Avoid Long-Term Spot Positions Under 25% Circulating Supply",
+    "rule2Tag": "RULE #02 // MONTHLY DOLLAR OVERHANG",
+    "rule2Badge": "MONTHLY UNLOCK < 30% DAILY VOL",
+    "rule2Text": "Compare Monthly Dollar Unlocks Against Daily Spot Volume",
+    "rule3Tag": "RULE #03 // SWEET-SPOT ACCUMULATION",
+    "rule3Badge": "BUY AFTER 60% VESTING COMPLETES",
+    "rule3Text": "Accumulate Only After 60% of VC Vesting Has Unlocked",
+    "verdictPills": [
+      "\u2713 FLOAT > 25%",
+      "\u2713 UNLOCK VS VOL",
+      "\u2713 >60% VESTED"
+    ]
+  },
+  "words": [
+    {
+      "word": "If",
+      "start": 0.095,
+      "end": 0.255
+    },
+    {
+      "word": "a",
+      "start": 0.266,
+      "end": 0.386
+    },
+    {
+      "word": "new",
+      "start": 0.323,
+      "end": 0.539
+    },
+    {
+      "word": "crypto",
+      "start": 0.55,
+      "end": 0.948
+    },
+    {
+      "word": "gaming",
+      "start": 0.959,
+      "end": 1.323
+    },
+    {
+      "word": "or",
+      "start": 1.334,
+      "end": 1.459
+    },
+    {
+      "word": "Layer-2",
+      "start": 1.47,
+      "end": 2.186
+    },
+    {
+      "word": "token",
+      "start": 2.198,
+      "end": 2.527
+    },
+    {
+      "word": "launches",
+      "start": 2.539,
+      "end": 2.925
+    },
+    {
+      "word": "with",
+      "start": 2.936,
+      "end": 3.056
+    },
+    {
+      "word": "a",
+      "start": 3.061,
+      "end": 3.181
+    },
+    {
+      "word": "two",
+      "start": 3.13,
+      "end": 3.334
+    },
+    {
+      "word": "hundred",
+      "start": 3.345,
+      "end": 3.618
+    },
+    {
+      "word": "million",
+      "start": 3.63,
+      "end": 3.936
+    },
+    {
+      "word": "dollar",
+      "start": 3.948,
+      "end": 4.22
+    },
+    {
+      "word": "market",
+      "start": 4.232,
+      "end": 4.55
+    },
+    {
+      "word": "cap",
+      "start": 4.561,
+      "end": 4.914
+    },
+    {
+      "word": "but",
+      "start": 4.925,
+      "end": 5.045
+    },
+    {
+      "word": "a",
+      "start": 5.05,
+      "end": 5.17
+    },
+    {
+      "word": "four",
+      "start": 5.107,
+      "end": 5.391
+    },
+    {
+      "word": "billion",
+      "start": 5.402,
+      "end": 5.732
+    },
+    {
+      "word": "dollar",
+      "start": 5.743,
+      "end": 6.027
+    },
+    {
+      "word": "Fully",
+      "start": 6.039,
+      "end": 6.311
+    },
+    {
+      "word": "Diluted",
+      "start": 6.323,
+      "end": 6.709
+    },
+    {
+      "word": "Valuation",
+      "start": 6.72,
+      "end": 7.345
+    },
+    {
+      "word": "you",
+      "start": 7.595,
+      "end": 7.715
+    },
+    {
+      "word": "are",
+      "start": 7.675,
+      "end": 7.795
+    },
+    {
+      "word": "staring",
+      "start": 7.8,
+      "end": 8.209
+    },
+    {
+      "word": "at",
+      "start": 8.22,
+      "end": 8.34
+    },
+    {
+      "word": "a",
+      "start": 8.289,
+      "end": 8.409
+    },
+    {
+      "word": "mathematical",
+      "start": 8.334,
+      "end": 8.936
+    },
+    {
+      "word": "time",
+      "start": 8.948,
+      "end": 9.22
+    },
+    {
+      "word": "bomb",
+      "start": 9.232,
+      "end": 9.607
+    },
+    {
+      "word": "With",
+      "start": 10.386,
+      "end": 10.568
+    },
+    {
+      "word": "only",
+      "start": 10.58,
+      "end": 10.795
+    },
+    {
+      "word": "five",
+      "start": 10.807,
+      "end": 11.114
+    },
+    {
+      "word": "percent",
+      "start": 11.125,
+      "end": 11.466
+    },
+    {
+      "word": "of",
+      "start": 11.477,
+      "end": 11.597
+    },
+    {
+      "word": "tokens",
+      "start": 11.568,
+      "end": 11.966
+    },
+    {
+      "word": "circulating",
+      "start": 11.977,
+      "end": 12.523
+    },
+    {
+      "word": "at",
+      "start": 12.534,
+      "end": 12.654
+    },
+    {
+      "word": "launch",
+      "start": 12.636,
+      "end": 13.034
+    },
+    {
+      "word": "ninety-five",
+      "start": 13.25,
+      "end": 13.818
+    },
+    {
+      "word": "percent",
+      "start": 13.83,
+      "end": 14.17
+    },
+    {
+      "word": "of",
+      "start": 14.182,
+      "end": 14.302
+    },
+    {
+      "word": "the",
+      "start": 14.25,
+      "end": 14.37
+    },
+    {
+      "word": "supply",
+      "start": 14.33,
+      "end": 14.784
+    },
+    {
+      "word": "is",
+      "start": 14.795,
+      "end": 14.977
+    },
+    {
+      "word": "locked",
+      "start": 14.989,
+      "end": 15.239
+    },
+    {
+      "word": "for",
+      "start": 15.25,
+      "end": 15.37
+    },
+    {
+      "word": "VCs",
+      "start": 15.375,
+      "end": 15.92
+    },
+    {
+      "word": "who",
+      "start": 15.932,
+      "end": 16.052
+    },
+    {
+      "word": "bought",
+      "start": 16.034,
+      "end": 16.318
+    },
+    {
+      "word": "at",
+      "start": 16.33,
+      "end": 16.45
+    },
+    {
+      "word": "a",
+      "start": 16.409,
+      "end": 16.529
+    },
+    {
+      "word": "ninety",
+      "start": 16.443,
+      "end": 16.75
+    },
+    {
+      "word": "percent",
+      "start": 16.761,
+      "end": 17.114
+    },
+    {
+      "word": "discount",
+      "start": 17.125,
+      "end": 17.659
+    },
+    {
+      "word": "Even",
+      "start": 18.443,
+      "end": 18.705
+    },
+    {
+      "word": "if",
+      "start": 18.716,
+      "end": 18.836
+    },
+    {
+      "word": "the",
+      "start": 18.818,
+      "end": 18.938
+    },
+    {
+      "word": "project",
+      "start": 18.909,
+      "end": 19.352
+    },
+    {
+      "word": "grows",
+      "start": 19.364,
+      "end": 19.67
+    },
+    {
+      "word": "three",
+      "start": 19.682,
+      "end": 19.886
+    },
+    {
+      "word": "hundred",
+      "start": 19.898,
+      "end": 20.125
+    },
+    {
+      "word": "percent",
+      "start": 20.136,
+      "end": 20.523
+    },
+    {
+      "word": "in",
+      "start": 20.534,
+      "end": 20.654
+    },
+    {
+      "word": "users",
+      "start": 20.648,
+      "end": 21.102
+    },
+    {
+      "word": "linear",
+      "start": 21.33,
+      "end": 21.636
+    },
+    {
+      "word": "monthly",
+      "start": 21.648,
+      "end": 22.023
+    },
+    {
+      "word": "unlocks",
+      "start": 22.034,
+      "end": 22.477
+    },
+    {
+      "word": "will",
+      "start": 22.489,
+      "end": 22.609
+    },
+    {
+      "word": "crush",
+      "start": 22.614,
+      "end": 22.932
+    },
+    {
+      "word": "the",
+      "start": 22.943,
+      "end": 23.063
+    },
+    {
+      "word": "token",
+      "start": 23.057,
+      "end": 23.386
+    },
+    {
+      "word": "price",
+      "start": 23.398,
+      "end": 23.716
+    },
+    {
+      "word": "for",
+      "start": 23.727,
+      "end": 23.852
+    },
+    {
+      "word": "three",
+      "start": 23.864,
+      "end": 24.114
+    },
+    {
+      "word": "straight",
+      "start": 24.125,
+      "end": 24.386
+    },
+    {
+      "word": "years",
+      "start": 24.398,
+      "end": 24.875
+    },
+    {
+      "word": "Protect",
+      "start": 25.659,
+      "end": 26.057
+    },
+    {
+      "word": "your",
+      "start": 26.068,
+      "end": 26.188
+    },
+    {
+      "word": "portfolio",
+      "start": 26.182,
+      "end": 26.818
+    },
+    {
+      "word": "with",
+      "start": 26.83,
+      "end": 26.989
+    },
+    {
+      "word": "these",
+      "start": 27.0,
+      "end": 27.25
+    },
+    {
+      "word": "three",
+      "start": 27.261,
+      "end": 27.5
+    },
+    {
+      "word": "rules",
+      "start": 27.511,
+      "end": 28.023
+    },
+    {
+      "word": "Rule",
+      "start": 28.807,
+      "end": 29.136
+    },
+    {
+      "word": "one",
+      "start": 29.148,
+      "end": 29.409
+    },
+    {
+      "word": "never",
+      "start": 29.705,
+      "end": 29.977
+    },
+    {
+      "word": "hold",
+      "start": 29.989,
+      "end": 30.261
+    },
+    {
+      "word": "long-term",
+      "start": 30.273,
+      "end": 30.761
+    },
+    {
+      "word": "spot",
+      "start": 30.773,
+      "end": 31.068
+    },
+    {
+      "word": "positions",
+      "start": 31.08,
+      "end": 31.591
+    },
+    {
+      "word": "in",
+      "start": 31.602,
+      "end": 31.773
+    },
+    {
+      "word": "any",
+      "start": 31.784,
+      "end": 31.977
+    },
+    {
+      "word": "token",
+      "start": 31.989,
+      "end": 32.33
+    },
+    {
+      "word": "launching",
+      "start": 32.341,
+      "end": 32.705
+    },
+    {
+      "word": "with",
+      "start": 32.716,
+      "end": 32.836
+    },
+    {
+      "word": "less",
+      "start": 32.83,
+      "end": 33.091
+    },
+    {
+      "word": "thantwenty-five",
+      "start": 33.102,
+      "end": 33.773
+    },
+    {
+      "word": "percent",
+      "start": 33.784,
+      "end": 34.136
+    },
+    {
+      "word": "circulating",
+      "start": 34.148,
+      "end": 34.682
+    },
+    {
+      "word": "supply",
+      "start": 34.693,
+      "end": 35.239
+    },
+    {
+      "word": "Rule",
+      "start": 36.023,
+      "end": 36.341
+    },
+    {
+      "word": "two",
+      "start": 36.352,
+      "end": 36.67
+    },
+    {
+      "word": "calculate",
+      "start": 36.943,
+      "end": 37.432
+    },
+    {
+      "word": "monthly",
+      "start": 37.443,
+      "end": 37.807
+    },
+    {
+      "word": "emission",
+      "start": 37.818,
+      "end": 38.193
+    },
+    {
+      "word": "pressure",
+      "start": 38.205,
+      "end": 38.545
+    },
+    {
+      "word": "in",
+      "start": 38.557,
+      "end": 38.677
+    },
+    {
+      "word": "dollars",
+      "start": 38.67,
+      "end": 39.057
+    },
+    {
+      "word": "and",
+      "start": 39.068,
+      "end": 39.188
+    },
+    {
+      "word": "compare",
+      "start": 39.193,
+      "end": 39.557
+    },
+    {
+      "word": "it",
+      "start": 39.568,
+      "end": 39.688
+    },
+    {
+      "word": "to",
+      "start": 39.659,
+      "end": 39.779
+    },
+    {
+      "word": "daily",
+      "start": 39.75,
+      "end": 40.057
+    },
+    {
+      "word": "spot",
+      "start": 40.068,
+      "end": 40.352
+    },
+    {
+      "word": "volume",
+      "start": 40.364,
+      "end": 40.841
+    },
+    {
+      "word": "Rule",
+      "start": 41.625,
+      "end": 41.932
+    },
+    {
+      "word": "three",
+      "start": 41.943,
+      "end": 42.307
+    },
+    {
+      "word": "wait",
+      "start": 42.614,
+      "end": 42.83
+    },
+    {
+      "word": "until",
+      "start": 42.841,
+      "end": 43.08
+    },
+    {
+      "word": "at",
+      "start": 43.091,
+      "end": 43.211
+    },
+    {
+      "word": "least",
+      "start": 43.193,
+      "end": 43.42
+    },
+    {
+      "word": "sixty",
+      "start": 43.432,
+      "end": 43.773
+    },
+    {
+      "word": "percent",
+      "start": 43.784,
+      "end": 44.148
+    },
+    {
+      "word": "of",
+      "start": 44.159,
+      "end": 44.279
+    },
+    {
+      "word": "VC",
+      "start": 44.273,
+      "end": 44.67
+    },
+    {
+      "word": "vesting",
+      "start": 44.682,
+      "end": 45.091
+    },
+    {
+      "word": "is",
+      "start": 45.102,
+      "end": 45.239
+    },
+    {
+      "word": "unlocked",
+      "start": 45.25,
+      "end": 45.659
+    },
+    {
+      "word": "before",
+      "start": 45.67,
+      "end": 45.977
+    },
+    {
+      "word": "accumulating",
+      "start": 45.989,
+      "end": 46.614
+    },
+    {
+      "word": "for",
+      "start": 46.625,
+      "end": 46.745
+    },
+    {
+      "word": "the",
+      "start": 46.739,
+      "end": 46.859
+    },
+    {
+      "word": "next",
+      "start": 46.807,
+      "end": 47.045
+    },
+    {
+      "word": "cycle",
+      "start": 47.057,
+      "end": 47.511
+    },
+    {
+      "word": "Save",
+      "start": 48.295,
+      "end": 48.67
+    },
+    {
+      "word": "this",
+      "start": 48.682,
+      "end": 48.841
+    },
+    {
+      "word": "valuation",
+      "start": 48.852,
+      "end": 49.477
+    },
+    {
+      "word": "rule",
+      "start": 49.489,
+      "end": 49.773
+    },
+    {
+      "word": "and",
+      "start": 49.784,
+      "end": 49.904
+    },
+    {
+      "word": "subscribe",
+      "start": 49.898,
+      "end": 50.432
+    },
+    {
+      "word": "for",
+      "start": 50.443,
+      "end": 50.568
+    },
+    {
+      "word": "institutional",
+      "start": 50.58,
+      "end": 51.205
+    },
+    {
+      "word": "tokenomics",
+      "start": 51.216,
+      "end": 51.92
+    },
+    {
+      "word": "because",
+      "start": 52.148,
+      "end": 52.784
+    }
+  ]
+}

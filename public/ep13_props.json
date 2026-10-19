@@ -1,0 +1,834 @@
+{
+  "episodeNumber": "13",
+  "voFile": "ep13_vo_raw.mp3",
+  "bedFile": "ep13_bed.wav",
+  "brollFile": "ep13_flow_broll.mp4",
+  "durationInFrames": 1867,
+  "phaseTimes": {
+    "phase1Start": 0.0,
+    "phase2Start": 8.086,
+    "phase3Start": 29.607000000000003,
+    "phase4Start": 56.25,
+    "rule1Start": 32.807,
+    "rule2Start": 40.443,
+    "rule3Start": 48.886
+  },
+  "hudData": {
+    "stage1Header": "01 // TREASURY MINT TELEMETRY",
+    "stage1Badge": "\u25cf +$1.4B DRY POWDER",
+    "walletLabel": "TETHER / CIRCLE TREASURY MINT",
+    "walletAddress": "0x575...E890",
+    "tag1": "36H MINT: +$1.42B",
+    "tag2": "ROUTED TO: BINANCE/CB",
+    "nodeLeftTitle": "TREASURY MINT",
+    "nodeLeftValue": "+$1.42B USDC/T",
+    "flowLabel": "SETTLEMENT INFLOW \u2192",
+    "nodeRightTitle": "CEX SPOT DESKS",
+    "nodeRightValue": "BUY WALL READY",
+    "stage2Header": "02 // DIP PANIC VS STABLECOIN INFLOW",
+    "stage2Badge": "REBOUND: +38.5%",
+    "metricLeftLabel": "RETAIL FEAR INDEX",
+    "metricLeftValue": "PANIC SELLING",
+    "metricLeftSub": "Liquidating Spot at Local Bottom",
+    "metricRightLabel": "INSTITUTIONAL DRY POWDER",
+    "metricRightValue": "+$1.42B INFLOW",
+    "metricRightSub": "Fresh Stablecoins Absorbing Every Dip",
+    "chartLeftLabel": "STABLECOIN CEX RESERVE SURGE",
+    "chartRightLabel": "\u25b2 SPOT ABSORPTION RALLY (+38%)",
+    "barLeftLabel": "FRESH INSTITUTIONAL STABLECOIN INFLOW: 79%",
+    "barLeftPct": 79,
+    "barRightLabel": "RETAIL PANIC OUTFLOW: 21%",
+    "stage3Header": "03 // MACRO LIQUIDITY RADAR RULES",
+    "rule1Tag": "RULE #01 // 7-DAY MINT EXPANSION",
+    "rule1Badge": "STABLECOIN MCAP MUST TREND UP",
+    "rule1Text": "Track 7-Day Net USDT + USDC Supply Expansion",
+    "rule2Tag": "RULE #02 // CEX DRY-POWDER RATIO",
+    "rule2Badge": "PRICE DOWN + CEX STABLES UP = BUY",
+    "rule2Text": "Buy Dips When Exchange Stablecoin Reserves Surge",
+    "rule3Tag": "RULE #03 // SECTOR LEADER ROTATION",
+    "rule3Badge": "STABLES \u2192 SOL/ETH \u2192 GAMING BETA",
+    "rule3Text": "Follow Stablecoin Conversion Into High-Volume Leaders",
+    "verdictPills": [
+      "\u2713 7D MINT UP",
+      "\u2713 CEX RESERVES",
+      "\u2713 SPOT FLOW"
+    ]
+  },
+  "words": [
+    {
+      "word": "If",
+      "start": 0.095,
+      "end": 0.232
+    },
+    {
+      "word": "you",
+      "start": 0.243,
+      "end": 0.363
+    },
+    {
+      "word": "want",
+      "start": 0.345,
+      "end": 0.493
+    },
+    {
+      "word": "to",
+      "start": 0.505,
+      "end": 0.625
+    },
+    {
+      "word": "know",
+      "start": 0.584,
+      "end": 0.8
+    },
+    {
+      "word": "whether",
+      "start": 0.811,
+      "end": 1.073
+    },
+    {
+      "word": "a",
+      "start": 1.084,
+      "end": 1.204
+    },
+    {
+      "word": "crypto",
+      "start": 1.141,
+      "end": 1.493
+    },
+    {
+      "word": "market",
+      "start": 1.505,
+      "end": 1.845
+    },
+    {
+      "word": "dip",
+      "start": 1.857,
+      "end": 2.084
+    },
+    {
+      "word": "is",
+      "start": 2.095,
+      "end": 2.215
+    },
+    {
+      "word": "a",
+      "start": 2.209,
+      "end": 2.329
+    },
+    {
+      "word": "real",
+      "start": 2.277,
+      "end": 2.55
+    },
+    {
+      "word": "crash",
+      "start": 2.561,
+      "end": 2.97
+    },
+    {
+      "word": "or",
+      "start": 2.982,
+      "end": 3.107
+    },
+    {
+      "word": "a",
+      "start": 3.118,
+      "end": 3.238
+    },
+    {
+      "word": "whale",
+      "start": 3.186,
+      "end": 3.493
+    },
+    {
+      "word": "buying",
+      "start": 3.505,
+      "end": 3.8
+    },
+    {
+      "word": "opportunity",
+      "start": 3.811,
+      "end": 4.414
+    },
+    {
+      "word": "stop",
+      "start": 4.709,
+      "end": 5.005
+    },
+    {
+      "word": "watching",
+      "start": 5.016,
+      "end": 5.368
+    },
+    {
+      "word": "Bitcoin",
+      "start": 5.38,
+      "end": 5.8
+    },
+    {
+      "word": "candles",
+      "start": 5.811,
+      "end": 6.255
+    },
+    {
+      "word": "and",
+      "start": 6.266,
+      "end": 6.386
+    },
+    {
+      "word": "watch",
+      "start": 6.38,
+      "end": 6.63
+    },
+    {
+      "word": "Tether",
+      "start": 6.641,
+      "end": 6.948
+    },
+    {
+      "word": "and",
+      "start": 6.959,
+      "end": 7.079
+    },
+    {
+      "word": "Circle",
+      "start": 7.073,
+      "end": 7.414
+    },
+    {
+      "word": "treasury",
+      "start": 7.425,
+      "end": 7.823
+    },
+    {
+      "word": "mints",
+      "start": 7.834,
+      "end": 8.3
+    },
+    {
+      "word": "Institutions",
+      "start": 9.08,
+      "end": 9.852
+    },
+    {
+      "word": "cannot",
+      "start": 9.864,
+      "end": 10.17
+    },
+    {
+      "word": "buy",
+      "start": 10.182,
+      "end": 10.307
+    },
+    {
+      "word": "hundreds",
+      "start": 10.318,
+      "end": 10.67
+    },
+    {
+      "word": "of",
+      "start": 10.682,
+      "end": 10.802
+    },
+    {
+      "word": "millions",
+      "start": 10.773,
+      "end": 11.182
+    },
+    {
+      "word": "of",
+      "start": 11.193,
+      "end": 11.313
+    },
+    {
+      "word": "dollars",
+      "start": 11.284,
+      "end": 11.659
+    },
+    {
+      "word": "of",
+      "start": 11.67,
+      "end": 11.79
+    },
+    {
+      "word": "spot",
+      "start": 11.761,
+      "end": 12.057
+    },
+    {
+      "word": "crypto",
+      "start": 12.068,
+      "end": 12.477
+    },
+    {
+      "word": "without",
+      "start": 12.489,
+      "end": 12.795
+    },
+    {
+      "word": "first",
+      "start": 12.807,
+      "end": 13.091
+    },
+    {
+      "word": "minting",
+      "start": 13.102,
+      "end": 13.386
+    },
+    {
+      "word": "fresh",
+      "start": 13.398,
+      "end": 13.693
+    },
+    {
+      "word": "USDT",
+      "start": 13.705,
+      "end": 14.5
+    },
+    {
+      "word": "or",
+      "start": 14.511,
+      "end": 14.67
+    },
+    {
+      "word": "USDC",
+      "start": 14.682,
+      "end": 15.489
+    },
+    {
+      "word": "and",
+      "start": 15.5,
+      "end": 15.659
+    },
+    {
+      "word": "routing",
+      "start": 15.67,
+      "end": 15.955
+    },
+    {
+      "word": "it",
+      "start": 15.966,
+      "end": 16.086
+    },
+    {
+      "word": "to",
+      "start": 16.08,
+      "end": 16.2
+    },
+    {
+      "word": "exchange",
+      "start": 16.182,
+      "end": 16.659
+    },
+    {
+      "word": "settlement",
+      "start": 16.67,
+      "end": 17.034
+    },
+    {
+      "word": "wallets",
+      "start": 17.045,
+      "end": 17.568
+    },
+    {
+      "word": "During",
+      "start": 18.352,
+      "end": 18.636
+    },
+    {
+      "word": "last",
+      "start": 18.648,
+      "end": 18.92
+    },
+    {
+      "word": "month's",
+      "start": 18.932,
+      "end": 19.182
+    },
+    {
+      "word": "panic",
+      "start": 19.193,
+      "end": 19.523
+    },
+    {
+      "word": "sell-off",
+      "start": 19.534,
+      "end": 20.045
+    },
+    {
+      "word": "retail",
+      "start": 20.295,
+      "end": 20.693
+    },
+    {
+      "word": "sold",
+      "start": 20.705,
+      "end": 21.0
+    },
+    {
+      "word": "in",
+      "start": 21.011,
+      "end": 21.131
+    },
+    {
+      "word": "fear",
+      "start": 21.125,
+      "end": 21.489
+    },
+    {
+      "word": "while",
+      "start": 21.5,
+      "end": 21.682
+    },
+    {
+      "word": "on-chain",
+      "start": 21.693,
+      "end": 22.08
+    },
+    {
+      "word": "telemetry",
+      "start": 22.091,
+      "end": 22.591
+    },
+    {
+      "word": "recorded",
+      "start": 22.602,
+      "end": 23.0
+    },
+    {
+      "word": "one",
+      "start": 23.011,
+      "end": 23.216
+    },
+    {
+      "word": "point",
+      "start": 23.227,
+      "end": 23.455
+    },
+    {
+      "word": "four",
+      "start": 23.466,
+      "end": 23.716
+    },
+    {
+      "word": "billion",
+      "start": 23.727,
+      "end": 24.045
+    },
+    {
+      "word": "dollars",
+      "start": 24.057,
+      "end": 24.386
+    },
+    {
+      "word": "of",
+      "start": 24.398,
+      "end": 24.518
+    },
+    {
+      "word": "fresh",
+      "start": 24.489,
+      "end": 24.784
+    },
+    {
+      "word": "stablecoins",
+      "start": 24.795,
+      "end": 25.42
+    },
+    {
+      "word": "minted",
+      "start": 25.432,
+      "end": 25.773
+    },
+    {
+      "word": "and",
+      "start": 25.784,
+      "end": 25.904
+    },
+    {
+      "word": "sent",
+      "start": 25.909,
+      "end": 26.091
+    },
+    {
+      "word": "to",
+      "start": 26.102,
+      "end": 26.222
+    },
+    {
+      "word": "Binance",
+      "start": 26.205,
+      "end": 26.636
+    },
+    {
+      "word": "and",
+      "start": 26.648,
+      "end": 26.784
+    },
+    {
+      "word": "Coinbase",
+      "start": 26.795,
+      "end": 27.33
+    },
+    {
+      "word": "in",
+      "start": 27.341,
+      "end": 27.466
+    },
+    {
+      "word": "thirty-six",
+      "start": 27.477,
+      "end": 28.0
+    },
+    {
+      "word": "hours",
+      "start": 28.011,
+      "end": 28.5
+    },
+    {
+      "word": "Read",
+      "start": 29.284,
+      "end": 29.557
+    },
+    {
+      "word": "the",
+      "start": 29.568,
+      "end": 29.688
+    },
+    {
+      "word": "macro",
+      "start": 29.648,
+      "end": 30.034
+    },
+    {
+      "word": "liquidity",
+      "start": 30.045,
+      "end": 30.489
+    },
+    {
+      "word": "tide",
+      "start": 30.5,
+      "end": 30.864
+    },
+    {
+      "word": "with",
+      "start": 30.875,
+      "end": 30.995
+    },
+    {
+      "word": "these",
+      "start": 31.0,
+      "end": 31.25
+    },
+    {
+      "word": "three",
+      "start": 31.261,
+      "end": 31.5
+    },
+    {
+      "word": "rules",
+      "start": 31.511,
+      "end": 32.023
+    },
+    {
+      "word": "Rule",
+      "start": 32.807,
+      "end": 33.136
+    },
+    {
+      "word": "one",
+      "start": 33.148,
+      "end": 33.409
+    },
+    {
+      "word": "track",
+      "start": 33.67,
+      "end": 33.977
+    },
+    {
+      "word": "seven-day",
+      "start": 33.989,
+      "end": 34.534
+    },
+    {
+      "word": "net",
+      "start": 34.545,
+      "end": 34.761
+    },
+    {
+      "word": "stablecoin",
+      "start": 34.773,
+      "end": 35.398
+    },
+    {
+      "word": "market",
+      "start": 35.409,
+      "end": 35.739
+    },
+    {
+      "word": "cap",
+      "start": 35.75,
+      "end": 36.0
+    },
+    {
+      "word": "expansion",
+      "start": 36.011,
+      "end": 36.625
+    },
+    {
+      "word": "sustained",
+      "start": 36.92,
+      "end": 37.364
+    },
+    {
+      "word": "rallies",
+      "start": 37.375,
+      "end": 37.784
+    },
+    {
+      "word": "require",
+      "start": 37.795,
+      "end": 38.205
+    },
+    {
+      "word": "positive",
+      "start": 38.216,
+      "end": 38.659
+    },
+    {
+      "word": "stablecoin",
+      "start": 38.67,
+      "end": 39.261
+    },
+    {
+      "word": "minting",
+      "start": 39.273,
+      "end": 39.659
+    },
+    {
+      "word": "Rule",
+      "start": 40.443,
+      "end": 40.761
+    },
+    {
+      "word": "two",
+      "start": 40.773,
+      "end": 41.08
+    },
+    {
+      "word": "watch",
+      "start": 41.375,
+      "end": 41.648
+    },
+    {
+      "word": "the",
+      "start": 41.659,
+      "end": 41.779
+    },
+    {
+      "word": "Stablecoin",
+      "start": 41.761,
+      "end": 42.398
+    },
+    {
+      "word": "Supply",
+      "start": 42.409,
+      "end": 42.784
+    },
+    {
+      "word": "Ratio",
+      "start": 42.795,
+      "end": 43.273
+    },
+    {
+      "word": "on",
+      "start": 43.284,
+      "end": 43.404
+    },
+    {
+      "word": "exchanges",
+      "start": 43.398,
+      "end": 44.045
+    },
+    {
+      "word": "rising",
+      "start": 44.352,
+      "end": 44.739
+    },
+    {
+      "word": "stablecoin",
+      "start": 44.75,
+      "end": 45.375
+    },
+    {
+      "word": "reserves",
+      "start": 45.386,
+      "end": 45.795
+    },
+    {
+      "word": "during",
+      "start": 45.807,
+      "end": 46.0
+    },
+    {
+      "word": "a",
+      "start": 46.011,
+      "end": 46.131
+    },
+    {
+      "word": "dip",
+      "start": 46.102,
+      "end": 46.295
+    },
+    {
+      "word": "signal",
+      "start": 46.307,
+      "end": 46.67
+    },
+    {
+      "word": "imminent",
+      "start": 46.682,
+      "end": 47.011
+    },
+    {
+      "word": "institutional",
+      "start": 47.023,
+      "end": 47.659
+    },
+    {
+      "word": "buying",
+      "start": 47.67,
+      "end": 48.102
+    },
+    {
+      "word": "Rule",
+      "start": 48.886,
+      "end": 49.193
+    },
+    {
+      "word": "three",
+      "start": 49.205,
+      "end": 49.557
+    },
+    {
+      "word": "confirm",
+      "start": 49.818,
+      "end": 50.284
+    },
+    {
+      "word": "those",
+      "start": 50.295,
+      "end": 50.489
+    },
+    {
+      "word": "stablecoins",
+      "start": 50.5,
+      "end": 51.193
+    },
+    {
+      "word": "are",
+      "start": 51.205,
+      "end": 51.325
+    },
+    {
+      "word": "converting",
+      "start": 51.33,
+      "end": 51.773
+    },
+    {
+      "word": "into",
+      "start": 51.784,
+      "end": 51.966
+    },
+    {
+      "word": "spot",
+      "start": 51.977,
+      "end": 52.33
+    },
+    {
+      "word": "ETH",
+      "start": 52.341,
+      "end": 52.898
+    },
+    {
+      "word": "SOL",
+      "start": 53.068,
+      "end": 53.557
+    },
+    {
+      "word": "and",
+      "start": 53.807,
+      "end": 53.927
+    },
+    {
+      "word": "high-conviction",
+      "start": 53.909,
+      "end": 54.602
+    },
+    {
+      "word": "gaming",
+      "start": 54.614,
+      "end": 54.955
+    },
+    {
+      "word": "leaders",
+      "start": 54.966,
+      "end": 55.466
+    },
+    {
+      "word": "Save",
+      "start": 56.25,
+      "end": 56.625
+    },
+    {
+      "word": "this",
+      "start": 56.636,
+      "end": 56.795
+    },
+    {
+      "word": "macro",
+      "start": 56.807,
+      "end": 57.227
+    },
+    {
+      "word": "indicator",
+      "start": 57.239,
+      "end": 57.773
+    },
+    {
+      "word": "and",
+      "start": 57.784,
+      "end": 57.904
+    },
+    {
+      "word": "subscribe",
+      "start": 57.898,
+      "end": 58.432
+    },
+    {
+      "word": "for",
+      "start": 58.443,
+      "end": 58.568
+    },
+    {
+      "word": "daily",
+      "start": 58.58,
+      "end": 58.943
+    },
+    {
+      "word": "on-chain",
+      "start": 58.955,
+      "end": 59.398
+    },
+    {
+      "word": "intelligence",
+      "start": 59.409,
+      "end": 60.102
+    },
+    {
+      "word": "because",
+      "start": 60.318,
+      "end": 60.955
+    }
+  ]
+}

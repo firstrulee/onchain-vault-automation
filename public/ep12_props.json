@@ -1,0 +1,774 @@
+{
+  "episodeNumber": "12",
+  "voFile": "ep12_vo_raw.mp3",
+  "bedFile": "ep12_bed.wav",
+  "brollFile": "ep12_flow_broll.mp4",
+  "durationInFrames": 1730,
+  "phaseTimes": {
+    "phase1Start": 0.0,
+    "phase2Start": 7.497,
+    "phase3Start": 26.448,
+    "phase4Start": 51.795,
+    "rule1Start": 29.648,
+    "rule2Start": 37.409,
+    "rule3Start": 44.909
+  },
+  "hudData": {
+    "stage1Header": "01 // SYBIL CLUSTERING ALGORITHM",
+    "stage1Badge": "\u25b2 WALLET DISQUALIFIED",
+    "walletLabel": "ON-CHAIN GRAPH DETECTION ENGINE",
+    "walletAddress": "0x7F3...11D4",
+    "tag1": "SHARED GAS LINK: TRUE",
+    "tag2": "ENTROPY SCORE: LOW",
+    "nodeLeftTitle": "WALLET A (FARMER)",
+    "nodeLeftValue": "0x7F3...11D4",
+    "flowLabel": "DIRECT GAS TRANSFER \u2192",
+    "nodeRightTitle": "WALLET B (FLAGGED)",
+    "nodeRightValue": "SYBIL CLUSTER",
+    "stage2Header": "02 // SNAPSHOT QUALIFICATION METRICS",
+    "stage2Badge": "64% WALLETS FILTERED",
+    "metricLeftLabel": "DISQUALIFIED WALLETS",
+    "metricLeftValue": "LOW BALANCE",
+    "metricLeftSub": "Zero Native Balance After Tx + Linked Gas",
+    "metricRightLabel": "TIER-1 QUALIFIED WALLETS",
+    "metricRightValue": "3.8x MULTIPLIER",
+    "metricRightSub": "Isolated CEX Funding + 30D Sticky Balance",
+    "chartLeftLabel": "ORGANIC MULTI-CONTRACT ACTIVITY",
+    "chartRightLabel": "\u25bc BOT SCRIPT CLUSTER SLASHED",
+    "barLeftLabel": "ORGANIC QUALIFIED WALLETS: 36%",
+    "barLeftPct": 36,
+    "barRightLabel": "SYBIL / BOT FLAGGED WALLETS: 64%",
+    "stage3Header": "03 // THE ANTI-SYBIL OPSEC CHECKLIST",
+    "rule1Tag": "RULE #01 // CEX ISOLATION FUNDING",
+    "rule1Badge": "ZERO WALLET-TO-WALLET TRANSFERS",
+    "rule1Text": "Fund Every Wallet Only From Isolated Exchange Withdrawals",
+    "rule2Tag": "RULE #02 // STICKY NATIVE BALANCE",
+    "rule2Badge": "HOLD >$50 NATIVE FOR 30+ DAYS",
+    "rule2Text": "Keep Over $50 in Native Gas Parked Across Snapshot Windows",
+    "rule3Tag": "RULE #03 // TIMING & SIZE ENTROPY",
+    "rule3Badge": "RANDOMIZE AMOUNTS & PROTOCOLS",
+    "rule3Text": "Vary Transaction Sizes, Days, and Ecosystem DApps",
+    "verdictPills": [
+      "\u2713 ISOLATED CEX",
+      "\u2713 >$50 BALANCE",
+      "\u2713 HIGH ENTROPY"
+    ]
+  },
+  "words": [
+    {
+      "word": "You",
+      "start": 0.095,
+      "end": 0.266
+    },
+    {
+      "word": "spent",
+      "start": 0.277,
+      "end": 0.55
+    },
+    {
+      "word": "six",
+      "start": 0.561,
+      "end": 0.834
+    },
+    {
+      "word": "months",
+      "start": 0.845,
+      "end": 1.095
+    },
+    {
+      "word": "farming",
+      "start": 1.107,
+      "end": 1.436
+    },
+    {
+      "word": "a",
+      "start": 1.448,
+      "end": 1.568
+    },
+    {
+      "word": "top",
+      "start": 1.516,
+      "end": 1.811
+    },
+    {
+      "word": "gaming",
+      "start": 1.823,
+      "end": 2.198
+    },
+    {
+      "word": "or",
+      "start": 2.209,
+      "end": 2.334
+    },
+    {
+      "word": "Layer-2",
+      "start": 2.345,
+      "end": 3.084
+    },
+    {
+      "word": "airdrop",
+      "start": 3.095,
+      "end": 3.584
+    },
+    {
+      "word": "only",
+      "start": 3.834,
+      "end": 4.061
+    },
+    {
+      "word": "to",
+      "start": 4.073,
+      "end": 4.193
+    },
+    {
+      "word": "get",
+      "start": 4.186,
+      "end": 4.323
+    },
+    {
+      "word": "disqualified",
+      "start": 4.334,
+      "end": 5.039
+    },
+    {
+      "word": "on",
+      "start": 5.05,
+      "end": 5.186
+    },
+    {
+      "word": "snapshot",
+      "start": 5.198,
+      "end": 5.789
+    },
+    {
+      "word": "day",
+      "start": 5.8,
+      "end": 6.005
+    },
+    {
+      "word": "by",
+      "start": 6.016,
+      "end": 6.186
+    },
+    {
+      "word": "an",
+      "start": 6.198,
+      "end": 6.318
+    },
+    {
+      "word": "algorithmic",
+      "start": 6.311,
+      "end": 6.868
+    },
+    {
+      "word": "Sybil",
+      "start": 6.88,
+      "end": 7.152
+    },
+    {
+      "word": "filter",
+      "start": 7.164,
+      "end": 7.618
+    },
+    {
+      "word": "Modern",
+      "start": 8.398,
+      "end": 8.761
+    },
+    {
+      "word": "airdrop",
+      "start": 8.773,
+      "end": 9.216
+    },
+    {
+      "word": "clustering",
+      "start": 9.227,
+      "end": 9.659
+    },
+    {
+      "word": "algorithms",
+      "start": 9.67,
+      "end": 10.273
+    },
+    {
+      "word": "don't",
+      "start": 10.284,
+      "end": 10.489
+    },
+    {
+      "word": "just",
+      "start": 10.5,
+      "end": 10.705
+    },
+    {
+      "word": "look",
+      "start": 10.716,
+      "end": 10.875
+    },
+    {
+      "word": "at",
+      "start": 10.886,
+      "end": 11.006
+    },
+    {
+      "word": "transaction",
+      "start": 10.955,
+      "end": 11.568
+    },
+    {
+      "word": "counts",
+      "start": 11.58,
+      "end": 12.0
+    },
+    {
+      "word": "they",
+      "start": 12.284,
+      "end": 12.409
+    },
+    {
+      "word": "build",
+      "start": 12.42,
+      "end": 12.682
+    },
+    {
+      "word": "a",
+      "start": 12.693,
+      "end": 12.813
+    },
+    {
+      "word": "graph",
+      "start": 12.75,
+      "end": 13.057
+    },
+    {
+      "word": "of",
+      "start": 13.068,
+      "end": 13.188
+    },
+    {
+      "word": "your",
+      "start": 13.148,
+      "end": 13.284
+    },
+    {
+      "word": "wallet's",
+      "start": 13.295,
+      "end": 13.659
+    },
+    {
+      "word": "funding",
+      "start": 13.67,
+      "end": 13.989
+    },
+    {
+      "word": "sources",
+      "start": 14.0,
+      "end": 14.511
+    },
+    {
+      "word": "timing",
+      "start": 14.716,
+      "end": 15.08
+    },
+    {
+      "word": "entropy",
+      "start": 15.091,
+      "end": 15.5
+    },
+    {
+      "word": "and",
+      "start": 15.693,
+      "end": 15.83
+    },
+    {
+      "word": "contract",
+      "start": 15.841,
+      "end": 16.318
+    },
+    {
+      "word": "diversity",
+      "start": 16.33,
+      "end": 16.932
+    },
+    {
+      "word": "If",
+      "start": 17.716,
+      "end": 17.864
+    },
+    {
+      "word": "you",
+      "start": 17.875,
+      "end": 17.995
+    },
+    {
+      "word": "ever",
+      "start": 18.0,
+      "end": 18.216
+    },
+    {
+      "word": "transferred",
+      "start": 18.227,
+      "end": 18.716
+    },
+    {
+      "word": "gas",
+      "start": 18.727,
+      "end": 19.057
+    },
+    {
+      "word": "between",
+      "start": 19.068,
+      "end": 19.364
+    },
+    {
+      "word": "your",
+      "start": 19.375,
+      "end": 19.545
+    },
+    {
+      "word": "own",
+      "start": 19.557,
+      "end": 19.705
+    },
+    {
+      "word": "wallets",
+      "start": 19.716,
+      "end": 20.068
+    },
+    {
+      "word": "or",
+      "start": 20.08,
+      "end": 20.25
+    },
+    {
+      "word": "executed",
+      "start": 20.261,
+      "end": 20.75
+    },
+    {
+      "word": "identical",
+      "start": 20.761,
+      "end": 21.205
+    },
+    {
+      "word": "swap",
+      "start": 21.216,
+      "end": 21.5
+    },
+    {
+      "word": "amounts",
+      "start": 21.511,
+      "end": 21.852
+    },
+    {
+      "word": "within",
+      "start": 21.864,
+      "end": 22.08
+    },
+    {
+      "word": "the",
+      "start": 22.091,
+      "end": 22.211
+    },
+    {
+      "word": "same",
+      "start": 22.182,
+      "end": 22.455
+    },
+    {
+      "word": "hour",
+      "start": 22.466,
+      "end": 22.761
+    },
+    {
+      "word": "you",
+      "start": 23.034,
+      "end": 23.154
+    },
+    {
+      "word": "are",
+      "start": 23.125,
+      "end": 23.245
+    },
+    {
+      "word": "flagged",
+      "start": 23.25,
+      "end": 23.67
+    },
+    {
+      "word": "as",
+      "start": 23.682,
+      "end": 23.802
+    },
+    {
+      "word": "a",
+      "start": 23.795,
+      "end": 23.915
+    },
+    {
+      "word": "bot",
+      "start": 23.864,
+      "end": 24.08
+    },
+    {
+      "word": "cluster",
+      "start": 24.091,
+      "end": 24.602
+    },
+    {
+      "word": "Protect",
+      "start": 25.386,
+      "end": 25.784
+    },
+    {
+      "word": "your",
+      "start": 25.795,
+      "end": 25.966
+    },
+    {
+      "word": "airdrop",
+      "start": 25.977,
+      "end": 26.386
+    },
+    {
+      "word": "eligibility",
+      "start": 26.398,
+      "end": 27.034
+    },
+    {
+      "word": "with",
+      "start": 27.045,
+      "end": 27.205
+    },
+    {
+      "word": "these",
+      "start": 27.216,
+      "end": 27.455
+    },
+    {
+      "word": "three",
+      "start": 27.466,
+      "end": 27.727
+    },
+    {
+      "word": "operational",
+      "start": 27.739,
+      "end": 28.352
+    },
+    {
+      "word": "rules",
+      "start": 28.364,
+      "end": 28.864
+    },
+    {
+      "word": "Rule",
+      "start": 29.648,
+      "end": 29.977
+    },
+    {
+      "word": "one",
+      "start": 29.989,
+      "end": 30.273
+    },
+    {
+      "word": "fund",
+      "start": 30.5,
+      "end": 30.795
+    },
+    {
+      "word": "every",
+      "start": 30.807,
+      "end": 31.057
+    },
+    {
+      "word": "wallet",
+      "start": 31.068,
+      "end": 31.375
+    },
+    {
+      "word": "exclusively",
+      "start": 31.386,
+      "end": 32.08
+    },
+    {
+      "word": "from",
+      "start": 32.091,
+      "end": 32.25
+    },
+    {
+      "word": "a",
+      "start": 32.261,
+      "end": 32.381
+    },
+    {
+      "word": "unique",
+      "start": 32.295,
+      "end": 32.682
+    },
+    {
+      "word": "centralized",
+      "start": 32.693,
+      "end": 33.284
+    },
+    {
+      "word": "exchange",
+      "start": 33.295,
+      "end": 33.739
+    },
+    {
+      "word": "withdrawal",
+      "start": 33.75,
+      "end": 34.227
+    },
+    {
+      "word": "address",
+      "start": 34.239,
+      "end": 34.693
+    },
+    {
+      "word": "never",
+      "start": 34.989,
+      "end": 35.261
+    },
+    {
+      "word": "send",
+      "start": 35.273,
+      "end": 35.545
+    },
+    {
+      "word": "gas",
+      "start": 35.557,
+      "end": 35.83
+    },
+    {
+      "word": "wallet-to-wallet",
+      "start": 35.841,
+      "end": 36.625
+    },
+    {
+      "word": "Rule",
+      "start": 37.409,
+      "end": 37.727
+    },
+    {
+      "word": "two",
+      "start": 37.739,
+      "end": 38.057
+    },
+    {
+      "word": "maintain",
+      "start": 38.341,
+      "end": 38.818
+    },
+    {
+      "word": "at",
+      "start": 38.83,
+      "end": 38.95
+    },
+    {
+      "word": "least",
+      "start": 38.943,
+      "end": 39.17
+    },
+    {
+      "word": "zero-point-zero-five",
+      "start": 39.182,
+      "end": 40.341
+    },
+    {
+      "word": "ETH",
+      "start": 40.352,
+      "end": 40.932
+    },
+    {
+      "word": "or",
+      "start": 40.943,
+      "end": 41.08
+    },
+    {
+      "word": "fifty",
+      "start": 41.091,
+      "end": 41.398
+    },
+    {
+      "word": "dollars",
+      "start": 41.409,
+      "end": 41.807
+    },
+    {
+      "word": "of",
+      "start": 41.818,
+      "end": 41.938
+    },
+    {
+      "word": "native",
+      "start": 41.92,
+      "end": 42.216
+    },
+    {
+      "word": "liquidity",
+      "start": 42.227,
+      "end": 42.659
+    },
+    {
+      "word": "parked",
+      "start": 42.67,
+      "end": 43.0
+    },
+    {
+      "word": "for",
+      "start": 43.011,
+      "end": 43.182
+    },
+    {
+      "word": "over",
+      "start": 43.193,
+      "end": 43.364
+    },
+    {
+      "word": "thirty",
+      "start": 43.375,
+      "end": 43.648
+    },
+    {
+      "word": "days",
+      "start": 43.659,
+      "end": 44.125
+    },
+    {
+      "word": "Rule",
+      "start": 44.909,
+      "end": 45.216
+    },
+    {
+      "word": "three",
+      "start": 45.227,
+      "end": 45.602
+    },
+    {
+      "word": "interact",
+      "start": 45.818,
+      "end": 46.284
+    },
+    {
+      "word": "with",
+      "start": 46.295,
+      "end": 46.415
+    },
+    {
+      "word": "authentic",
+      "start": 46.409,
+      "end": 46.909
+    },
+    {
+      "word": "gaming",
+      "start": 46.92,
+      "end": 47.341
+    },
+    {
+      "word": "and",
+      "start": 47.352,
+      "end": 47.472
+    },
+    {
+      "word": "DeFi",
+      "start": 47.432,
+      "end": 47.784
+    },
+    {
+      "word": "contracts",
+      "start": 47.795,
+      "end": 48.33
+    },
+    {
+      "word": "across",
+      "start": 48.341,
+      "end": 48.682
+    },
+    {
+      "word": "different",
+      "start": 48.693,
+      "end": 48.989
+    },
+    {
+      "word": "days",
+      "start": 49.0,
+      "end": 49.33
+    },
+    {
+      "word": "and",
+      "start": 49.341,
+      "end": 49.466
+    },
+    {
+      "word": "randomized",
+      "start": 49.477,
+      "end": 50.0
+    },
+    {
+      "word": "position",
+      "start": 50.011,
+      "end": 50.42
+    },
+    {
+      "word": "sizes",
+      "start": 50.432,
+      "end": 51.011
+    },
+    {
+      "word": "Save",
+      "start": 51.795,
+      "end": 52.182
+    },
+    {
+      "word": "this",
+      "start": 52.193,
+      "end": 52.352
+    },
+    {
+      "word": "anti-Sybil",
+      "start": 52.364,
+      "end": 52.955
+    },
+    {
+      "word": "checklist",
+      "start": 52.966,
+      "end": 53.489
+    },
+    {
+      "word": "and",
+      "start": 53.5,
+      "end": 53.62
+    },
+    {
+      "word": "subscribe",
+      "start": 53.602,
+      "end": 54.136
+    },
+    {
+      "word": "for",
+      "start": 54.148,
+      "end": 54.273
+    },
+    {
+      "word": "daily",
+      "start": 54.284,
+      "end": 54.602
+    },
+    {
+      "word": "Web3",
+      "start": 54.614,
+      "end": 55.159
+    },
+    {
+      "word": "alpha",
+      "start": 55.17,
+      "end": 55.534
+    },
+    {
+      "word": "because",
+      "start": 55.795,
+      "end": 56.42
+    }
+  ]
+}

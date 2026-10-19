@@ -1,0 +1,824 @@
+{
+  "episodeNumber": "11",
+  "voFile": "ep11_vo_raw.mp3",
+  "bedFile": "ep11_bed.wav",
+  "brollFile": "ep11_flow_broll.mp4",
+  "durationInFrames": 1718,
+  "phaseTimes": {
+    "phase1Start": 0.0,
+    "phase2Start": 7.444,
+    "phase3Start": 26.959,
+    "phase4Start": 51.852,
+    "rule1Start": 30.159,
+    "rule2Start": 36.886,
+    "rule3Start": 45.648
+  },
+  "hudData": {
+    "stage1Header": "01 // CEX LISTING INFLOW FORENSICS",
+    "stage1Badge": "\u25b2 WHALE DISTRIBUTION",
+    "walletLabel": "PRE-LISTING DEPOSIT SPIKE",
+    "walletAddress": "0x28E...63A9",
+    "tag1": "CEX INFLOW: +$19.6M",
+    "tag2": "76% DUMP POST-LISTING",
+    "nodeLeftTitle": "EARLY DEX WHALES",
+    "nodeLeftValue": "+800% UNREALIZED",
+    "flowLabel": "DEPOSITS TO SELL \u2192",
+    "nodeRightTitle": "TIER-1 CEX ORDERBOOK",
+    "nodeRightValue": "RETAIL BUYERS",
+    "stage2Header": "02 // POST-LISTING 60-DAY PERFORMANCE",
+    "stage2Badge": "AVG DRAW-DOWN: -52%",
+    "metricLeftLabel": "MINUTE 1-30 CANDLE",
+    "metricLeftValue": "RETAIL FOMO TOP",
+    "metricLeftSub": "Maximum Slippage & Hype Peak",
+    "metricRightLabel": "ON-CHAIN DEPOSIT REALITY",
+    "metricRightValue": "4.2% SUPPLY SENT",
+    "metricRightSub": "Early Insiders Offloading Into Listing",
+    "chartLeftLabel": "LISTING ANNOUNCEMENT SPIKE",
+    "chartRightLabel": "\u25bc 60-DAY DISTRIBUTION BLEED",
+    "barLeftLabel": "TOKENS HOLDING POST-LISTING GAINS: 24%",
+    "barLeftPct": 24,
+    "barRightLabel": "TOKENS DUMPING BELOW LISTING PRICE: 76%",
+    "stage3Header": "03 // INSTITUTIONAL LISTING PLAYBOOK",
+    "rule1Tag": "RULE #01 // THE 72-HOUR COOLING RULE",
+    "rule1Badge": "NEVER BUY MINUTE-1 CANDLE",
+    "rule1Text": "Never Market-Buy Listing Day\u2014Wait 72 Hours for Base",
+    "rule2Tag": "RULE #02 // CEX DEPOSIT MONITOR",
+    "rule2Badge": "DANGER IF >3% SUPPLY DEPOSITED",
+    "rule2Text": "Short or Avoid If Whales Deposit >3% Supply Pre-Listing",
+    "rule3Tag": "RULE #03 // TEST-TX FRONT-RUNNING",
+    "rule3Badge": "TRACK CEX COLD WALLET TEST TXS",
+    "rule3Text": "Spot Listings Early via Exchange Cold-Wallet Test Transfers",
+    "verdictPills": [
+      "\u2713 72H WAIT RULE",
+      "\u2713 CEX INFLOW <3%",
+      "\u2713 TEST-TX SCAN"
+    ]
+  },
+  "words": [
+    {
+      "word": "Buying",
+      "start": 0.095,
+      "end": 0.425
+    },
+    {
+      "word": "a",
+      "start": 0.436,
+      "end": 0.556
+    },
+    {
+      "word": "token",
+      "start": 0.505,
+      "end": 0.834
+    },
+    {
+      "word": "the",
+      "start": 0.845,
+      "end": 0.965
+    },
+    {
+      "word": "minute",
+      "start": 0.914,
+      "end": 1.152
+    },
+    {
+      "word": "a",
+      "start": 1.164,
+      "end": 1.284
+    },
+    {
+      "word": "Tier-1",
+      "start": 1.243,
+      "end": 2.05
+    },
+    {
+      "word": "exchange",
+      "start": 2.061,
+      "end": 2.493
+    },
+    {
+      "word": "announces",
+      "start": 2.505,
+      "end": 2.925
+    },
+    {
+      "word": "a",
+      "start": 2.936,
+      "end": 3.056
+    },
+    {
+      "word": "listing",
+      "start": 3.005,
+      "end": 3.402
+    },
+    {
+      "word": "is",
+      "start": 3.414,
+      "end": 3.534
+    },
+    {
+      "word": "one",
+      "start": 3.527,
+      "end": 3.652
+    },
+    {
+      "word": "of",
+      "start": 3.664,
+      "end": 3.784
+    },
+    {
+      "word": "the",
+      "start": 3.743,
+      "end": 3.863
+    },
+    {
+      "word": "fastest",
+      "start": 3.823,
+      "end": 4.345
+    },
+    {
+      "word": "ways",
+      "start": 4.357,
+      "end": 4.618
+    },
+    {
+      "word": "to",
+      "start": 4.63,
+      "end": 4.75
+    },
+    {
+      "word": "lose",
+      "start": 4.743,
+      "end": 4.993
+    },
+    {
+      "word": "forty",
+      "start": 5.005,
+      "end": 5.277
+    },
+    {
+      "word": "percent",
+      "start": 5.289,
+      "end": 5.63
+    },
+    {
+      "word": "of",
+      "start": 5.641,
+      "end": 5.761
+    },
+    {
+      "word": "your",
+      "start": 5.709,
+      "end": 5.829
+    },
+    {
+      "word": "capital",
+      "start": 5.834,
+      "end": 6.311
+    },
+    {
+      "word": "On-chain",
+      "start": 7.091,
+      "end": 7.591
+    },
+    {
+      "word": "data",
+      "start": 7.602,
+      "end": 7.932
+    },
+    {
+      "word": "across",
+      "start": 7.943,
+      "end": 8.307
+    },
+    {
+      "word": "forty",
+      "start": 8.318,
+      "end": 8.591
+    },
+    {
+      "word": "major",
+      "start": 8.602,
+      "end": 8.932
+    },
+    {
+      "word": "exchange",
+      "start": 8.943,
+      "end": 9.375
+    },
+    {
+      "word": "listings",
+      "start": 9.386,
+      "end": 9.83
+    },
+    {
+      "word": "last",
+      "start": 9.841,
+      "end": 10.102
+    },
+    {
+      "word": "year",
+      "start": 10.114,
+      "end": 10.239
+    },
+    {
+      "word": "proves",
+      "start": 10.25,
+      "end": 10.602
+    },
+    {
+      "word": "that",
+      "start": 10.614,
+      "end": 10.739
+    },
+    {
+      "word": "seventy-six",
+      "start": 10.75,
+      "end": 11.318
+    },
+    {
+      "word": "percent",
+      "start": 11.33,
+      "end": 11.682
+    },
+    {
+      "word": "of",
+      "start": 11.693,
+      "end": 11.813
+    },
+    {
+      "word": "tokens",
+      "start": 11.784,
+      "end": 12.193
+    },
+    {
+      "word": "peak",
+      "start": 12.205,
+      "end": 12.455
+    },
+    {
+      "word": "within",
+      "start": 12.466,
+      "end": 12.682
+    },
+    {
+      "word": "the",
+      "start": 12.693,
+      "end": 12.813
+    },
+    {
+      "word": "first",
+      "start": 12.773,
+      "end": 13.08
+    },
+    {
+      "word": "thirty",
+      "start": 13.091,
+      "end": 13.318
+    },
+    {
+      "word": "minutes",
+      "start": 13.33,
+      "end": 13.614
+    },
+    {
+      "word": "of",
+      "start": 13.625,
+      "end": 13.745
+    },
+    {
+      "word": "trading",
+      "start": 13.716,
+      "end": 14.091
+    },
+    {
+      "word": "and",
+      "start": 14.102,
+      "end": 14.222
+    },
+    {
+      "word": "trend",
+      "start": 14.193,
+      "end": 14.477
+    },
+    {
+      "word": "down",
+      "start": 14.489,
+      "end": 14.739
+    },
+    {
+      "word": "for",
+      "start": 14.75,
+      "end": 14.87
+    },
+    {
+      "word": "the",
+      "start": 14.852,
+      "end": 14.972
+    },
+    {
+      "word": "next",
+      "start": 14.92,
+      "end": 15.159
+    },
+    {
+      "word": "sixty",
+      "start": 15.17,
+      "end": 15.455
+    },
+    {
+      "word": "days",
+      "start": 15.466,
+      "end": 15.932
+    },
+    {
+      "word": "Why",
+      "start": 16.716,
+      "end": 17.148
+    },
+    {
+      "word": "Because",
+      "start": 17.932,
+      "end": 18.261
+    },
+    {
+      "word": "early",
+      "start": 18.273,
+      "end": 18.568
+    },
+    {
+      "word": "on-chain",
+      "start": 18.58,
+      "end": 19.057
+    },
+    {
+      "word": "whales",
+      "start": 19.068,
+      "end": 19.398
+    },
+    {
+      "word": "who",
+      "start": 19.409,
+      "end": 19.529
+    },
+    {
+      "word": "bought",
+      "start": 19.511,
+      "end": 19.784
+    },
+    {
+      "word": "on",
+      "start": 19.795,
+      "end": 19.92
+    },
+    {
+      "word": "DEXs",
+      "start": 19.932,
+      "end": 20.386
+    },
+    {
+      "word": "weeks",
+      "start": 20.398,
+      "end": 20.67
+    },
+    {
+      "word": "earlier",
+      "start": 20.682,
+      "end": 21.068
+    },
+    {
+      "word": "use",
+      "start": 21.08,
+      "end": 21.318
+    },
+    {
+      "word": "the",
+      "start": 21.33,
+      "end": 21.45
+    },
+    {
+      "word": "listing",
+      "start": 21.443,
+      "end": 21.773
+    },
+    {
+      "word": "announcement's",
+      "start": 21.784,
+      "end": 22.261
+    },
+    {
+      "word": "retail",
+      "start": 22.273,
+      "end": 22.659
+    },
+    {
+      "word": "liquidity",
+      "start": 22.67,
+      "end": 23.125
+    },
+    {
+      "word": "to",
+      "start": 23.136,
+      "end": 23.256
+    },
+    {
+      "word": "exit",
+      "start": 23.25,
+      "end": 23.568
+    },
+    {
+      "word": "millions",
+      "start": 23.58,
+      "end": 23.977
+    },
+    {
+      "word": "of",
+      "start": 23.989,
+      "end": 24.109
+    },
+    {
+      "word": "dollars",
+      "start": 24.08,
+      "end": 24.455
+    },
+    {
+      "word": "at",
+      "start": 24.466,
+      "end": 24.586
+    },
+    {
+      "word": "market",
+      "start": 24.557,
+      "end": 24.864
+    },
+    {
+      "word": "top",
+      "start": 24.875,
+      "end": 25.239
+    },
+    {
+      "word": "Trade",
+      "start": 26.023,
+      "end": 26.307
+    },
+    {
+      "word": "exchange",
+      "start": 26.318,
+      "end": 26.818
+    },
+    {
+      "word": "listings",
+      "start": 26.83,
+      "end": 27.273
+    },
+    {
+      "word": "like",
+      "start": 27.284,
+      "end": 27.42
+    },
+    {
+      "word": "an",
+      "start": 27.432,
+      "end": 27.552
+    },
+    {
+      "word": "institution",
+      "start": 27.534,
+      "end": 28.193
+    },
+    {
+      "word": "with",
+      "start": 28.205,
+      "end": 28.341
+    },
+    {
+      "word": "these",
+      "start": 28.352,
+      "end": 28.591
+    },
+    {
+      "word": "three",
+      "start": 28.602,
+      "end": 28.852
+    },
+    {
+      "word": "rules",
+      "start": 28.864,
+      "end": 29.375
+    },
+    {
+      "word": "Rule",
+      "start": 30.159,
+      "end": 30.489
+    },
+    {
+      "word": "one",
+      "start": 30.5,
+      "end": 30.761
+    },
+    {
+      "word": "never",
+      "start": 31.034,
+      "end": 31.284
+    },
+    {
+      "word": "market-buy",
+      "start": 31.295,
+      "end": 31.773
+    },
+    {
+      "word": "the",
+      "start": 31.784,
+      "end": 31.904
+    },
+    {
+      "word": "listing",
+      "start": 31.909,
+      "end": 32.25
+    },
+    {
+      "word": "candle",
+      "start": 32.261,
+      "end": 32.659
+    },
+    {
+      "word": "wait",
+      "start": 32.955,
+      "end": 33.136
+    },
+    {
+      "word": "seventy-two",
+      "start": 33.148,
+      "end": 33.761
+    },
+    {
+      "word": "hours",
+      "start": 33.773,
+      "end": 34.159
+    },
+    {
+      "word": "for",
+      "start": 34.17,
+      "end": 34.318
+    },
+    {
+      "word": "initial",
+      "start": 34.33,
+      "end": 34.693
+    },
+    {
+      "word": "whale",
+      "start": 34.705,
+      "end": 34.966
+    },
+    {
+      "word": "distribution",
+      "start": 34.977,
+      "end": 35.545
+    },
+    {
+      "word": "to",
+      "start": 35.557,
+      "end": 35.677
+    },
+    {
+      "word": "clear",
+      "start": 35.67,
+      "end": 36.102
+    },
+    {
+      "word": "Rule",
+      "start": 36.886,
+      "end": 37.205
+    },
+    {
+      "word": "two",
+      "start": 37.216,
+      "end": 37.523
+    },
+    {
+      "word": "watch",
+      "start": 37.818,
+      "end": 38.091
+    },
+    {
+      "word": "exchange",
+      "start": 38.102,
+      "end": 38.545
+    },
+    {
+      "word": "hot-wallet",
+      "start": 38.557,
+      "end": 39.034
+    },
+    {
+      "word": "deposits",
+      "start": 39.045,
+      "end": 39.625
+    },
+    {
+      "word": "if",
+      "start": 39.92,
+      "end": 40.045
+    },
+    {
+      "word": "on-chain",
+      "start": 40.057,
+      "end": 40.511
+    },
+    {
+      "word": "whales",
+      "start": 40.523,
+      "end": 40.864
+    },
+    {
+      "word": "send",
+      "start": 40.875,
+      "end": 41.114
+    },
+    {
+      "word": "over",
+      "start": 41.125,
+      "end": 41.295
+    },
+    {
+      "word": "three",
+      "start": 41.307,
+      "end": 41.534
+    },
+    {
+      "word": "percent",
+      "start": 41.545,
+      "end": 41.909
+    },
+    {
+      "word": "of",
+      "start": 41.92,
+      "end": 42.04
+    },
+    {
+      "word": "supply",
+      "start": 42.0,
+      "end": 42.398
+    },
+    {
+      "word": "to",
+      "start": 42.409,
+      "end": 42.529
+    },
+    {
+      "word": "the",
+      "start": 42.523,
+      "end": 42.643
+    },
+    {
+      "word": "exchange",
+      "start": 42.591,
+      "end": 43.102
+    },
+    {
+      "word": "before",
+      "start": 43.114,
+      "end": 43.42
+    },
+    {
+      "word": "launch",
+      "start": 43.432,
+      "end": 43.818
+    },
+    {
+      "word": "expect",
+      "start": 44.045,
+      "end": 44.432
+    },
+    {
+      "word": "a",
+      "start": 44.443,
+      "end": 44.563
+    },
+    {
+      "word": "dump",
+      "start": 44.523,
+      "end": 44.864
+    },
+    {
+      "word": "Rule",
+      "start": 45.648,
+      "end": 45.955
+    },
+    {
+      "word": "three",
+      "start": 45.966,
+      "end": 46.295
+    },
+    {
+      "word": "catch",
+      "start": 46.545,
+      "end": 46.841
+    },
+    {
+      "word": "tokens",
+      "start": 46.852,
+      "end": 47.239
+    },
+    {
+      "word": "BEFORE",
+      "start": 47.25,
+      "end": 47.568
+    },
+    {
+      "word": "listing",
+      "start": 47.58,
+      "end": 47.92
+    },
+    {
+      "word": "by",
+      "start": 47.932,
+      "end": 48.052
+    },
+    {
+      "word": "tracking",
+      "start": 48.057,
+      "end": 48.477
+    },
+    {
+      "word": "exchange",
+      "start": 48.489,
+      "end": 48.966
+    },
+    {
+      "word": "cold-wallet",
+      "start": 48.977,
+      "end": 49.545
+    },
+    {
+      "word": "test",
+      "start": 49.557,
+      "end": 49.818
+    },
+    {
+      "word": "transactions",
+      "start": 49.83,
+      "end": 50.466
+    },
+    {
+      "word": "on-chain",
+      "start": 50.477,
+      "end": 51.068
+    },
+    {
+      "word": "Save",
+      "start": 51.852,
+      "end": 52.239
+    },
+    {
+      "word": "this",
+      "start": 52.25,
+      "end": 52.409
+    },
+    {
+      "word": "listing",
+      "start": 52.42,
+      "end": 52.795
+    },
+    {
+      "word": "strategy",
+      "start": 52.807,
+      "end": 53.341
+    },
+    {
+      "word": "and",
+      "start": 53.352,
+      "end": 53.472
+    },
+    {
+      "word": "subscribe",
+      "start": 53.466,
+      "end": 53.989
+    },
+    {
+      "word": "for",
+      "start": 54.0,
+      "end": 54.125
+    },
+    {
+      "word": "daily",
+      "start": 54.136,
+      "end": 54.432
+    },
+    {
+      "word": "wallet",
+      "start": 54.443,
+      "end": 54.739
+    },
+    {
+      "word": "alerts",
+      "start": 54.75,
+      "end": 55.193
+    },
+    {
+      "word": "because",
+      "start": 55.398,
+      "end": 56.023
+    }
+  ]
+}

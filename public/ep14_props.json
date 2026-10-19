@@ -1,0 +1,804 @@
+{
+  "episodeNumber": "14",
+  "voFile": "ep14_vo_raw.mp3",
+  "bedFile": "ep14_bed.wav",
+  "brollFile": "ep14_flow_broll.mp4",
+  "durationInFrames": 1740,
+  "phaseTimes": {
+    "phase1Start": 0.0,
+    "phase2Start": 7.537,
+    "phase3Start": 27.05,
+    "phase4Start": 52.614,
+    "rule1Start": 30.25,
+    "rule2Start": 36.773,
+    "rule3Start": 45.057
+  },
+  "hudData": {
+    "stage1Header": "01 // COPY-TRADING BAIT FORENSICS",
+    "stage1Badge": "\u25b2 BOT TRAP DETECTED",
+    "walletLabel": "PUBLIC DOXXED WHALE WALLET",
+    "walletAddress": "0xA11...50F2",
+    "tag1": "BAIT BUY: +$500K",
+    "tag2": "SHADOW DUMP: -$2.1M",
+    "nodeLeftTitle": "PUBLIC BAIT WALLET",
+    "nodeLeftValue": "BUYS +$500K",
+    "flowLabel": "TRIGGERS COPY-BOTS \u2192",
+    "nodeRightTitle": "3 SHADOW WALLETS",
+    "nodeRightValue": "DUMPS -$2.1M",
+    "stage2Header": "02 // PUBLIC BAIT VS SHADOW WALLET PNL",
+    "stage2Badge": "BOT LOSS: -46.0%",
+    "metricLeftLabel": "PUBLIC WALLET SIGNAL",
+    "metricLeftValue": "+$500K ENTRY",
+    "metricLeftSub": "0.2% of Whale's Portfolio (Pure Bait)",
+    "metricRightLabel": "UNTAGGED SHADOW WALLETS",
+    "metricRightValue": "-$2.1M EXIT",
+    "metricRightSub": "Sells Into Retail Copy-Trading Slippage",
+    "chartLeftLabel": "COPY-BOT PUMP SPIKE (3 SECONDS)",
+    "chartRightLabel": "\u25bc SHADOW WALLET DISTRIBUTION",
+    "barLeftLabel": "GENUINE CONVICTION WALLETS: 18%",
+    "barLeftPct": 18,
+    "barRightLabel": "PUBLIC BAIT / WASH WALLETS: 82%",
+    "stage3Header": "03 // SAFE SMART-MONEY TRACKING RULES",
+    "rule1Tag": "RULE #01 // IGNORE DOXXED WALLETS",
+    "rule1Badge": "NEVER COPY PUBLIC INFLUENCERS",
+    "rule1Text": "Never Copy-Trade Public Doxxed Wallets on Low-Cap Tokens",
+    "rule2Tag": "RULE #02 // HOLD-TIME & WIN-RATE",
+    "rule2Badge": ">80% WIN RATE + >7D AVG HOLD",
+    "rule2Text": "Filter for Untagged Wallets With >7-Day Average Hold Time",
+    "rule3Tag": "RULE #03 // PORTFOLIO WEIGHT CHECK",
+    "rule3Badge": "POSITION MUST BE >2% OF NET WORTH",
+    "rule3Text": "Only Follow Buys Representing >2% of the Wallet's Total Value",
+    "verdictPills": [
+      "\u2713 NO DOXXED",
+      "\u2713 >7D HOLD TIME",
+      "\u2713 >2% WEIGHT"
+    ]
+  },
+  "words": [
+    {
+      "word": "Blindly",
+      "start": 0.095,
+      "end": 0.516
+    },
+    {
+      "word": "copy-trading",
+      "start": 0.527,
+      "end": 1.198
+    },
+    {
+      "word": "a",
+      "start": 1.209,
+      "end": 1.329
+    },
+    {
+      "word": "famous",
+      "start": 1.277,
+      "end": 1.652
+    },
+    {
+      "word": "whale",
+      "start": 1.664,
+      "end": 1.959
+    },
+    {
+      "word": "wallet",
+      "start": 1.97,
+      "end": 2.311
+    },
+    {
+      "word": "is",
+      "start": 2.323,
+      "end": 2.443
+    },
+    {
+      "word": "the",
+      "start": 2.448,
+      "end": 2.568
+    },
+    {
+      "word": "easiest",
+      "start": 2.539,
+      "end": 2.993
+    },
+    {
+      "word": "way",
+      "start": 3.005,
+      "end": 3.152
+    },
+    {
+      "word": "to",
+      "start": 3.164,
+      "end": 3.284
+    },
+    {
+      "word": "get",
+      "start": 3.277,
+      "end": 3.448
+    },
+    {
+      "word": "used",
+      "start": 3.459,
+      "end": 3.777
+    },
+    {
+      "word": "as",
+      "start": 3.789,
+      "end": 3.909
+    },
+    {
+      "word": "their",
+      "start": 3.891,
+      "end": 4.027
+    },
+    {
+      "word": "personal",
+      "start": 4.039,
+      "end": 4.448
+    },
+    {
+      "word": "exit",
+      "start": 4.459,
+      "end": 4.709
+    },
+    {
+      "word": "liquidity",
+      "start": 4.72,
+      "end": 5.255
+    },
+    {
+      "word": "Publicly",
+      "start": 6.034,
+      "end": 6.5
+    },
+    {
+      "word": "tagged",
+      "start": 6.511,
+      "end": 6.886
+    },
+    {
+      "word": "billionaire",
+      "start": 6.898,
+      "end": 7.443
+    },
+    {
+      "word": "and",
+      "start": 7.455,
+      "end": 7.575
+    },
+    {
+      "word": "influencer",
+      "start": 7.568,
+      "end": 8.136
+    },
+    {
+      "word": "wallets",
+      "start": 8.148,
+      "end": 8.489
+    },
+    {
+      "word": "know",
+      "start": 8.5,
+      "end": 8.67
+    },
+    {
+      "word": "thousands",
+      "start": 8.682,
+      "end": 9.114
+    },
+    {
+      "word": "of",
+      "start": 9.125,
+      "end": 9.245
+    },
+    {
+      "word": "copy-trading",
+      "start": 9.216,
+      "end": 9.864
+    },
+    {
+      "word": "bots",
+      "start": 9.875,
+      "end": 10.193
+    },
+    {
+      "word": "mirror",
+      "start": 10.205,
+      "end": 10.511
+    },
+    {
+      "word": "their",
+      "start": 10.523,
+      "end": 10.727
+    },
+    {
+      "word": "every",
+      "start": 10.739,
+      "end": 10.943
+    },
+    {
+      "word": "transaction",
+      "start": 10.955,
+      "end": 11.602
+    },
+    {
+      "word": "within",
+      "start": 11.614,
+      "end": 11.886
+    },
+    {
+      "word": "three",
+      "start": 11.898,
+      "end": 12.148
+    },
+    {
+      "word": "seconds",
+      "start": 12.159,
+      "end": 12.727
+    },
+    {
+      "word": "So",
+      "start": 13.511,
+      "end": 13.761
+    },
+    {
+      "word": "what",
+      "start": 13.773,
+      "end": 13.92
+    },
+    {
+      "word": "do",
+      "start": 13.932,
+      "end": 14.052
+    },
+    {
+      "word": "they",
+      "start": 14.011,
+      "end": 14.148
+    },
+    {
+      "word": "do",
+      "start": 14.159,
+      "end": 14.466
+    },
+    {
+      "word": "They",
+      "start": 15.25,
+      "end": 15.409
+    },
+    {
+      "word": "buy",
+      "start": 15.42,
+      "end": 15.591
+    },
+    {
+      "word": "five",
+      "start": 15.602,
+      "end": 15.898
+    },
+    {
+      "word": "hundred",
+      "start": 15.909,
+      "end": 16.148
+    },
+    {
+      "word": "thousand",
+      "start": 16.159,
+      "end": 16.534
+    },
+    {
+      "word": "dollars",
+      "start": 16.545,
+      "end": 16.898
+    },
+    {
+      "word": "of",
+      "start": 16.909,
+      "end": 17.029
+    },
+    {
+      "word": "an",
+      "start": 16.977,
+      "end": 17.097
+    },
+    {
+      "word": "illiquid",
+      "start": 17.057,
+      "end": 17.432
+    },
+    {
+      "word": "gaming",
+      "start": 17.443,
+      "end": 17.761
+    },
+    {
+      "word": "token",
+      "start": 17.773,
+      "end": 18.125
+    },
+    {
+      "word": "on",
+      "start": 18.136,
+      "end": 18.256
+    },
+    {
+      "word": "their",
+      "start": 18.227,
+      "end": 18.347
+    },
+    {
+      "word": "public",
+      "start": 18.352,
+      "end": 18.659
+    },
+    {
+      "word": "wallet",
+      "start": 18.67,
+      "end": 18.989
+    },
+    {
+      "word": "to",
+      "start": 19.0,
+      "end": 19.12
+    },
+    {
+      "word": "trigger",
+      "start": 19.091,
+      "end": 19.409
+    },
+    {
+      "word": "copy-bots",
+      "start": 19.42,
+      "end": 20.068
+    },
+    {
+      "word": "and",
+      "start": 20.341,
+      "end": 20.466
+    },
+    {
+      "word": "immediately",
+      "start": 20.477,
+      "end": 20.943
+    },
+    {
+      "word": "dump",
+      "start": 20.955,
+      "end": 21.239
+    },
+    {
+      "word": "two",
+      "start": 21.25,
+      "end": 21.409
+    },
+    {
+      "word": "million",
+      "start": 21.42,
+      "end": 21.761
+    },
+    {
+      "word": "dollars",
+      "start": 21.773,
+      "end": 22.136
+    },
+    {
+      "word": "of",
+      "start": 22.148,
+      "end": 22.268
+    },
+    {
+      "word": "the",
+      "start": 22.227,
+      "end": 22.347
+    },
+    {
+      "word": "exact",
+      "start": 22.273,
+      "end": 22.739
+    },
+    {
+      "word": "same",
+      "start": 22.75,
+      "end": 23.011
+    },
+    {
+      "word": "token",
+      "start": 23.023,
+      "end": 23.398
+    },
+    {
+      "word": "from",
+      "start": 23.409,
+      "end": 23.557
+    },
+    {
+      "word": "three",
+      "start": 23.568,
+      "end": 23.898
+    },
+    {
+      "word": "untagged",
+      "start": 23.909,
+      "end": 24.42
+    },
+    {
+      "word": "shadow",
+      "start": 24.432,
+      "end": 24.795
+    },
+    {
+      "word": "wallets",
+      "start": 24.807,
+      "end": 25.159
+    },
+    {
+      "word": "into",
+      "start": 25.17,
+      "end": 25.352
+    },
+    {
+      "word": "the",
+      "start": 25.364,
+      "end": 25.484
+    },
+    {
+      "word": "bot",
+      "start": 25.466,
+      "end": 25.682
+    },
+    {
+      "word": "pump",
+      "start": 25.693,
+      "end": 26.068
+    },
+    {
+      "word": "Copy",
+      "start": 26.852,
+      "end": 27.205
+    },
+    {
+      "word": "smart",
+      "start": 27.216,
+      "end": 27.511
+    },
+    {
+      "word": "money",
+      "start": 27.523,
+      "end": 27.761
+    },
+    {
+      "word": "safely",
+      "start": 27.773,
+      "end": 28.193
+    },
+    {
+      "word": "with",
+      "start": 28.205,
+      "end": 28.341
+    },
+    {
+      "word": "this",
+      "start": 28.352,
+      "end": 28.545
+    },
+    {
+      "word": "three-rule",
+      "start": 28.557,
+      "end": 28.977
+    },
+    {
+      "word": "filter",
+      "start": 28.989,
+      "end": 29.466
+    },
+    {
+      "word": "Rule",
+      "start": 30.25,
+      "end": 30.58
+    },
+    {
+      "word": "one",
+      "start": 30.591,
+      "end": 30.852
+    },
+    {
+      "word": "never",
+      "start": 31.148,
+      "end": 31.42
+    },
+    {
+      "word": "copy-trade",
+      "start": 31.432,
+      "end": 32.045
+    },
+    {
+      "word": "public",
+      "start": 32.057,
+      "end": 32.375
+    },
+    {
+      "word": "doxxed",
+      "start": 32.386,
+      "end": 32.705
+    },
+    {
+      "word": "wallets",
+      "start": 32.716,
+      "end": 33.102
+    },
+    {
+      "word": "on",
+      "start": 33.114,
+      "end": 33.261
+    },
+    {
+      "word": "low-liquidity",
+      "start": 33.273,
+      "end": 33.83
+    },
+    {
+      "word": "tokens",
+      "start": 33.841,
+      "end": 34.375
+    },
+    {
+      "word": "they",
+      "start": 34.659,
+      "end": 34.784
+    },
+    {
+      "word": "farm",
+      "start": 34.795,
+      "end": 35.114
+    },
+    {
+      "word": "copy-traders",
+      "start": 35.125,
+      "end": 35.989
+    },
+    {
+      "word": "Rule",
+      "start": 36.773,
+      "end": 37.091
+    },
+    {
+      "word": "two",
+      "start": 37.102,
+      "end": 37.443
+    },
+    {
+      "word": "only",
+      "start": 37.727,
+      "end": 38.023
+    },
+    {
+      "word": "track",
+      "start": 38.034,
+      "end": 38.398
+    },
+    {
+      "word": "untagged",
+      "start": 38.409,
+      "end": 38.852
+    },
+    {
+      "word": "high-win-rate",
+      "start": 38.864,
+      "end": 39.42
+    },
+    {
+      "word": "wallets",
+      "start": 39.432,
+      "end": 39.773
+    },
+    {
+      "word": "with",
+      "start": 39.784,
+      "end": 39.909
+    },
+    {
+      "word": "over",
+      "start": 39.92,
+      "end": 40.193
+    },
+    {
+      "word": "eighty",
+      "start": 40.205,
+      "end": 40.386
+    },
+    {
+      "word": "percent",
+      "start": 40.398,
+      "end": 40.784
+    },
+    {
+      "word": "profitable",
+      "start": 40.795,
+      "end": 41.273
+    },
+    {
+      "word": "thirty-day",
+      "start": 41.284,
+      "end": 41.818
+    },
+    {
+      "word": "PnL",
+      "start": 41.83,
+      "end": 42.466
+    },
+    {
+      "word": "and",
+      "start": 42.477,
+      "end": 42.597
+    },
+    {
+      "word": "minimum",
+      "start": 42.58,
+      "end": 42.909
+    },
+    {
+      "word": "seven-day",
+      "start": 42.92,
+      "end": 43.477
+    },
+    {
+      "word": "hold",
+      "start": 43.489,
+      "end": 43.739
+    },
+    {
+      "word": "times",
+      "start": 43.75,
+      "end": 44.273
+    },
+    {
+      "word": "Rule",
+      "start": 45.057,
+      "end": 45.364
+    },
+    {
+      "word": "three",
+      "start": 45.375,
+      "end": 45.705
+    },
+    {
+      "word": "verify",
+      "start": 45.966,
+      "end": 46.42
+    },
+    {
+      "word": "the",
+      "start": 46.432,
+      "end": 46.552
+    },
+    {
+      "word": "wallet's",
+      "start": 46.557,
+      "end": 46.909
+    },
+    {
+      "word": "position",
+      "start": 46.92,
+      "end": 47.386
+    },
+    {
+      "word": "size",
+      "start": 47.398,
+      "end": 47.784
+    },
+    {
+      "word": "is",
+      "start": 47.795,
+      "end": 47.92
+    },
+    {
+      "word": "at",
+      "start": 47.932,
+      "end": 48.052
+    },
+    {
+      "word": "least",
+      "start": 48.045,
+      "end": 48.318
+    },
+    {
+      "word": "two",
+      "start": 48.33,
+      "end": 48.477
+    },
+    {
+      "word": "percent",
+      "start": 48.489,
+      "end": 48.864
+    },
+    {
+      "word": "of",
+      "start": 48.875,
+      "end": 48.995
+    },
+    {
+      "word": "their",
+      "start": 48.955,
+      "end": 49.091
+    },
+    {
+      "word": "total",
+      "start": 49.102,
+      "end": 49.398
+    },
+    {
+      "word": "portfolio",
+      "start": 49.409,
+      "end": 50.068
+    },
+    {
+      "word": "ignore",
+      "start": 50.375,
+      "end": 50.727
+    },
+    {
+      "word": "tiny",
+      "start": 50.739,
+      "end": 51.068
+    },
+    {
+      "word": "bait",
+      "start": 51.08,
+      "end": 51.318
+    },
+    {
+      "word": "buys",
+      "start": 51.33,
+      "end": 51.83
+    },
+    {
+      "word": "Save",
+      "start": 52.614,
+      "end": 53.0
+    },
+    {
+      "word": "this",
+      "start": 53.011,
+      "end": 53.17
+    },
+    {
+      "word": "copy-trading",
+      "start": 53.182,
+      "end": 53.864
+    },
+    {
+      "word": "filter",
+      "start": 53.875,
+      "end": 54.284
+    },
+    {
+      "word": "and",
+      "start": 54.295,
+      "end": 54.415
+    },
+    {
+      "word": "subscribe",
+      "start": 54.409,
+      "end": 54.955
+    },
+    {
+      "word": "to",
+      "start": 54.966,
+      "end": 55.086
+    },
+    {
+      "word": "OnChain",
+      "start": 55.091,
+      "end": 55.58
+    },
+    {
+      "word": "Vault",
+      "start": 55.591,
+      "end": 55.943
+    },
+    {
+      "word": "because",
+      "start": 56.125,
+      "end": 56.739
+    }
+  ]
+}

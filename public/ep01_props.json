@@ -1,0 +1,585 @@
+{
+  "episodeNumber": "01",
+  "voFile": "ep01_vo_raw.mp3",
+  "bedFile": "ep01_bed.wav",
+  "brollFile": "ep01_flow_broll.mp4",
+  "durationInFrames": 1409,
+  "phaseTimes": {
+    "phase1Start": 0.0,
+    "phase2Start": 4.982,
+    "phase3Start": 18.852,
+    "phase4Start": 41.795
+  },
+  "words": [
+    {
+      "word": "Before",
+      "start": 0.095,
+      "end": 0.47
+    },
+    {
+      "word": "you",
+      "start": 0.482,
+      "end": 0.602
+    },
+    {
+      "word": "buy",
+      "start": 0.584,
+      "end": 0.789
+    },
+    {
+      "word": "any",
+      "start": 0.8,
+      "end": 1.016
+    },
+    {
+      "word": "gaming",
+      "start": 1.027,
+      "end": 1.436
+    },
+    {
+      "word": "or",
+      "start": 1.448,
+      "end": 1.63
+    },
+    {
+      "word": "AI",
+      "start": 1.641,
+      "end": 1.902
+    },
+    {
+      "word": "token",
+      "start": 1.914,
+      "end": 2.266
+    },
+    {
+      "word": "this",
+      "start": 2.277,
+      "end": 2.448
+    },
+    {
+      "word": "week",
+      "start": 2.459,
+      "end": 2.732
+    },
+    {
+      "word": "look",
+      "start": 2.97,
+      "end": 3.141
+    },
+    {
+      "word": "at",
+      "start": 3.152,
+      "end": 3.272
+    },
+    {
+      "word": "wallet",
+      "start": 3.255,
+      "end": 3.573
+    },
+    {
+      "word": "0x71C...89A2",
+      "start": 3.584,
+      "end": 4.777
+    },
+    {
+      "word": "48",
+      "start": 4.982,
+      "end": 5.425
+    },
+    {
+      "word": "hours",
+      "start": 5.436,
+      "end": 5.755
+    },
+    {
+      "word": "before",
+      "start": 5.766,
+      "end": 6.084
+    },
+    {
+      "word": "a",
+      "start": 6.095,
+      "end": 6.215
+    },
+    {
+      "word": "hyped",
+      "start": 6.141,
+      "end": 6.47
+    },
+    {
+      "word": "Web3",
+      "start": 6.482,
+      "end": 7.005
+    },
+    {
+      "word": "game",
+      "start": 7.016,
+      "end": 7.277
+    },
+    {
+      "word": "token",
+      "start": 7.289,
+      "end": 7.618
+    },
+    {
+      "word": "dumped",
+      "start": 7.63,
+      "end": 7.857
+    },
+    {
+      "word": "-64",
+      "start": 7.868,
+      "end": 8.38
+    },
+    {
+      "word": "percent",
+      "start": 8.391,
+      "end": 8.811
+    },
+    {
+      "word": "retail",
+      "start": 9.118,
+      "end": 9.459
+    },
+    {
+      "word": "volume",
+      "start": 9.47,
+      "end": 9.8
+    },
+    {
+      "word": "hit",
+      "start": 9.811,
+      "end": 9.948
+    },
+    {
+      "word": "an",
+      "start": 9.959,
+      "end": 10.079
+    },
+    {
+      "word": "all-time",
+      "start": 10.084,
+      "end": 10.493
+    },
+    {
+      "word": "high",
+      "start": 10.505,
+      "end": 10.891
+    },
+    {
+      "word": "Why",
+      "start": 11.67,
+      "end": 12.102
+    },
+    {
+      "word": "Because",
+      "start": 12.886,
+      "end": 13.216
+    },
+    {
+      "word": "influencers",
+      "start": 13.227,
+      "end": 13.886
+    },
+    {
+      "word": "were",
+      "start": 13.898,
+      "end": 14.018
+    },
+    {
+      "word": "paid",
+      "start": 14.023,
+      "end": 14.284
+    },
+    {
+      "word": "to",
+      "start": 14.295,
+      "end": 14.415
+    },
+    {
+      "word": "push",
+      "start": 14.386,
+      "end": 14.614
+    },
+    {
+      "word": "a",
+      "start": 14.625,
+      "end": 14.745
+    },
+    {
+      "word": "tournament",
+      "start": 14.705,
+      "end": 15.114
+    },
+    {
+      "word": "right",
+      "start": 15.125,
+      "end": 15.352
+    },
+    {
+      "word": "before",
+      "start": 15.364,
+      "end": 15.648
+    },
+    {
+      "word": "a",
+      "start": 15.659,
+      "end": 15.779
+    },
+    {
+      "word": "$48.5M",
+      "start": 15.716,
+      "end": 16.159
+    },
+    {
+      "word": "million",
+      "start": 16.17,
+      "end": 16.5
+    },
+    {
+      "word": "dollar",
+      "start": 16.511,
+      "end": 16.807
+    },
+    {
+      "word": "VC",
+      "start": 16.818,
+      "end": 17.227
+    },
+    {
+      "word": "cliff",
+      "start": 17.239,
+      "end": 17.545
+    },
+    {
+      "word": "unlock",
+      "start": 17.557,
+      "end": 18.068
+    },
+    {
+      "word": "Smart",
+      "start": 18.852,
+      "end": 19.273
+    },
+    {
+      "word": "money",
+      "start": 19.284,
+      "end": 19.568
+    },
+    {
+      "word": "never",
+      "start": 19.58,
+      "end": 19.909
+    },
+    {
+      "word": "reads",
+      "start": 19.92,
+      "end": 20.17
+    },
+    {
+      "word": "hype",
+      "start": 20.182,
+      "end": 20.42
+    },
+    {
+      "word": "threads",
+      "start": 20.432,
+      "end": 20.943
+    },
+    {
+      "word": "They",
+      "start": 21.727,
+      "end": 21.909
+    },
+    {
+      "word": "audit",
+      "start": 21.92,
+      "end": 22.239
+    },
+    {
+      "word": "three",
+      "start": 22.25,
+      "end": 22.477
+    },
+    {
+      "word": "numbers",
+      "start": 22.489,
+      "end": 22.864
+    },
+    {
+      "word": "in",
+      "start": 22.875,
+      "end": 23.0
+    },
+    {
+      "word": "60",
+      "start": 23.011,
+      "end": 23.352
+    },
+    {
+      "word": "seconds",
+      "start": 23.364,
+      "end": 23.932
+    },
+    {
+      "word": "Rule",
+      "start": 24.716,
+      "end": 25.045
+    },
+    {
+      "word": "one",
+      "start": 25.057,
+      "end": 25.295
+    },
+    {
+      "word": "divide",
+      "start": 25.591,
+      "end": 25.977
+    },
+    {
+      "word": "Fully",
+      "start": 25.989,
+      "end": 26.273
+    },
+    {
+      "word": "Diluted",
+      "start": 26.284,
+      "end": 26.693
+    },
+    {
+      "word": "Valuation",
+      "start": 26.705,
+      "end": 27.33
+    },
+    {
+      "word": "by",
+      "start": 27.341,
+      "end": 27.461
+    },
+    {
+      "word": "Market",
+      "start": 27.466,
+      "end": 27.83
+    },
+    {
+      "word": "Cap.",
+      "start": 27.841,
+      "end": 28.216
+    },
+    {
+      "word": "Above",
+      "start": 29.0,
+      "end": 29.364
+    },
+    {
+      "word": "5x",
+      "start": 29.375,
+      "end": 29.739
+    },
+    {
+      "word": "means",
+      "start": 29.75,
+      "end": 30.034
+    },
+    {
+      "word": "you",
+      "start": 30.045,
+      "end": 30.165
+    },
+    {
+      "word": "are",
+      "start": 30.159,
+      "end": 30.284
+    },
+    {
+      "word": "the",
+      "start": 30.295,
+      "end": 30.415
+    },
+    {
+      "word": "exit",
+      "start": 30.375,
+      "end": 30.75
+    },
+    {
+      "word": "liquidity",
+      "start": 30.761,
+      "end": 31.307
+    },
+    {
+      "word": "Rule",
+      "start": 32.091,
+      "end": 32.398
+    },
+    {
+      "word": "two",
+      "start": 32.409,
+      "end": 32.739
+    },
+    {
+      "word": "never",
+      "start": 33.057,
+      "end": 33.33
+    },
+    {
+      "word": "buy",
+      "start": 33.341,
+      "end": 33.5
+    },
+    {
+      "word": "within",
+      "start": 33.511,
+      "end": 33.83
+    },
+    {
+      "word": "7",
+      "start": 33.841,
+      "end": 34.17
+    },
+    {
+      "word": "days",
+      "start": 34.182,
+      "end": 34.489
+    },
+    {
+      "word": "of",
+      "start": 34.5,
+      "end": 34.62
+    },
+    {
+      "word": "a",
+      "start": 34.568,
+      "end": 34.688
+    },
+    {
+      "word": "5",
+      "start": 34.659,
+      "end": 34.966
+    },
+    {
+      "word": "percent",
+      "start": 34.977,
+      "end": 35.318
+    },
+    {
+      "word": "supply",
+      "start": 35.33,
+      "end": 35.773
+    },
+    {
+      "word": "unlock",
+      "start": 35.784,
+      "end": 36.307
+    },
+    {
+      "word": "Rule",
+      "start": 37.091,
+      "end": 37.398
+    },
+    {
+      "word": "three",
+      "start": 37.409,
+      "end": 37.773
+    },
+    {
+      "word": "track",
+      "start": 38.011,
+      "end": 38.318
+    },
+    {
+      "word": "multisig",
+      "start": 38.33,
+      "end": 38.898
+    },
+    {
+      "word": "outflows",
+      "start": 38.909,
+      "end": 39.398
+    },
+    {
+      "word": "to",
+      "start": 39.409,
+      "end": 39.529
+    },
+    {
+      "word": "exchange",
+      "start": 39.523,
+      "end": 40.011
+    },
+    {
+      "word": "deposit",
+      "start": 40.023,
+      "end": 40.477
+    },
+    {
+      "word": "wallets",
+      "start": 40.489,
+      "end": 41.011
+    },
+    {
+      "word": "Save",
+      "start": 41.795,
+      "end": 42.182
+    },
+    {
+      "word": "this",
+      "start": 42.193,
+      "end": 42.352
+    },
+    {
+      "word": "checklist",
+      "start": 42.364,
+      "end": 42.864
+    },
+    {
+      "word": "and",
+      "start": 42.875,
+      "end": 42.995
+    },
+    {
+      "word": "subscribe",
+      "start": 42.977,
+      "end": 43.523
+    },
+    {
+      "word": "so",
+      "start": 43.534,
+      "end": 43.659
+    },
+    {
+      "word": "we",
+      "start": 43.67,
+      "end": 43.79
+    },
+    {
+      "word": "track",
+      "start": 43.784,
+      "end": 44.091
+    },
+    {
+      "word": "the",
+      "start": 44.102,
+      "end": 44.222
+    },
+    {
+      "word": "whales",
+      "start": 44.205,
+      "end": 44.557
+    },
+    {
+      "word": "for",
+      "start": 44.568,
+      "end": 44.705
+    },
+    {
+      "word": "you",
+      "start": 44.716,
+      "end": 44.898
+    },
+    {
+      "word": "especially",
+      "start": 45.08,
+      "end": 45.705
+    }
+  ]
+}

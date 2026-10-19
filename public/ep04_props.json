@@ -1,0 +1,764 @@
+{
+  "episodeNumber": "04",
+  "voFile": "ep04_vo_raw.mp3",
+  "bedFile": "ep04_bed.wav",
+  "brollFile": "ep04_flow_broll.mp4",
+  "durationInFrames": 1581,
+  "phaseTimes": {
+    "phase1Start": 0.0,
+    "phase2Start": 6.848,
+    "phase3Start": 22.777,
+    "phase4Start": 46.966,
+    "rule1Start": 25.977,
+    "rule2Start": 33.557,
+    "rule3Start": 39.636
+  },
+  "hudData": {
+    "stage1Header": "01 // DEX LIQUIDITY ILLUSION",
+    "stage1Badge": "\u25b2 RUG RISK: CRITICAL",
+    "walletLabel": "UNISWAP / RAYDIUM LP CONTRACT",
+    "walletAddress": "0xE12...44D9",
+    "tag1": "PAPER MCAP: $50.0M",
+    "tag2": "REAL LP: $90,000",
+    "nodeLeftTitle": "PAPER VALUATION",
+    "nodeLeftValue": "$50,000,000",
+    "flowLabel": "0.18% LP DEPTH \u2192",
+    "nodeRightTitle": "ACTUAL EXIT POOL",
+    "nodeRightValue": "$90,000 WETH",
+    "stage2Header": "02 // SLIPPAGE CASCADE ANALYSIS",
+    "stage2Badge": "-94% ON $80K SELL",
+    "metricLeftLabel": "DISPLAYED MARKET CAP",
+    "metricLeftValue": "$50.0M FAKE",
+    "metricLeftSub": "Artificially Pumped with Low Float",
+    "metricRightLabel": "EXTRACTED LIQUIDITY",
+    "metricRightValue": "$90K POOL",
+    "metricRightSub": "Single Whale Sell Wipes Out Orderbook",
+    "chartLeftLabel": "ARTIFICIAL LOW-LP PUMP",
+    "chartRightLabel": "\u25bc LP DRAIN COLLAPSE (-94%)",
+    "barLeftLabel": "REAL LOCKED LIQUIDITY: 4%",
+    "barLeftPct": 8,
+    "barRightLabel": "ILLIQUID PAPER VALUATION: 96%",
+    "stage3Header": "03 // THE 3-STEP DEX LIQUIDITY AUDIT",
+    "rule1Tag": "RULE #01 // LP-TO-MCAP RATIO",
+    "rule1Badge": "LOCKED LP MUST BE > 5% MCAP",
+    "rule1Text": "Never Buy If Locked Liquidity Is Under 5% of Market Cap",
+    "rule2Tag": "RULE #02 // LP LOCK VERIFICATION",
+    "rule2Badge": "BURNED OR LOCKED > 12 MONTHS",
+    "rule2Text": "Confirm LP Tokens Are Burned or Locked Over 12 Months",
+    "rule3Tag": "RULE #03 // TOP 10 HOLDER CLUSTER",
+    "rule3Badge": "TOP 10 WALLETS < 20% SUPPLY",
+    "rule3Text": "Reject Any Token Where Top 10 Wallets Hold Over 20%",
+    "verdictPills": [
+      "\u2713 LP > 5% MCAP",
+      "\u2713 12M LP LOCK",
+      "\u2713 TOP 10 < 20%"
+    ]
+  },
+  "words": [
+    {
+      "word": "A",
+      "start": 0.095,
+      "end": 0.215
+    },
+    {
+      "word": "token",
+      "start": 0.22,
+      "end": 0.584
+    },
+    {
+      "word": "showing",
+      "start": 0.595,
+      "end": 0.925
+    },
+    {
+      "word": "a",
+      "start": 0.936,
+      "end": 1.056
+    },
+    {
+      "word": "fifty",
+      "start": 1.016,
+      "end": 1.345
+    },
+    {
+      "word": "million",
+      "start": 1.357,
+      "end": 1.686
+    },
+    {
+      "word": "dollar",
+      "start": 1.698,
+      "end": 1.97
+    },
+    {
+      "word": "market",
+      "start": 1.982,
+      "end": 2.311
+    },
+    {
+      "word": "cap",
+      "start": 2.323,
+      "end": 2.618
+    },
+    {
+      "word": "on",
+      "start": 2.63,
+      "end": 2.789
+    },
+    {
+      "word": "DEX",
+      "start": 2.8,
+      "end": 3.164
+    },
+    {
+      "word": "Screener",
+      "start": 3.175,
+      "end": 3.55
+    },
+    {
+      "word": "can",
+      "start": 3.561,
+      "end": 3.709
+    },
+    {
+      "word": "collapse",
+      "start": 3.72,
+      "end": 4.107
+    },
+    {
+      "word": "to",
+      "start": 4.118,
+      "end": 4.238
+    },
+    {
+      "word": "zero",
+      "start": 4.209,
+      "end": 4.63
+    },
+    {
+      "word": "with",
+      "start": 4.641,
+      "end": 4.811
+    },
+    {
+      "word": "just",
+      "start": 4.823,
+      "end": 5.084
+    },
+    {
+      "word": "eighty",
+      "start": 5.095,
+      "end": 5.277
+    },
+    {
+      "word": "thousand",
+      "start": 5.289,
+      "end": 5.686
+    },
+    {
+      "word": "dollars",
+      "start": 5.698,
+      "end": 6.027
+    },
+    {
+      "word": "of",
+      "start": 6.039,
+      "end": 6.159
+    },
+    {
+      "word": "sell",
+      "start": 6.13,
+      "end": 6.357
+    },
+    {
+      "word": "pressure",
+      "start": 6.368,
+      "end": 6.834
+    },
+    {
+      "word": "Last",
+      "start": 7.614,
+      "end": 7.966
+    },
+    {
+      "word": "week",
+      "start": 7.977,
+      "end": 8.261
+    },
+    {
+      "word": "a",
+      "start": 8.477,
+      "end": 8.597
+    },
+    {
+      "word": "trending",
+      "start": 8.557,
+      "end": 8.955
+    },
+    {
+      "word": "gaming",
+      "start": 8.966,
+      "end": 9.307
+    },
+    {
+      "word": "token",
+      "start": 9.318,
+      "end": 9.682
+    },
+    {
+      "word": "rugged",
+      "start": 9.693,
+      "end": 9.966
+    },
+    {
+      "word": "thousands",
+      "start": 9.977,
+      "end": 10.398
+    },
+    {
+      "word": "of",
+      "start": 10.409,
+      "end": 10.529
+    },
+    {
+      "word": "traders",
+      "start": 10.5,
+      "end": 10.92
+    },
+    {
+      "word": "who",
+      "start": 10.932,
+      "end": 11.052
+    },
+    {
+      "word": "confused",
+      "start": 11.045,
+      "end": 11.523
+    },
+    {
+      "word": "Market",
+      "start": 11.534,
+      "end": 11.875
+    },
+    {
+      "word": "Cap",
+      "start": 11.886,
+      "end": 12.193
+    },
+    {
+      "word": "with",
+      "start": 12.205,
+      "end": 12.325
+    },
+    {
+      "word": "actual",
+      "start": 12.318,
+      "end": 12.727
+    },
+    {
+      "word": "Locked",
+      "start": 12.739,
+      "end": 13.023
+    },
+    {
+      "word": "Liquidity",
+      "start": 13.034,
+      "end": 13.557
+    },
+    {
+      "word": "The",
+      "start": 14.341,
+      "end": 14.461
+    },
+    {
+      "word": "developer",
+      "start": 14.466,
+      "end": 14.966
+    },
+    {
+      "word": "held",
+      "start": 14.977,
+      "end": 15.193
+    },
+    {
+      "word": "ninety-one",
+      "start": 15.205,
+      "end": 15.682
+    },
+    {
+      "word": "percent",
+      "start": 15.693,
+      "end": 16.057
+    },
+    {
+      "word": "of",
+      "start": 16.068,
+      "end": 16.188
+    },
+    {
+      "word": "the",
+      "start": 16.148,
+      "end": 16.268
+    },
+    {
+      "word": "supply",
+      "start": 16.227,
+      "end": 16.693
+    },
+    {
+      "word": "and",
+      "start": 16.705,
+      "end": 16.841
+    },
+    {
+      "word": "paired",
+      "start": 16.852,
+      "end": 17.114
+    },
+    {
+      "word": "it",
+      "start": 17.125,
+      "end": 17.245
+    },
+    {
+      "word": "with",
+      "start": 17.205,
+      "end": 17.33
+    },
+    {
+      "word": "only",
+      "start": 17.341,
+      "end": 17.545
+    },
+    {
+      "word": "ninety",
+      "start": 17.557,
+      "end": 17.875
+    },
+    {
+      "word": "thousand",
+      "start": 17.886,
+      "end": 18.295
+    },
+    {
+      "word": "dollars",
+      "start": 18.307,
+      "end": 18.648
+    },
+    {
+      "word": "of",
+      "start": 18.659,
+      "end": 18.779
+    },
+    {
+      "word": "wrapped",
+      "start": 18.761,
+      "end": 19.034
+    },
+    {
+      "word": "Ethereum",
+      "start": 19.045,
+      "end": 19.58
+    },
+    {
+      "word": "Never",
+      "start": 20.364,
+      "end": 20.682
+    },
+    {
+      "word": "get",
+      "start": 20.693,
+      "end": 20.852
+    },
+    {
+      "word": "trapped",
+      "start": 20.864,
+      "end": 21.227
+    },
+    {
+      "word": "by",
+      "start": 21.239,
+      "end": 21.359
+    },
+    {
+      "word": "paper",
+      "start": 21.364,
+      "end": 21.716
+    },
+    {
+      "word": "valuation",
+      "start": 21.727,
+      "end": 22.284
+    },
+    {
+      "word": "again",
+      "start": 22.295,
+      "end": 22.693
+    },
+    {
+      "word": "Audit",
+      "start": 23.477,
+      "end": 23.83
+    },
+    {
+      "word": "these",
+      "start": 23.841,
+      "end": 24.08
+    },
+    {
+      "word": "three",
+      "start": 24.091,
+      "end": 24.318
+    },
+    {
+      "word": "numbers",
+      "start": 24.33,
+      "end": 24.693
+    },
+    {
+      "word": "first",
+      "start": 24.705,
+      "end": 25.193
+    },
+    {
+      "word": "Rule",
+      "start": 25.977,
+      "end": 26.307
+    },
+    {
+      "word": "one",
+      "start": 26.318,
+      "end": 26.591
+    },
+    {
+      "word": "check",
+      "start": 26.818,
+      "end": 27.08
+    },
+    {
+      "word": "Liquidity-to-Market-Cap",
+      "start": 27.091,
+      "end": 28.193
+    },
+    {
+      "word": "ratio",
+      "start": 28.205,
+      "end": 28.739
+    },
+    {
+      "word": "if",
+      "start": 29.034,
+      "end": 29.193
+    },
+    {
+      "word": "locked",
+      "start": 29.205,
+      "end": 29.5
+    },
+    {
+      "word": "liquidity",
+      "start": 29.511,
+      "end": 30.011
+    },
+    {
+      "word": "is",
+      "start": 30.023,
+      "end": 30.159
+    },
+    {
+      "word": "under",
+      "start": 30.17,
+      "end": 30.386
+    },
+    {
+      "word": "five",
+      "start": 30.398,
+      "end": 30.693
+    },
+    {
+      "word": "percent",
+      "start": 30.705,
+      "end": 31.057
+    },
+    {
+      "word": "of",
+      "start": 31.068,
+      "end": 31.188
+    },
+    {
+      "word": "market",
+      "start": 31.159,
+      "end": 31.511
+    },
+    {
+      "word": "cap",
+      "start": 31.523,
+      "end": 31.852
+    },
+    {
+      "word": "walk",
+      "start": 32.102,
+      "end": 32.352
+    },
+    {
+      "word": "away",
+      "start": 32.364,
+      "end": 32.773
+    },
+    {
+      "word": "Rule",
+      "start": 33.557,
+      "end": 33.875
+    },
+    {
+      "word": "two",
+      "start": 33.886,
+      "end": 34.216
+    },
+    {
+      "word": "verify",
+      "start": 34.477,
+      "end": 34.955
+    },
+    {
+      "word": "LP",
+      "start": 34.966,
+      "end": 35.341
+    },
+    {
+      "word": "tokens",
+      "start": 35.352,
+      "end": 35.761
+    },
+    {
+      "word": "are",
+      "start": 35.773,
+      "end": 35.898
+    },
+    {
+      "word": "burned",
+      "start": 35.909,
+      "end": 36.216
+    },
+    {
+      "word": "or",
+      "start": 36.227,
+      "end": 36.347
+    },
+    {
+      "word": "locked",
+      "start": 36.341,
+      "end": 36.648
+    },
+    {
+      "word": "in",
+      "start": 36.659,
+      "end": 36.779
+    },
+    {
+      "word": "an",
+      "start": 36.739,
+      "end": 36.859
+    },
+    {
+      "word": "audited",
+      "start": 36.852,
+      "end": 37.216
+    },
+    {
+      "word": "contract",
+      "start": 37.227,
+      "end": 37.727
+    },
+    {
+      "word": "for",
+      "start": 37.739,
+      "end": 37.859
+    },
+    {
+      "word": "at",
+      "start": 37.864,
+      "end": 37.984
+    },
+    {
+      "word": "least",
+      "start": 37.943,
+      "end": 38.148
+    },
+    {
+      "word": "twelve",
+      "start": 38.159,
+      "end": 38.409
+    },
+    {
+      "word": "months",
+      "start": 38.42,
+      "end": 38.852
+    },
+    {
+      "word": "Rule",
+      "start": 39.636,
+      "end": 39.955
+    },
+    {
+      "word": "three",
+      "start": 39.966,
+      "end": 40.33
+    },
+    {
+      "word": "inspect",
+      "start": 40.557,
+      "end": 41.0
+    },
+    {
+      "word": "top",
+      "start": 41.011,
+      "end": 41.284
+    },
+    {
+      "word": "ten",
+      "start": 41.295,
+      "end": 41.534
+    },
+    {
+      "word": "non-exchange",
+      "start": 41.545,
+      "end": 42.159
+    },
+    {
+      "word": "holders",
+      "start": 42.17,
+      "end": 42.625
+    },
+    {
+      "word": "if",
+      "start": 42.92,
+      "end": 43.045
+    },
+    {
+      "word": "they",
+      "start": 43.057,
+      "end": 43.177
+    },
+    {
+      "word": "control",
+      "start": 43.182,
+      "end": 43.625
+    },
+    {
+      "word": "over",
+      "start": 43.636,
+      "end": 43.818
+    },
+    {
+      "word": "twenty",
+      "start": 43.83,
+      "end": 44.091
+    },
+    {
+      "word": "percent",
+      "start": 44.102,
+      "end": 44.545
+    },
+    {
+      "word": "it",
+      "start": 44.852,
+      "end": 44.972
+    },
+    {
+      "word": "is",
+      "start": 44.92,
+      "end": 45.04
+    },
+    {
+      "word": "a",
+      "start": 45.011,
+      "end": 45.131
+    },
+    {
+      "word": "rug",
+      "start": 45.08,
+      "end": 45.341
+    },
+    {
+      "word": "waiting",
+      "start": 45.352,
+      "end": 45.648
+    },
+    {
+      "word": "to",
+      "start": 45.659,
+      "end": 45.779
+    },
+    {
+      "word": "happen",
+      "start": 45.739,
+      "end": 46.182
+    },
+    {
+      "word": "Save",
+      "start": 46.966,
+      "end": 47.352
+    },
+    {
+      "word": "this",
+      "start": 47.364,
+      "end": 47.545
+    },
+    {
+      "word": "DEX",
+      "start": 47.557,
+      "end": 47.932
+    },
+    {
+      "word": "audit",
+      "start": 47.943,
+      "end": 48.261
+    },
+    {
+      "word": "and",
+      "start": 48.273,
+      "end": 48.393
+    },
+    {
+      "word": "subscribe",
+      "start": 48.386,
+      "end": 48.955
+    },
+    {
+      "word": "so",
+      "start": 48.966,
+      "end": 49.091
+    },
+    {
+      "word": "you",
+      "start": 49.102,
+      "end": 49.222
+    },
+    {
+      "word": "never",
+      "start": 49.227,
+      "end": 49.466
+    },
+    {
+      "word": "become",
+      "start": 49.477,
+      "end": 49.761
+    },
+    {
+      "word": "exit",
+      "start": 49.773,
+      "end": 50.08
+    },
+    {
+      "word": "liquidity",
+      "start": 50.091,
+      "end": 50.568
+    },
+    {
+      "word": "because",
+      "start": 50.807,
+      "end": 51.432
+    }
+  ]
+}

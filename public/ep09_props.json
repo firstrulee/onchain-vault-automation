@@ -1,0 +1,699 @@
+{
+  "episodeNumber": "09",
+  "voFile": "ep09_vo_raw.mp3",
+  "bedFile": "ep09_bed.wav",
+  "brollFile": "ep09_flow_broll.mp4",
+  "durationInFrames": 1566,
+  "phaseTimes": {
+    "phase1Start": 0.0,
+    "phase2Start": 6.785,
+    "phase3Start": 24.63,
+    "phase4Start": 46.625,
+    "rule1Start": 27.83,
+    "rule2Start": 33.386,
+    "rule3Start": 39.932
+  },
+  "hudData": {
+    "stage1Header": "01 // SMART CONTRACT SECURITY AUDIT",
+    "stage1Badge": "\u25b2 HONEYPOT DETECTED",
+    "walletLabel": "UNVERIFIED PROXY CONTRACT",
+    "walletAddress": "0x66F...02C8",
+    "tag1": "BUY TAX: 0.0%",
+    "tag2": "SELL TAX: 99.0%",
+    "nodeLeftTitle": "OWNER PRIVILEGE",
+    "nodeLeftValue": "setTax(99%)",
+    "flowLabel": "BLOCKS RETAIL SELLS \u2192",
+    "nodeRightTitle": "RETAIL SWAP TX",
+    "nodeRightValue": "REVERTED",
+    "stage2Header": "02 // MALICIOUS FUNCTION CALL TRACE",
+    "stage2Badge": "100% FUNDS LOCKED",
+    "metricLeftLabel": "DISPLAYED CHART",
+    "metricLeftValue": "+340% GREEN",
+    "metricLeftSub": "Only Buys Allowed\u2014Sells Blocked",
+    "metricRightLabel": "HIDDEN ADMIN CODE",
+    "metricRightValue": "BLACKLIST()",
+    "metricRightSub": "Owner Freezes Non-Whitelisted Wallets",
+    "chartLeftLabel": "ARTIFICIAL BUY-ONLY STAIRCASE",
+    "chartRightLabel": "\u25bc OWNER LP PULL (-100%)",
+    "barLeftLabel": "RENOUNCED / SAFE CONTRACTS: 15%",
+    "barLeftPct": 15,
+    "barRightLabel": "UPGRADEABLE / ADMIN-RISK CONTRACTS: 85%",
+    "stage3Header": "03 // THE 10-SECOND CONTRACT AUDIT",
+    "rule1Tag": "RULE #01 // OWNERSHIP RENOUNCED",
+    "rule1Badge": "OWNER = 0x000...DEAD OR TIMELOCK",
+    "rule1Text": "Confirm Contract Ownership Is Renounced or Timelocked",
+    "rule2Tag": "RULE #02 // PROXY FUNCTION SCAN",
+    "rule2Badge": "NO setTax() OR blacklist() CALLS",
+    "rule2Text": "Reject Contracts With Mutable Tax or Blacklist Functions",
+    "rule3Tag": "RULE #03 // REVOKE APPROVALS",
+    "rule3Badge": "NEVER SIGN INFINITE SPEND CAPS",
+    "rule3Text": "Use Exact Spend Approvals and Revoke Permissions Weekly",
+    "verdictPills": [
+      "\u2713 RENOUNCED",
+      "\u2713 ZERO TAX FN",
+      "\u2713 REVOKE CAPS"
+    ]
+  },
+  "words": [
+    {
+      "word": "Your",
+      "start": 0.095,
+      "end": 0.311
+    },
+    {
+      "word": "chart",
+      "start": 0.323,
+      "end": 0.618
+    },
+    {
+      "word": "shows",
+      "start": 0.63,
+      "end": 0.902
+    },
+    {
+      "word": "a",
+      "start": 0.914,
+      "end": 1.034
+    },
+    {
+      "word": "three",
+      "start": 0.982,
+      "end": 1.243
+    },
+    {
+      "word": "hundred",
+      "start": 1.255,
+      "end": 1.493
+    },
+    {
+      "word": "percent",
+      "start": 1.505,
+      "end": 1.868
+    },
+    {
+      "word": "gain",
+      "start": 1.88,
+      "end": 2.198
+    },
+    {
+      "word": "you",
+      "start": 2.459,
+      "end": 2.579
+    },
+    {
+      "word": "click",
+      "start": 2.573,
+      "end": 2.811
+    },
+    {
+      "word": "sell",
+      "start": 2.823,
+      "end": 3.118
+    },
+    {
+      "word": "on",
+      "start": 3.13,
+      "end": 3.255
+    },
+    {
+      "word": "Uniswap",
+      "start": 3.266,
+      "end": 3.891
+    },
+    {
+      "word": "and",
+      "start": 4.13,
+      "end": 4.25
+    },
+    {
+      "word": "the",
+      "start": 4.22,
+      "end": 4.34
+    },
+    {
+      "word": "transaction",
+      "start": 4.3,
+      "end": 4.914
+    },
+    {
+      "word": "fails",
+      "start": 4.925,
+      "end": 5.391
+    },
+    {
+      "word": "welcome",
+      "start": 5.664,
+      "end": 6.05
+    },
+    {
+      "word": "to",
+      "start": 6.061,
+      "end": 6.186
+    },
+    {
+      "word": "a",
+      "start": 6.198,
+      "end": 6.318
+    },
+    {
+      "word": "smart",
+      "start": 6.277,
+      "end": 6.618
+    },
+    {
+      "word": "contract",
+      "start": 6.63,
+      "end": 7.095
+    },
+    {
+      "word": "honeypot",
+      "start": 7.107,
+      "end": 7.686
+    },
+    {
+      "word": "Scammers",
+      "start": 8.466,
+      "end": 9.0
+    },
+    {
+      "word": "deploy",
+      "start": 9.011,
+      "end": 9.375
+    },
+    {
+      "word": "gaming",
+      "start": 9.386,
+      "end": 9.807
+    },
+    {
+      "word": "and",
+      "start": 9.818,
+      "end": 9.938
+    },
+    {
+      "word": "meme",
+      "start": 9.932,
+      "end": 10.17
+    },
+    {
+      "word": "tokens",
+      "start": 10.182,
+      "end": 10.591
+    },
+    {
+      "word": "with",
+      "start": 10.602,
+      "end": 10.727
+    },
+    {
+      "word": "clean-looking",
+      "start": 10.739,
+      "end": 11.295
+    },
+    {
+      "word": "code",
+      "start": 11.307,
+      "end": 11.625
+    },
+    {
+      "word": "that",
+      "start": 11.636,
+      "end": 11.756
+    },
+    {
+      "word": "hides",
+      "start": 11.75,
+      "end": 12.045
+    },
+    {
+      "word": "a",
+      "start": 12.057,
+      "end": 12.177
+    },
+    {
+      "word": "dynamic",
+      "start": 12.125,
+      "end": 12.568
+    },
+    {
+      "word": "sell-tax",
+      "start": 12.58,
+      "end": 13.114
+    },
+    {
+      "word": "modifier",
+      "start": 13.125,
+      "end": 13.773
+    },
+    {
+      "word": "or",
+      "start": 13.784,
+      "end": 13.932
+    },
+    {
+      "word": "a",
+      "start": 13.943,
+      "end": 14.063
+    },
+    {
+      "word": "transfer",
+      "start": 14.0,
+      "end": 14.432
+    },
+    {
+      "word": "blacklist",
+      "start": 14.443,
+      "end": 14.909
+    },
+    {
+      "word": "function",
+      "start": 14.92,
+      "end": 15.375
+    },
+    {
+      "word": "Once",
+      "start": 16.159,
+      "end": 16.477
+    },
+    {
+      "word": "retail",
+      "start": 16.489,
+      "end": 16.875
+    },
+    {
+      "word": "pushes",
+      "start": 16.886,
+      "end": 17.239
+    },
+    {
+      "word": "the",
+      "start": 17.25,
+      "end": 17.37
+    },
+    {
+      "word": "price",
+      "start": 17.352,
+      "end": 17.648
+    },
+    {
+      "word": "up",
+      "start": 17.659,
+      "end": 17.875
+    },
+    {
+      "word": "the",
+      "start": 18.091,
+      "end": 18.211
+    },
+    {
+      "word": "owner",
+      "start": 18.216,
+      "end": 18.489
+    },
+    {
+      "word": "calls",
+      "start": 18.5,
+      "end": 18.773
+    },
+    {
+      "word": "a",
+      "start": 18.784,
+      "end": 18.904
+    },
+    {
+      "word": "single",
+      "start": 18.852,
+      "end": 19.216
+    },
+    {
+      "word": "contract",
+      "start": 19.227,
+      "end": 19.682
+    },
+    {
+      "word": "function",
+      "start": 19.693,
+      "end": 20.091
+    },
+    {
+      "word": "that",
+      "start": 20.102,
+      "end": 20.227
+    },
+    {
+      "word": "sets",
+      "start": 20.239,
+      "end": 20.545
+    },
+    {
+      "word": "sell",
+      "start": 20.557,
+      "end": 20.761
+    },
+    {
+      "word": "tax",
+      "start": 20.773,
+      "end": 21.102
+    },
+    {
+      "word": "to",
+      "start": 21.114,
+      "end": 21.234
+    },
+    {
+      "word": "ninety-nine",
+      "start": 21.216,
+      "end": 21.716
+    },
+    {
+      "word": "percent",
+      "start": 21.727,
+      "end": 22.227
+    },
+    {
+      "word": "Never",
+      "start": 23.011,
+      "end": 23.33
+    },
+    {
+      "word": "sign",
+      "start": 23.341,
+      "end": 23.614
+    },
+    {
+      "word": "a",
+      "start": 23.625,
+      "end": 23.745
+    },
+    {
+      "word": "swap",
+      "start": 23.682,
+      "end": 24.057
+    },
+    {
+      "word": "before",
+      "start": 24.068,
+      "end": 24.352
+    },
+    {
+      "word": "checking",
+      "start": 24.364,
+      "end": 24.716
+    },
+    {
+      "word": "these",
+      "start": 24.727,
+      "end": 24.955
+    },
+    {
+      "word": "three",
+      "start": 24.966,
+      "end": 25.182
+    },
+    {
+      "word": "contract",
+      "start": 25.193,
+      "end": 25.67
+    },
+    {
+      "word": "flags",
+      "start": 25.682,
+      "end": 26.08
+    },
+    {
+      "word": "in",
+      "start": 26.091,
+      "end": 26.227
+    },
+    {
+      "word": "ten",
+      "start": 26.239,
+      "end": 26.477
+    },
+    {
+      "word": "seconds",
+      "start": 26.489,
+      "end": 27.045
+    },
+    {
+      "word": "Rule",
+      "start": 27.83,
+      "end": 28.159
+    },
+    {
+      "word": "one",
+      "start": 28.17,
+      "end": 28.386
+    },
+    {
+      "word": "verify",
+      "start": 28.614,
+      "end": 29.045
+    },
+    {
+      "word": "contract",
+      "start": 29.057,
+      "end": 29.545
+    },
+    {
+      "word": "ownership",
+      "start": 29.557,
+      "end": 30.0
+    },
+    {
+      "word": "is",
+      "start": 30.011,
+      "end": 30.136
+    },
+    {
+      "word": "renounced",
+      "start": 30.148,
+      "end": 30.636
+    },
+    {
+      "word": "or",
+      "start": 30.648,
+      "end": 30.768
+    },
+    {
+      "word": "controlled",
+      "start": 30.739,
+      "end": 31.17
+    },
+    {
+      "word": "by",
+      "start": 31.182,
+      "end": 31.307
+    },
+    {
+      "word": "a",
+      "start": 31.318,
+      "end": 31.438
+    },
+    {
+      "word": "time-locked",
+      "start": 31.386,
+      "end": 31.92
+    },
+    {
+      "word": "multisig",
+      "start": 31.932,
+      "end": 32.602
+    },
+    {
+      "word": "Rule",
+      "start": 33.386,
+      "end": 33.693
+    },
+    {
+      "word": "two",
+      "start": 33.705,
+      "end": 34.011
+    },
+    {
+      "word": "scan",
+      "start": 34.295,
+      "end": 34.636
+    },
+    {
+      "word": "for",
+      "start": 34.648,
+      "end": 34.773
+    },
+    {
+      "word": "hidden",
+      "start": 34.784,
+      "end": 35.034
+    },
+    {
+      "word": "blacklist",
+      "start": 35.045,
+      "end": 35.636
+    },
+    {
+      "word": "pauseTrading",
+      "start": 35.773,
+      "end": 36.466
+    },
+    {
+      "word": "or",
+      "start": 36.648,
+      "end": 36.773
+    },
+    {
+      "word": "setTax",
+      "start": 36.784,
+      "end": 37.318
+    },
+    {
+      "word": "functions",
+      "start": 37.33,
+      "end": 37.761
+    },
+    {
+      "word": "in",
+      "start": 37.773,
+      "end": 37.893
+    },
+    {
+      "word": "the",
+      "start": 37.852,
+      "end": 37.972
+    },
+    {
+      "word": "proxy",
+      "start": 37.932,
+      "end": 38.352
+    },
+    {
+      "word": "implementation",
+      "start": 38.364,
+      "end": 39.148
+    },
+    {
+      "word": "Rule",
+      "start": 39.932,
+      "end": 40.239
+    },
+    {
+      "word": "three",
+      "start": 40.25,
+      "end": 40.614
+    },
+    {
+      "word": "never",
+      "start": 40.932,
+      "end": 41.205
+    },
+    {
+      "word": "grant",
+      "start": 41.216,
+      "end": 41.534
+    },
+    {
+      "word": "unlimited",
+      "start": 41.545,
+      "end": 42.023
+    },
+    {
+      "word": "token",
+      "start": 42.034,
+      "end": 42.341
+    },
+    {
+      "word": "approvals",
+      "start": 42.352,
+      "end": 42.932
+    },
+    {
+      "word": "always",
+      "start": 43.205,
+      "end": 43.534
+    },
+    {
+      "word": "revoke",
+      "start": 43.545,
+      "end": 43.932
+    },
+    {
+      "word": "active",
+      "start": 43.943,
+      "end": 44.25
+    },
+    {
+      "word": "spender",
+      "start": 44.261,
+      "end": 44.58
+    },
+    {
+      "word": "permissions",
+      "start": 44.591,
+      "end": 45.114
+    },
+    {
+      "word": "after",
+      "start": 45.125,
+      "end": 45.364
+    },
+    {
+      "word": "trading",
+      "start": 45.375,
+      "end": 45.841
+    },
+    {
+      "word": "Save",
+      "start": 46.625,
+      "end": 47.011
+    },
+    {
+      "word": "this",
+      "start": 47.023,
+      "end": 47.17
+    },
+    {
+      "word": "security",
+      "start": 47.182,
+      "end": 47.625
+    },
+    {
+      "word": "shield",
+      "start": 47.636,
+      "end": 48.034
+    },
+    {
+      "word": "and",
+      "start": 48.045,
+      "end": 48.165
+    },
+    {
+      "word": "subscribe",
+      "start": 48.159,
+      "end": 48.67
+    },
+    {
+      "word": "for",
+      "start": 48.682,
+      "end": 48.807
+    },
+    {
+      "word": "daily",
+      "start": 48.818,
+      "end": 49.17
+    },
+    {
+      "word": "on-chain",
+      "start": 49.182,
+      "end": 49.625
+    },
+    {
+      "word": "defense",
+      "start": 49.636,
+      "end": 50.125
+    },
+    {
+      "word": "because",
+      "start": 50.33,
+      "end": 50.955
+    }
+  ]
+}
