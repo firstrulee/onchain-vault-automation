@@ -1,0 +1,8 @@
+node_modules/
+__pycache__/
+.env
+client_secret.json
+youtube_credentials.json
+auth_url.txt
+out/
+*.pyc

@@ -1,0 +1,83 @@
+name: OnChain Vault Daily Shorts Automation
+
+on:
+  workflow_dispatch:
+    inputs:
+      privacy:
+        description: 'YouTube Privacy Status (public, private, unlisted)'
+        required: true
+        default: 'public'
+      force:
+        description: 'Force publish regardless of time window'
+        required: false
+        default: 'false'
+  repository_dispatch:
+    types: [daily_short, cronjob]
+
+jobs:
+  publish-short:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: 📥 Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: 🐍 Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 📦 Install Python Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: 🎬 Install FFmpeg
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+
+      - name: 🔒 Strict Time Window Gatekeeper (Turkey 15:00 & 02:00 ONLY)
+        run: |
+          python -c "
+          import sys
+          from datetime import datetime, timezone, timedelta
+          trt = datetime.now(timezone(timedelta(hours=3)))
+          h, m = trt.hour, trt.minute
+          force_in = '${{ github.event.inputs.force }}'.lower() == 'true'
+          is_15 = (h == 14 and m >= 50) or (h == 15 and m <= 35)
+          is_02 = (h == 1 and m >= 50) or (h == 2 and m <= 35)
+          print(f'Current Turkey Time: {trt.strftime(\"%Y-%m-%d %H:%M:%S\")}')
+          if not (is_15 or is_02 or force_in):
+              print(f'⛔ [ZAMAN KİLİDİ] Saat {trt.strftime(\"%H:%M\")}. İzin verilen pencereler dışında!')
+              sys.exit(10)
+          print('✅ Zaman penceresi doğrulandı.')
+          " || if [ $? -eq 10 ]; then echo "⛔ Zaman penceresi dışı, işlem güvenle sonlandırılıyor."; exit 0; else exit 1; fi
+
+      - name: 📦 Pop Video from Queue
+        env:
+          FORCE_RUN: ${{ github.event.inputs.force || 'false' }}
+        run: |
+          python cli.py run
+
+      - name: 🚀 Publish to OnChain Vault YouTube Channel
+        if: hashFiles('out/onchain_vault_short.mp4') != ''
+        env:
+          YOUTUBE_TOKEN_JSON: ${{ secrets.YOUTUBE_TOKEN_JSON }}
+          YOUTUBE_CREDENTIALS: ${{ secrets.YOUTUBE_CREDENTIALS }}
+          FORCE_PUBLISH: ${{ github.event.inputs.force || 'false' }}
+        run: |
+          python agents/youtube_publisher.py
+
+      - name: 🔄 Sync Queue Update back to Repository
+        if: success()
+        run: |
+          git config --global user.name "OnChain Vault Bot"
+          git config --global user.email "bot@onchainvault.internal"
+          git add queue/
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore(queue): consume video from stock queue [skip ci]" && git push)
