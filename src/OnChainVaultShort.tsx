@@ -18,6 +18,11 @@ export interface WordItem {
 }
 
 export interface HudStageData {
+  layoutMode?: number; // 0..6 distinct visual engines
+  accentPrimary?: string;
+  accentSecondary?: string;
+  accentDanger?: string;
+  headerTag?: string;
   stage1Header: string;
   stage1Badge: string;
   walletLabel: string;
@@ -52,6 +57,8 @@ export interface HudStageData {
   rule3Tag: string;
   rule3Badge: string;
   rule3Text: string;
+  verdictHeadline?: string;
+  verdictSubline?: string;
   verdictPills: [string, string, string];
 }
 
@@ -75,6 +82,11 @@ export interface OnChainVaultProps {
 }
 
 const DEFAULT_HUD: HudStageData = {
+  layoutMode: 0,
+  accentPrimary: "#06B6D4",
+  accentSecondary: "#6366F1",
+  accentDanger: "#F43F5E",
+  headerTag: "SONAR TELEMETRY",
   stage1Header: "01 // INSIDER WALLET ALERT",
   stage1Badge: "▲ ANOMALY DETECTED",
   walletLabel: "TRACKED VC / MARKET-MAKER MULTISIG",
@@ -86,47 +98,45 @@ const DEFAULT_HUD: HudStageData = {
   flowLabel: "-$14.2M OUTFLOW →",
   nodeRightTitle: "EXCHANGE HOT WALLET",
   nodeRightValue: "BINANCE DEP",
-  stage2Header: "02 // FORENSIC CASE STUDY (T-48 HOURS)",
+  stage2Header: "02 // FORENSIC CASE STUDY",
   stage2Badge: "PRICE CRASH: -64.0%",
-  metricLeftLabel: "WHAT RETAIL SAW (HYPE)",
+  metricLeftLabel: "WHAT RETAIL SAW",
   metricLeftValue: "ATH VOLUME",
-  metricLeftSub: "Paid Influencer Tournament Push",
-  metricRightLabel: "HIDDEN ON-CHAIN REALITY",
+  metricLeftSub: "Paid Influencer Push",
+  metricRightLabel: "ON-CHAIN REALITY",
   metricRightValue: "$48.5M UNLOCK",
-  metricRightSub: "VC Cliff Supply Shock Hit Market",
-  chartLeftLabel: "RETAIL BUY PEAK (EXIT LIQUIDITY)",
+  metricRightSub: "VC Supply Shock",
+  chartLeftLabel: "RETAIL BUY PEAK",
   chartRightLabel: "▼ VC CLIFF DUMP (-64%)",
-  barLeftLabel: "RETAIL CIRCULATING FLOAT: 22%",
+  barLeftLabel: "RETAIL FLOAT: 22%",
   barLeftPct: 22,
-  barRightLabel: "LOCKED VC / INSIDER SUPPLY: 78%",
-  stage3Header: "03 // THE 60-SECOND SMART MONEY AUDIT",
+  barRightLabel: "INSIDER LOCKED: 78%",
+  stage3Header: "03 // THE 60-SECOND PLAYBOOK",
   rule1Tag: "RULE #01 // DILUTION RATIO",
-  rule1Badge: "FDV ÷ MCAP > 5x = EXIT LIQUIDITY",
+  rule1Badge: "FDV ÷ MCAP < 5x",
   rule1Text: "Divide Fully Diluted Valuation by Market Cap",
   rule2Tag: "RULE #02 // CLIFF UNLOCK SHIELD",
-  rule2Badge: "7-DAY BLACKOUT WINDOW",
+  rule2Badge: "7-DAY BLACKOUT",
   rule2Text: "Never Buy Within 7 Days of a >5% Supply Unlock",
   rule3Tag: "RULE #03 // TREASURY TELEMETRY",
   rule3Badge: "MULTISIG → CEX FLOW",
   rule3Text: "Track Multisig Outflows to Exchange Deposit Wallets",
+  verdictHeadline: "DECODE THE CHAIN.",
+  verdictSubline: "NEVER BE EXIT LIQUIDITY.",
   verdictPills: ["✓ FDV/MC < 5x", "✓ 7D UNLOCK SHIELD", "✓ CEX FLOW"],
 };
 
-const EMERALD = "#10B981";
-const EMERALD_LIGHT = "#34D399";
-const CRIMSON = "#F43F5E";
-const AMBER = "#F59E0B";
-const STEEL_WHITE = "#F8FAFC";
-const SLATE_MUTED = "#94A3B8";
-const OBSIDIAN_BG = "#06080C";
-
-const VaultCubeIcon: React.FC<{ size?: number }> = ({ size = 44 }) => (
+const VaultCubeIcon: React.FC<{ size?: number; primary?: string; secondary?: string }> = ({
+  size = 44,
+  primary = "#10B981",
+  secondary = "#38BDF8",
+}) => (
   <svg width={size} height={size} viewBox="0 0 240 240" fill="none">
     <polygon points="120,24 204,72 168,93 120,65 72,93 36,72" fill="#F8FAFC" />
     <polygon points="36,72 72,93 72,148 120,176 120,216 36,168" fill="#64748B" />
-    <polygon points="204,72 204,168 120,216 120,176 168,148 168,93" fill="#10B981" />
-    <polygon points="120,82 154,102 120,122 86,102" fill="#34D399" />
-    <polygon points="86,102 120,122 120,160 86,140" fill="#059669" />
+    <polygon points="204,72 204,168 120,216 120,176 168,148 168,93" fill={primary} />
+    <polygon points="120,82 154,102 120,122 86,102" fill={secondary} />
+    <polygon points="86,102 120,122 120,160 86,140" fill={primary} />
     <polygon points="154,102 154,140 120,160 120,122" fill="#F8FAFC" />
   </svg>
 );
@@ -142,6 +152,16 @@ export const OnChainVaultShort: React.FC<OnChainVaultProps> = ({
   words,
 }) => {
   const hud = { ...DEFAULT_HUD, ...(hudData || {}) };
+  const epNumInt = parseInt(episodeNumber || "1", 10);
+  const mode = hud.layoutMode ?? epNumInt % 7;
+
+  const PRIMARY = hud.accentPrimary || "#06B6D4";
+  const SECONDARY = hud.accentSecondary || "#6366F1";
+  const DANGER = hud.accentDanger || "#F43F5E";
+  const STEEL_WHITE = "#F8FAFC";
+  const SLATE_MUTED = "#94A3B8";
+  const OBSIDIAN_BG = "#05070B";
+
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const currentTime = frame / fps;
@@ -166,7 +186,7 @@ export const OnChainVaultShort: React.FC<OnChainVaultProps> = ({
   const cardSpring = spring({
     frame: stageFrame,
     fps,
-    config: { damping: 16, stiffness: 140, mass: 0.8 },
+    config: { damping: 15, stiffness: 145, mass: 0.78 },
   });
 
   const PHRASE_SIZE = 4;
@@ -186,11 +206,12 @@ export const OnChainVaultShort: React.FC<OnChainVaultProps> = ({
       return currentTime >= p.start - 0.08 && currentTime < nextStart;
     }) || phrases[0];
 
-  const simulatedBlock = 21498310 + parseInt(episodeNumber || "1", 10) * 140 + Math.floor(frame / 18);
+  const simulatedBlock = 21640100 + epNumInt * 317 + Math.floor(frame / 14);
+  const r1Start = phaseTimes.rule1Start ?? phaseTimes.phase3Start + 3.0;
+  const r2Start = phaseTimes.rule2Start ?? phaseTimes.phase3Start + 8.5;
+  const r3Start = phaseTimes.rule3Start ?? phaseTimes.phase3Start + 14.0;
 
-  const r1Start = phaseTimes.rule1Start ?? phaseTimes.phase3Start + 3.5;
-  const r2Start = phaseTimes.rule2Start ?? phaseTimes.phase3Start + 9.5;
-  const r3Start = phaseTimes.rule3Start ?? phaseTimes.phase3Start + 15.0;
+  const radarAngle = (frame * 3.2) % 360;
 
   return (
     <AbsoluteFill
@@ -206,9 +227,9 @@ export const OnChainVaultShort: React.FC<OnChainVaultProps> = ({
       </style>
 
       {voFile && <Audio src={staticFile(voFile)} volume={1.0} />}
-      {bedFile && <Audio src={staticFile(bedFile)} volume={0.65} />}
+      {bedFile && <Audio src={staticFile(bedFile)} volume={0.58} />}
 
-      {/* Layer 1: Dark-Cinema Google Flow B-Roll Video */}
+      {/* Layer 1: Full-Bleed Distinct Google Flow 9:16 B-Roll */}
       <AbsoluteFill>
         <Loop durationInFrames={235}>
           <OffthreadVideo
@@ -218,59 +239,62 @@ export const OnChainVaultShort: React.FC<OnChainVaultProps> = ({
               width: "100%",
               height: "100%",
               objectFit: "cover",
-              filter: "brightness(0.38) contrast(1.18) saturate(0.9)",
+              filter: "brightness(0.42) contrast(1.16) saturate(1.05)",
               transform: `scale(${interpolate(
                 frame % 235,
                 [0, 235],
-                [1.02, 1.09]
+                [1.01, 1.08]
               )})`,
             }}
           />
         </Loop>
       </AbsoluteFill>
 
-      {/* Layer 2: Precision Vector Grid & Vignette Overlay */}
+      {/* Layer 2: Theme-Specific Atmospheric Gradient & Custom Background Geometry */}
       <AbsoluteFill
         style={{
-          background:
-            "radial-gradient(circle at 50% 38%, rgba(16,185,129,0.10) 0%, rgba(6,8,12,0.72) 55%, rgba(6,8,12,0.95) 100%)",
+          background: `radial-gradient(circle at 50% 34%, ${PRIMARY}22 0%, rgba(5,7,11,0.74) 58%, rgba(5,7,11,0.96) 100%)`,
         }}
       >
         <svg width="1080" height="1920" style={{ position: "absolute", inset: 0 }}>
           <defs>
             <pattern
-              id="hudGrid"
-              width="60"
-              height="60"
+              id={`grid-${mode}`}
+              width={mode % 2 === 0 ? "72" : "48"}
+              height={mode % 2 === 0 ? "72" : "48"}
               patternUnits="userSpaceOnUse"
             >
-              <path
-                d="M 60 0 L 0 0 0 60"
-                fill="none"
-                stroke="rgba(255,255,255,0.032)"
-                strokeWidth="1"
-              />
+              {mode % 3 === 0 ? (
+                <circle cx="36" cy="36" r="1.5" fill="rgba(255,255,255,0.08)" />
+              ) : (
+                <path
+                  d="M 72 0 L 0 0 0 72"
+                  fill="none"
+                  stroke="rgba(255,255,255,0.03)"
+                  strokeWidth="1"
+                />
+              )}
             </pattern>
           </defs>
-          <rect width="1080" height="1920" fill="url(#hudGrid)" />
+          <rect width="1080" height="1920" fill={`url(#grid-${mode})`} />
         </svg>
       </AbsoluteFill>
 
-      {/* Layer 3: Top Institutional Telemetry Header */}
+      {/* Layer 3: Top Telemetry Header (Styled by Theme) */}
       <div
         style={{
           position: "absolute",
-          top: 115,
-          left: 56,
-          right: 56,
-          background: "rgba(9, 13, 22, 0.88)",
-          border: "1.5px solid rgba(255, 255, 255, 0.12)",
-          borderRadius: 20,
-          padding: "20px 28px",
-          boxShadow: "0 20px 50px rgba(0,0,0,0.65)",
+          top: 108,
+          left: 52,
+          right: 52,
+          background: "rgba(8, 12, 20, 0.88)",
+          border: `1.5px solid ${PRIMARY}55`,
+          borderRadius: mode % 2 === 0 ? 22 : 14,
+          padding: "18px 26px",
+          boxShadow: `0 20px 50px rgba(0,0,0,0.7), 0 0 35px ${PRIMARY}18`,
           display: "flex",
           flexDirection: "column",
-          gap: 14,
+          gap: 12,
         }}
       >
         <div
@@ -281,7 +305,7 @@ export const OnChainVaultShort: React.FC<OnChainVaultProps> = ({
           }}
         >
           <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
-            <VaultCubeIcon size={42} />
+            <VaultCubeIcon size={40} primary={PRIMARY} secondary={SECONDARY} />
             <div>
               <div
                 style={{
@@ -292,17 +316,17 @@ export const OnChainVaultShort: React.FC<OnChainVaultProps> = ({
                   color: "#FFFFFF",
                 }}
               >
-                ONCHAIN<span style={{ color: EMERALD }}>VAULT</span>
+                ONCHAIN<span style={{ color: PRIMARY }}>VAULT</span>
               </div>
               <div
                 style={{
                   fontFamily: "'JetBrains Mono', monospace",
-                  fontSize: 13,
+                  fontSize: 12,
                   color: SLATE_MUTED,
-                  letterSpacing: "1.5px",
+                  letterSpacing: "1.6px",
                 }}
               >
-                FORENSIC BRIEF // EP.{episodeNumber}
+                {hud.headerTag || "ON-CHAIN INTEL"} // EP.{episodeNumber}
               </div>
             </div>
           </div>
@@ -320,37 +344,37 @@ export const OnChainVaultShort: React.FC<OnChainVaultProps> = ({
                 display: "flex",
                 alignItems: "center",
                 gap: 8,
-                background: "rgba(16, 185, 129, 0.14)",
-                border: "1px solid rgba(16, 185, 129, 0.35)",
+                background: `${PRIMARY}22`,
+                border: `1px solid ${PRIMARY}66`,
                 borderRadius: 999,
-                padding: "5px 14px",
+                padding: "4px 14px",
               }}
             >
               <span
                 style={{
-                  width: 9,
-                  height: 9,
+                  width: 8,
+                  height: 8,
                   borderRadius: "50%",
-                  backgroundColor: EMERALD,
-                  opacity: 0.5 + 0.5 * Math.sin(frame * 0.25),
+                  backgroundColor: PRIMARY,
+                  opacity: 0.5 + 0.5 * Math.sin(frame * 0.28),
                 }}
               />
               <span
                 style={{
                   fontFamily: "'JetBrains Mono', monospace",
-                  fontSize: 13,
+                  fontSize: 12,
                   fontWeight: 700,
-                  color: EMERALD_LIGHT,
+                  color: PRIMARY,
                   letterSpacing: "1.2px",
                 }}
               >
-                LIVE TELEMETRY
+                MODE 0{mode + 1} // LIVE
               </span>
             </div>
             <div
               style={{
                 fontFamily: "'JetBrains Mono', monospace",
-                fontSize: 13,
+                fontSize: 12,
                 color: "#64748B",
               }}
             >
@@ -372,24 +396,24 @@ export const OnChainVaultShort: React.FC<OnChainVaultProps> = ({
             style={{
               width: `${progress * 100}%`,
               height: "100%",
-              background: `linear-gradient(90deg, ${EMERALD}, ${EMERALD_LIGHT})`,
+              background: `linear-gradient(90deg, ${PRIMARY}, ${SECONDARY})`,
             }}
           />
         </div>
       </div>
 
-      {/* Layer 4: Dynamic Center Stage On-Chain HUD */}
+      {/* Layer 4: Center Visual Engine (7 Distinct Archetypes!) */}
       <div
         style={{
           position: "absolute",
-          top: 285,
-          left: 56,
-          right: 56,
-          height: 890,
+          top: 275,
+          left: 52,
+          right: 52,
+          height: 910,
           display: "flex",
           flexDirection: "column",
           justifyContent: "center",
-          transform: `translateY(${interpolate(cardSpring, [0, 1], [36, 0])}px) scale(${interpolate(
+          transform: `translateY(${interpolate(cardSpring, [0, 1], [32, 0])}px) scale(${interpolate(
             cardSpring,
             [0, 1],
             [0.96, 1]
@@ -397,36 +421,30 @@ export const OnChainVaultShort: React.FC<OnChainVaultProps> = ({
           opacity: interpolate(cardSpring, [0, 1], [0.15, 1]),
         }}
       >
-        {/* ================= STAGE 1: WALLET / ANOMALY HOOK ================= */}
+        {/* ================= STAGE 1: DISTINCT VISUAL HOOK BY ARCHETYPE ================= */}
         {isStage1 && (
           <div
             style={{
               background:
-                "linear-gradient(180deg, rgba(15,23,42,0.92) 0%, rgba(9,13,22,0.96) 100%)",
-              border: "2px solid rgba(244, 63, 94, 0.45)",
+                "linear-gradient(180deg, rgba(13,18,30,0.93) 0%, rgba(7,10,18,0.97) 100%)",
+              border: `2px solid ${PRIMARY}66`,
               borderRadius: 28,
-              padding: 40,
-              boxShadow:
-                "0 35px 80px rgba(0,0,0,0.85), 0 0 70px rgba(244,63,94,0.12)",
+              padding: 36,
+              boxShadow: `0 35px 80px rgba(0,0,0,0.88), 0 0 60px ${PRIMARY}22`,
               display: "flex",
               flexDirection: "column",
-              gap: 28,
+              gap: 24,
             }}
           >
-            <div
-              style={{
-                display: "flex",
-                justifyContent: "space-between",
-                alignItems: "center",
-              }}
-            >
+            {/* Stage 1 Top Row */}
+            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
               <span
                 style={{
                   fontFamily: "'JetBrains Mono', monospace",
-                  fontSize: 17,
+                  fontSize: 16,
                   fontWeight: 700,
-                  color: SLATE_MUTED,
-                  letterSpacing: 2,
+                  color: PRIMARY,
+                  letterSpacing: 1.8,
                 }}
               >
                 {hud.stage1Header}
@@ -434,12 +452,12 @@ export const OnChainVaultShort: React.FC<OnChainVaultProps> = ({
               <span
                 style={{
                   fontFamily: "'JetBrains Mono', monospace",
-                  fontSize: 16,
+                  fontSize: 15,
                   fontWeight: 800,
-                  color: CRIMSON,
-                  background: "rgba(244,63,94,0.15)",
-                  border: "1px solid rgba(244,63,94,0.4)",
-                  padding: "6px 16px",
+                  color: DANGER,
+                  background: `${DANGER}22`,
+                  border: `1px solid ${DANGER}66`,
+                  padding: "6px 14px",
                   borderRadius: 8,
                 }}
               >
@@ -447,670 +465,392 @@ export const OnChainVaultShort: React.FC<OnChainVaultProps> = ({
               </span>
             </div>
 
+            {/* ARCHETYPE-SPECIFIC STAGE 1 VISUAL WIDGET */}
+            {mode === 0 && (
+              /* MODE 0: 360° SONAR RADAR SCANNER */
+              <div style={{ display: "flex", alignItems: "center", gap: 28, background: "rgba(5,7,11,0.85)", borderRadius: 22, padding: 26, border: "1px solid rgba(255,255,255,0.08)" }}>
+                <svg width="260" height="260" viewBox="0 0 260 260">
+                  <circle cx="130" cy="130" r="118" stroke={`${PRIMARY}55`} strokeWidth="2" fill="rgba(6,182,212,0.05)" />
+                  <circle cx="130" cy="130" r="82" stroke={`${PRIMARY}33`} strokeWidth="1.5" strokeDasharray="5 5" fill="none" />
+                  <circle cx="130" cy="130" r="44" stroke={`${PRIMARY}33`} strokeWidth="1.5" fill="none" />
+                  <line x1="12" y1="130" x2="248" y2="130" stroke="rgba(255,255,255,0.08)" />
+                  <line x1="130" y1="12" x2="130" y2="248" stroke="rgba(255,255,255,0.08)" />
+                  <g transform={`rotate(${radarAngle} 130 130)`}>
+                    <path d="M 130 130 L 130 12 A 118 118 0 0 1 225 65 Z" fill={`${PRIMARY}33`} />
+                    <line x1="130" y1="130" x2="130" y2="12" stroke={PRIMARY} strokeWidth="3" />
+                  </g>
+                  <circle cx="175" cy="78" r="9" fill={DANGER} />
+                  <circle cx="175" cy="78" r={14 + (frame % 16)} stroke={DANGER} strokeWidth="2" fill="none" opacity={1 - (frame % 16) / 16} />
+                  <circle cx="82" cy="168" r="7" fill={PRIMARY} />
+                  <circle cx="158" cy="182" r="7" fill={SECONDARY} />
+                </svg>
+                <div style={{ flex: 1, display: "flex", flexDirection: "column", gap: 12 }}>
+                  <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 14, color: SLATE_MUTED }}>{hud.walletLabel}</div>
+                  <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 42, fontWeight: 800, color: PRIMARY }}>{hud.walletAddress}</div>
+                  <div style={{ display: "flex", flexWrap: "wrap", gap: 10 }}>
+                    <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 14, background: "rgba(255,255,255,0.08)", padding: "6px 12px", borderRadius: 8 }}>{hud.tag1}</span>
+                    <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 14, color: SECONDARY, background: `${SECONDARY}22`, padding: "6px 12px", borderRadius: 8 }}>{hud.tag2}</span>
+                  </div>
+                </div>
+              </div>
+            )}
+
+            {mode === 1 && (
+              /* MODE 1: FUTURES LIQUIDATION HEATMAP BANDS */
+              <div style={{ background: "rgba(5,7,11,0.88)", borderRadius: 22, padding: 28, border: "1px solid rgba(255,255,255,0.08)", display: "flex", flexDirection: "column", gap: 14 }}>
+                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline" }}>
+                  <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 15, color: SLATE_MUTED }}>{hud.walletLabel}</span>
+                  <span style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: 40, fontWeight: 800, color: PRIMARY }}>{hud.walletAddress}</span>
+                </div>
+                {[
+                  { lbl: "SHORT LIQ CLUSTER (+12%)", w: 92, col: "#FACC15", val: hud.nodeRightValue },
+                  { lbl: "HIGH LEVERAGE ZONE (+6%)", w: 74, col: PRIMARY, val: hud.flowLabel },
+                  { lbl: "SPOT MID-PRICE TRAP", w: 48, col: "#38BDF8", val: hud.nodeLeftValue },
+                  { lbl: "LONG STOP CASCADE (-9%)", w: 86, col: DANGER, val: hud.tag2 },
+                ].map((band, bIdx) => (
+                  <div key={bIdx} style={{ display: "flex", flexDirection: "column", gap: 4 }}>
+                    <div style={{ display: "flex", justifyContent: "space-between", fontFamily: "'JetBrains Mono', monospace", fontSize: 13 }}>
+                      <span style={{ color: "#CBD5E1" }}>{band.lbl}</span>
+                      <span style={{ color: band.col, fontWeight: 800 }}>{band.val}</span>
+                    </div>
+                    <div style={{ width: "100%", height: 18, background: "#111827", borderRadius: 6, overflow: "hidden" }}>
+                      <div style={{ width: `${band.w}%`, height: "100%", background: `linear-gradient(90deg, ${band.col}44, ${band.col})` }} />
+                    </div>
+                  </div>
+                ))}
+              </div>
+            )}
+
+            {mode === 2 && (
+              /* MODE 2: DUAL TACHOMETER GAMEFI GAUGES */
+              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 20 }}>
+                {[
+                  { title: hud.nodeLeftTitle, val: hud.nodeLeftValue, sub: hud.tag1, col: PRIMARY, pct: 0.82 },
+                  { title: hud.nodeRightTitle, val: hud.nodeRightValue, sub: hud.tag2, col: DANGER, pct: 0.91 },
+                ].map((g, gi) => (
+                  <div key={gi} style={{ background: "rgba(5,7,11,0.88)", borderRadius: 22, padding: 24, border: `1.5px solid ${g.col}55`, display: "flex", flexDirection: "column", alignItems: "center", textAlign: "center" }}>
+                    <svg width="210" height="125" viewBox="0 0 210 125">
+                      <path d="M 20 110 A 85 85 0 0 1 190 110" fill="none" stroke="rgba(255,255,255,0.1)" strokeWidth="16" strokeLinecap="round" />
+                      <path d="M 20 110 A 85 85 0 0 1 190 110" fill="none" stroke={g.col} strokeWidth="16" strokeLinecap="round" strokeDasharray="267" strokeDashoffset={267 * (1 - g.pct * Math.min(1, stageFrame / 25))} />
+                      <text x="105" y="96" textAnchor="middle" fill="#FFFFFF" fontSize="28" fontWeight="800" fontFamily="Space Grotesk">{g.val}</text>
+                    </svg>
+                    <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 15, fontWeight: 800, color: g.col, marginTop: 6 }}>{g.title}</div>
+                    <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 13, color: SLATE_MUTED, marginTop: 4 }}>{g.sub}</div>
+                  </div>
+                ))}
+              </div>
+            )}
+
+            {mode === 3 && (
+              /* MODE 3: SOLIDITY SMART CONTRACT X-RAY DECOMPILER */
+              <div style={{ background: "#04060A", borderRadius: 20, padding: "22px 26px", border: `1.5px solid ${DANGER}88`, fontFamily: "'JetBrains Mono', monospace", position: "relative", overflow: "hidden" }}>
+                <div style={{ display: "flex", justifyContent: "space-between", fontSize: 13, color: SLATE_MUTED, marginBottom: 14, borderBottom: "1px solid rgba(255,255,255,0.08)", paddingBottom: 10 }}>
+                  <span>CONTRACT: {hud.walletAddress}</span>
+                  <span style={{ color: PRIMARY }}>{hud.tag1}</span>
+                </div>
+                {[
+                  { ln: "041", code: "function _transfer(address from, address to, uint256 amt) internal {", danger: false },
+                  { ln: "042", code: `  require(!isBlacklisted[from], "${hud.nodeLeftValue}");`, danger: true },
+                  { ln: "043", code: `  if (to == dexPair) { taxRate = ${hud.nodeRightValue}; }`, danger: true },
+                  { ln: "044", code: `  uint256 fee = amt * taxRate / 100; // ${hud.flowLabel}`, danger: false },
+                  { ln: "045", code: "  super._transfer(from, treasuryVault, fee);", danger: false },
+                ].map((line, lIdx) => (
+                  <div key={lIdx} style={{ display: "flex", gap: 14, fontSize: 16, padding: "7px 10px", borderRadius: 8, background: line.danger ? `${DANGER}28` : "transparent", color: line.danger ? "#FECDD3" : "#A7F3D0", fontWeight: line.danger ? 800 : 500 }}>
+                    <span style={{ color: "#475569" }}>{line.ln}</span>
+                    <span>{line.code}</span>
+                  </div>
+                ))}
+              </div>
+            )}
+
+            {mode === 4 && (
+              /* MODE 4: MIRRORED L2 ORDERBOOK DEPTH WALL */
+              <div style={{ background: "rgba(5,7,11,0.88)", borderRadius: 22, padding: 24, border: "1px solid rgba(255,255,255,0.1)", display: "flex", flexDirection: "column", gap: 16 }}>
+                <div style={{ display: "flex", justifyContent: "space-between", fontFamily: "'JetBrains Mono', monospace", fontSize: 15 }}>
+                  <span style={{ color: PRIMARY, fontWeight: 800 }}>BIDS // {hud.nodeLeftTitle}: {hud.nodeLeftValue}</span>
+                  <span style={{ color: DANGER, fontWeight: 800 }}>ASKS // {hud.nodeRightTitle}: {hud.nodeRightValue}</span>
+                </div>
+                <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12 }}>
+                  <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
+                    {[88, 64, 42, 95].map((w, i) => (
+                      <div key={i} style={{ height: 28, background: "rgba(255,255,255,0.04)", borderRadius: 6, display: "flex", justifyContent: "flex-end", overflow: "hidden" }}>
+                        <div style={{ width: `${w}%`, height: "100%", background: i === 3 ? `${SECONDARY}99` : `${PRIMARY}88` }} />
+                      </div>
+                    ))}
+                  </div>
+                  <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
+                    {[45, 72, 94, 58].map((w, i) => (
+                      <div key={i} style={{ height: 28, background: "rgba(255,255,255,0.04)", borderRadius: 6, overflow: "hidden" }}>
+                        <div style={{ width: `${w}%`, height: "100%", background: `${DANGER}99` }} />
+                      </div>
+                    ))}
+                  </div>
+                </div>
+                <div style={{ textAlign: "center", fontFamily: "'JetBrains Mono', monospace", fontSize: 18, fontWeight: 800, color: "#FACC15" }}>
+                  ⚡ {hud.walletAddress} // {hud.flowLabel}
+                </div>
+              </div>
+            )}
+
+            {mode === 5 && (
+              /* MODE 5: CROSS-CHAIN BRIDGE ORBITAL ROUTER */
+              <div style={{ background: "rgba(5,7,11,0.88)", borderRadius: 22, padding: 26, border: "1px solid rgba(255,255,255,0.1)", display: "flex", flexDirection: "column", gap: 18 }}>
+                <div style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: 38, fontWeight: 800, color: PRIMARY, textAlign: "center" }}>
+                  {hud.walletAddress}
+                </div>
+                <svg width="840" height="140" viewBox="0 0 840 140">
+                  <rect x="20" y="30" width="210" height="80" rx="16" fill="#0F172A" stroke={PRIMARY} strokeWidth="2" />
+                  <text x="125" y="65" textAnchor="middle" fill="#94A3B8" fontSize="13" fontFamily="JetBrains Mono">{hud.nodeLeftTitle}</text>
+                  <text x="125" y="92" textAnchor="middle" fill="#FFFFFF" fontSize="20" fontWeight="800" fontFamily="JetBrains Mono">{hud.nodeLeftValue}</text>
+
+                  <path d="M 230 70 C 330 20, 510 120, 610 70" fill="none" stroke={SECONDARY} strokeWidth="4" strokeDasharray="8 6" />
+                  <circle cx={230 + ((frame * 8) % 380)} cy="70" r="9" fill={PRIMARY} />
+                  <text x="420" y="42" textAnchor="middle" fill={PRIMARY} fontSize="16" fontWeight="800" fontFamily="JetBrains Mono">{hud.flowLabel}</text>
+
+                  <rect x="610" y="30" width="210" height="80" rx="16" fill="#0F172A" stroke={DANGER} strokeWidth="2" />
+                  <text x="715" y="65" textAnchor="middle" fill="#94A3B8" fontSize="13" fontFamily="JetBrains Mono">{hud.nodeRightTitle}</text>
+                  <text x="715" y="92" textAnchor="middle" fill={DANGER} fontSize="20" fontWeight="800" fontFamily="JetBrains Mono">{hud.nodeRightValue}</text>
+                </svg>
+              </div>
+            )}
+
+            {mode === 6 && (
+              /* MODE 6: INSTITUTIONAL DONUT WHEEL ALLOCATION */
+              <div style={{ display: "flex", alignItems: "center", gap: 28, background: "rgba(5,7,11,0.88)", borderRadius: 22, padding: 26, border: "1px solid rgba(255,255,255,0.08)" }}>
+                <svg width="240" height="240" viewBox="0 0 240 240">
+                  <circle cx="120" cy="120" r="88" fill="none" stroke="#1E293B" strokeWidth="28" />
+                  <circle cx="120" cy="120" r="88" fill="none" stroke={PRIMARY} strokeWidth="28" strokeDasharray="310 552" transform="rotate(-90 120 120)" />
+                  <circle cx="120" cy="120" r="88" fill="none" stroke={SECONDARY} strokeWidth="28" strokeDasharray="150 552" strokeDashoffset="-310" transform="rotate(-90 120 120)" />
+                  <circle cx="120" cy="120" r="88" fill="none" stroke={DANGER} strokeWidth="28" strokeDasharray="92 552" strokeDashoffset="-460" transform="rotate(-90 120 120)" />
+                  <text x="120" y="115" textAnchor="middle" fill="#94A3B8" fontSize="13" fontFamily="JetBrains Mono">TRACKED NAV</text>
+                  <text x="120" y="142" textAnchor="middle" fill="#FFFFFF" fontSize="26" fontWeight="800" fontFamily="Space Grotesk">{hud.nodeLeftValue}</text>
+                </svg>
+                <div style={{ flex: 1, display: "flex", flexDirection: "column", gap: 12 }}>
+                  <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 14, color: SLATE_MUTED }}>{hud.walletLabel}</div>
+                  <div style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: 38, fontWeight: 800, color: PRIMARY }}>{hud.walletAddress}</div>
+                  <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 16, color: "#E2E8F0" }}>• {hud.tag1}</div>
+                  <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 16, color: SECONDARY }}>• {hud.tag2}</div>
+                  <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 16, color: DANGER }}>• {hud.flowLabel}</div>
+                </div>
+              </div>
+            )}
+
+            {/* Bottom Summary Strip in Stage 1 */}
             <div
               style={{
-                background: "rgba(6, 8, 12, 0.85)",
-                border: "1.5px solid rgba(255,255,255,0.1)",
-                borderRadius: 20,
-                padding: "28px 32px",
+                display: "flex",
+                justifyContent: "space-between",
+                alignItems: "center",
+                background: "rgba(255,255,255,0.04)",
+                borderRadius: 16,
+                padding: "16px 24px",
+                border: "1px solid rgba(255,255,255,0.07)",
               }}
             >
-              <div
-                style={{
-                  fontFamily: "'JetBrains Mono', monospace",
-                  fontSize: 16,
-                  color: SLATE_MUTED,
-                  marginBottom: 10,
-                }}
-              >
-                {hud.walletLabel}
+              <div>
+                <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 12, color: SLATE_MUTED }}>{hud.nodeLeftTitle}</div>
+                <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 20, fontWeight: 800, color: STEEL_WHITE }}>{hud.nodeLeftValue}</div>
               </div>
-              <div
-                style={{
-                  fontFamily: "'JetBrains Mono', monospace",
-                  fontSize: 48,
-                  fontWeight: 800,
-                  color: EMERALD_LIGHT,
-                  letterSpacing: "-1px",
-                }}
-              >
-                {hud.walletAddress}
+              <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 16, fontWeight: 800, color: PRIMARY }}>
+                {hud.flowLabel}
               </div>
-              <div
-                style={{
-                  display: "flex",
-                  gap: 14,
-                  marginTop: 18,
-                }}
-              >
-                <span
-                  style={{
-                    fontFamily: "'JetBrains Mono', monospace",
-                    fontSize: 15,
-                    color: STEEL_WHITE,
-                    background: "rgba(255,255,255,0.08)",
-                    padding: "6px 14px",
-                    borderRadius: 8,
-                  }}
-                >
-                  {hud.tag1}
-                </span>
-                <span
-                  style={{
-                    fontFamily: "'JetBrains Mono', monospace",
-                    fontSize: 15,
-                    color: AMBER,
-                    background: "rgba(245,158,11,0.14)",
-                    padding: "6px 14px",
-                    borderRadius: 8,
-                  }}
-                >
-                  {hud.tag2}
-                </span>
-              </div>
-            </div>
-
-            <div
-              style={{
-                background: "rgba(6, 8, 12, 0.7)",
-                border: "1px solid rgba(255,255,255,0.08)",
-                borderRadius: 20,
-                padding: 28,
-              }}
-            >
-              <div
-                style={{
-                  fontFamily: "'JetBrains Mono', monospace",
-                  fontSize: 15,
-                  color: SLATE_MUTED,
-                  marginBottom: 18,
-                  letterSpacing: 1.2,
-                }}
-              >
-                LIVE ON-CHAIN LIQUIDITY ROUTING
-              </div>
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "space-between",
-                }}
-              >
-                <div
-                  style={{
-                    background: "#111827",
-                    border: `1.5px solid ${EMERALD}`,
-                    borderRadius: 14,
-                    padding: "16px 20px",
-                    width: 245,
-                    textAlign: "center",
-                  }}
-                >
-                  <div
-                    style={{
-                      fontFamily: "'JetBrains Mono', monospace",
-                      fontSize: 13,
-                      color: SLATE_MUTED,
-                    }}
-                  >
-                    {hud.nodeLeftTitle}
-                  </div>
-                  <div
-                    style={{
-                      fontFamily: "'JetBrains Mono', monospace",
-                      fontSize: 19,
-                      fontWeight: 800,
-                      color: STEEL_WHITE,
-                      marginTop: 4,
-                    }}
-                  >
-                    {hud.nodeLeftValue}
-                  </div>
-                </div>
-
-                <div
-                  style={{
-                    flex: 1,
-                    height: 4,
-                    background: `linear-gradient(90deg, ${EMERALD}, ${CRIMSON})`,
-                    margin: "0 12px",
-                    position: "relative",
-                  }}
-                >
-                  <div
-                    style={{
-                      position: "absolute",
-                      top: -26,
-                      left: "50%",
-                      transform: "translateX(-50%)",
-                      fontFamily: "'JetBrains Mono', monospace",
-                      fontSize: 14,
-                      fontWeight: 700,
-                      color: CRIMSON,
-                      whiteSpace: "nowrap",
-                    }}
-                  >
-                    {hud.flowLabel}
-                  </div>
-                </div>
-
-                <div
-                  style={{
-                    background: "#111827",
-                    border: `1.5px solid ${CRIMSON}`,
-                    borderRadius: 14,
-                    padding: "16px 20px",
-                    width: 245,
-                    textAlign: "center",
-                  }}
-                >
-                  <div
-                    style={{
-                      fontFamily: "'JetBrains Mono', monospace",
-                      fontSize: 13,
-                      color: SLATE_MUTED,
-                    }}
-                  >
-                    {hud.nodeRightTitle}
-                  </div>
-                  <div
-                    style={{
-                      fontFamily: "'JetBrains Mono', monospace",
-                      fontSize: 19,
-                      fontWeight: 800,
-                      color: CRIMSON,
-                      marginTop: 4,
-                    }}
-                  >
-                    {hud.nodeRightValue}
-                  </div>
-                </div>
+              <div style={{ textAlign: "right" }}>
+                <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 12, color: SLATE_MUTED }}>{hud.nodeRightTitle}</div>
+                <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 20, fontWeight: 800, color: DANGER }}>{hud.nodeRightValue}</div>
               </div>
             </div>
           </div>
         )}
 
-        {/* ================= STAGE 2: FORENSIC CASE STUDY ================= */}
+        {/* ================= STAGE 2: FORENSIC DATA VISUALIZATION BY ARCHETYPE ================= */}
         {isStage2 && (
           <div
             style={{
               background:
-                "linear-gradient(180deg, rgba(15,23,42,0.92) 0%, rgba(9,13,22,0.96) 100%)",
-              border: "2px solid rgba(255, 255, 255, 0.14)",
+                "linear-gradient(180deg, rgba(13,18,30,0.94) 0%, rgba(7,10,18,0.98) 100%)",
+              border: `2px solid ${SECONDARY}66`,
               borderRadius: 28,
-              padding: 38,
-              boxShadow: "0 35px 80px rgba(0,0,0,0.85)",
+              padding: 36,
+              boxShadow: "0 35px 80px rgba(0,0,0,0.88)",
               display: "flex",
               flexDirection: "column",
-              gap: 24,
+              gap: 22,
             }}
           >
-            <div
-              style={{
-                display: "flex",
-                justifyContent: "space-between",
-                alignItems: "center",
-              }}
-            >
-              <span
-                style={{
-                  fontFamily: "'JetBrains Mono', monospace",
-                  fontSize: 17,
-                  fontWeight: 700,
-                  color: SLATE_MUTED,
-                  letterSpacing: 1.8,
-                }}
-              >
+            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+              <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 16, fontWeight: 700, color: SECONDARY, letterSpacing: 1.6 }}>
                 {hud.stage2Header}
               </span>
-              <span
-                style={{
-                  fontFamily: "'JetBrains Mono', monospace",
-                  fontSize: 16,
-                  fontWeight: 800,
-                  color: CRIMSON,
-                  background: "rgba(244,63,94,0.16)",
-                  border: "1px solid rgba(244,63,94,0.4)",
-                  padding: "6px 16px",
-                  borderRadius: 8,
-                }}
-              >
+              <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 15, fontWeight: 800, color: DANGER, background: `${DANGER}22`, border: `1px solid ${DANGER}66`, padding: "6px 16px", borderRadius: 8 }}>
                 {hud.stage2Badge}
               </span>
             </div>
 
-            <div
-              style={{
-                display: "grid",
-                gridTemplateColumns: "1fr 1fr",
-                gap: 20,
-              }}
-            >
-              <div
-                style={{
-                  background: "rgba(6,8,12,0.85)",
-                  border: "1.5px solid rgba(16,185,129,0.3)",
-                  borderRadius: 20,
-                  padding: 24,
-                }}
-              >
-                <div
-                  style={{
-                    fontFamily: "'JetBrains Mono', monospace",
-                    fontSize: 14,
-                    color: SLATE_MUTED,
-                  }}
-                >
-                  {hud.metricLeftLabel}
-                </div>
-                <div
-                  style={{
-                    fontFamily: "'Space Grotesk', sans-serif",
-                    fontSize: 34,
-                    fontWeight: 700,
-                    color: EMERALD_LIGHT,
-                    marginTop: 8,
-                  }}
-                >
-                  {hud.metricLeftValue}
-                </div>
-                <div
-                  style={{
-                    fontFamily: "'JetBrains Mono', monospace",
-                    fontSize: 14,
-                    color: "#CBD5E1",
-                    marginTop: 6,
-                  }}
-                >
-                  {hud.metricLeftSub}
-                </div>
+            {/* Dual Comparison Cards */}
+            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 18 }}>
+              <div style={{ background: "rgba(5,7,11,0.86)", border: `1.5px solid ${PRIMARY}55`, borderRadius: 20, padding: 22 }}>
+                <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 13, color: SLATE_MUTED }}>{hud.metricLeftLabel}</div>
+                <div style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: 34, fontWeight: 700, color: PRIMARY, marginTop: 6 }}>{hud.metricLeftValue}</div>
+                <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 13, color: "#CBD5E1", marginTop: 6 }}>{hud.metricLeftSub}</div>
               </div>
-
-              <div
-                style={{
-                  background: "rgba(6,8,12,0.85)",
-                  border: "1.5px solid rgba(244,63,94,0.45)",
-                  borderRadius: 20,
-                  padding: 24,
-                }}
-              >
-                <div
-                  style={{
-                    fontFamily: "'JetBrains Mono', monospace",
-                    fontSize: 14,
-                    color: SLATE_MUTED,
-                  }}
-                >
-                  {hud.metricRightLabel}
-                </div>
-                <div
-                  style={{
-                    fontFamily: "'Space Grotesk', sans-serif",
-                    fontSize: 34,
-                    fontWeight: 700,
-                    color: CRIMSON,
-                    marginTop: 8,
-                  }}
-                >
-                  {hud.metricRightValue}
-                </div>
-                <div
-                  style={{
-                    fontFamily: "'JetBrains Mono', monospace",
-                    fontSize: 14,
-                    color: "#CBD5E1",
-                    marginTop: 6,
-                  }}
-                >
-                  {hud.metricRightSub}
-                </div>
+              <div style={{ background: "rgba(5,7,11,0.86)", border: `1.5px solid ${DANGER}66`, borderRadius: 20, padding: 22 }}>
+                <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 13, color: SLATE_MUTED }}>{hud.metricRightLabel}</div>
+                <div style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: 34, fontWeight: 700, color: DANGER, marginTop: 6 }}>{hud.metricRightValue}</div>
+                <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 13, color: "#CBD5E1", marginTop: 6 }}>{hud.metricRightSub}</div>
               </div>
             </div>
 
-            <div
-              style={{
-                background: "rgba(6,8,12,0.85)",
-                border: "1px solid rgba(255,255,255,0.08)",
-                borderRadius: 20,
-                padding: "24px 28px",
-              }}
-            >
-              <div
-                style={{
-                  display: "flex",
-                  justifyContent: "space-between",
-                  fontFamily: "'JetBrains Mono', monospace",
-                  fontSize: 14,
-                  color: SLATE_MUTED,
-                  marginBottom: 12,
-                }}
-              >
+            {/* DISTINCT STAGE 2 CHART ENGINE PER MODE */}
+            <div style={{ background: "rgba(5,7,11,0.88)", border: "1px solid rgba(255,255,255,0.08)", borderRadius: 20, padding: "22px 26px" }}>
+              <div style={{ display: "flex", justifyContent: "space-between", fontFamily: "'JetBrains Mono', monospace", fontSize: 13, color: SLATE_MUTED, marginBottom: 12 }}>
                 <span>{hud.chartLeftLabel}</span>
-                <span style={{ color: CRIMSON, fontWeight: 700 }}>
-                  {hud.chartRightLabel}
-                </span>
+                <span style={{ color: DANGER, fontWeight: 700 }}>{hud.chartRightLabel}</span>
               </div>
-              <svg width="840" height="190" viewBox="0 0 840 190" fill="none">
-                <line
-                  x1="0"
-                  y1="45"
-                  x2="840"
-                  y2="45"
-                  stroke="rgba(255,255,255,0.06)"
-                  strokeDasharray="6 6"
-                />
-                <line
-                  x1="0"
-                  y1="135"
-                  x2="840"
-                  y2="135"
-                  stroke="rgba(255,255,255,0.06)"
-                  strokeDasharray="6 6"
-                />
-                <path
-                  d="M 10 150 L 120 135 L 230 110 L 340 65 L 440 24"
-                  stroke={EMERALD}
-                  strokeWidth="6"
-                  strokeLinecap="round"
-                />
-                <path
-                  d="M 440 24 L 510 38 L 570 115 L 680 162 L 820 172"
-                  stroke={CRIMSON}
-                  strokeWidth="6"
-                  strokeLinecap="round"
-                />
-                <line
-                  x1="440"
-                  y1="10"
-                  x2="440"
-                  y2="180"
-                  stroke={AMBER}
-                  strokeWidth="2.5"
-                  strokeDasharray="5 5"
-                />
-                <circle cx="440" cy="24" r="9" fill={AMBER} />
-              </svg>
+
+              {mode % 3 === 1 ? (
+                /* JAPANESE CANDLESTICK CHART */
+                <svg width="840" height="185" viewBox="0 0 840 185">
+                  {[
+                    { x: 45, hi: 120, lo: 165, o: 155, c: 130, bull: true },
+                    { x: 115, hi: 95, lo: 145, o: 130, c: 105, bull: true },
+                    { x: 185, hi: 70, lo: 120, o: 105, c: 80, bull: true },
+                    { x: 255, hi: 42, lo: 95, o: 80, c: 52, bull: true },
+                    { x: 325, hi: 14, lo: 75, o: 52, c: 28, bull: true },
+                    { x: 395, hi: 8, lo: 95, o: 28, c: 78, bull: false },
+                    { x: 465, hi: 60, lo: 135, o: 78, c: 122, bull: false },
+                    { x: 535, hi: 105, lo: 160, o: 122, c: 148, bull: false },
+                    { x: 605, hi: 125, lo: 175, o: 148, c: 166, bull: false },
+                    { x: 675, hi: 140, lo: 180, o: 166, c: 174, bull: false },
+                    { x: 745, hi: 150, lo: 182, o: 174, c: 178, bull: false },
+                  ].map((cd, cIdx) => {
+                    const col = cd.bull ? PRIMARY : DANGER;
+                    const top = Math.min(cd.o, cd.c);
+                    const h = Math.max(8, Math.abs(cd.c - cd.o));
+                    return (
+                      <g key={cIdx}>
+                        <line x1={cd.x} y1={cd.hi} x2={cd.x} y2={cd.lo} stroke={col} strokeWidth="3" />
+                        <rect x={cd.x - 16} y={top} width="32" height={h} rx="4" fill={col} />
+                      </g>
+                    );
+                  })}
+                </svg>
+              ) : mode % 3 === 2 ? (
+                /* VERTICAL MULTI-BAR HISTOGRAM COMPARISON */
+                <svg width="840" height="185" viewBox="0 0 840 185">
+                  {[0, 1, 2, 3, 4, 5, 6, 7].map((bIdx) => {
+                    const xBase = 40 + bIdx * 98;
+                    const hGreen = Math.max(18, 120 - bIdx * 12);
+                    const hRed = 30 + bIdx * 18;
+                    return (
+                      <g key={bIdx}>
+                        <rect x={xBase} y={175 - hGreen} width="28" height={hGreen} rx="5" fill={PRIMARY} />
+                        <rect x={xBase + 34} y={175 - hRed} width="28" height={hRed} rx="5" fill={DANGER} />
+                      </g>
+                    );
+                  })}
+                </svg>
+              ) : (
+                /* BUBBLE CLUSTER NETWORK TOPOLOGY */
+                <svg width="840" height="185" viewBox="0 0 840 185">
+                  <line x1="420" y1="92" x2="160" y2="42" stroke={DANGER} strokeWidth="2.5" strokeDasharray="5 5" />
+                  <line x1="420" y1="92" x2="180" y2="148" stroke={DANGER} strokeWidth="2.5" strokeDasharray="5 5" />
+                  <line x1="420" y1="92" x2="670" y2="40" stroke={PRIMARY} strokeWidth="2.5" />
+                  <line x1="420" y1="92" x2="690" y2="145" stroke={DANGER} strokeWidth="2.5" />
+                  <circle cx="160" cy="42" r="24" fill="#111827" stroke={PRIMARY} strokeWidth="3" />
+                  <circle cx="180" cy="148" r="24" fill="#111827" stroke={PRIMARY} strokeWidth="3" />
+                  <circle cx="670" cy="40" r="28" fill="#111827" stroke={DANGER} strokeWidth="3" />
+                  <circle cx="690" cy="145" r="28" fill="#111827" stroke={DANGER} strokeWidth="3" />
+                  <circle cx="420" cy="92" r="42" fill={DANGER} />
+                  <text x="420" y="98" textAnchor="middle" fill="#FFFFFF" fontSize="15" fontWeight="800" fontFamily="JetBrains Mono">CORE</text>
+                </svg>
+              )}
             </div>
 
+            {/* Bottom Ratio Split Bar */}
             <div>
-              <div
-                style={{
-                  display: "flex",
-                  justifyContent: "space-between",
-                  fontFamily: "'JetBrains Mono', monospace",
-                  fontSize: 15,
-                  fontWeight: 700,
-                  marginBottom: 10,
-                }}
-              >
-                <span style={{ color: EMERALD_LIGHT }}>{hud.barLeftLabel}</span>
-                <span style={{ color: CRIMSON }}>{hud.barRightLabel}</span>
+              <div style={{ display: "flex", justifyContent: "space-between", fontFamily: "'JetBrains Mono', monospace", fontSize: 14, fontWeight: 700, marginBottom: 8 }}>
+                <span style={{ color: PRIMARY }}>{hud.barLeftLabel}</span>
+                <span style={{ color: DANGER }}>{hud.barRightLabel}</span>
               </div>
-              <div
-                style={{
-                  width: "100%",
-                  height: 20,
-                  background: "#1E293B",
-                  borderRadius: 10,
-                  overflow: "hidden",
-                  display: "flex",
-                }}
-              >
-                <div
-                  style={{
-                    width: `${hud.barLeftPct}%`,
-                    height: "100%",
-                    background: EMERALD,
-                  }}
-                />
-                <div
-                  style={{
-                    width: `${100 - hud.barLeftPct}%`,
-                    height: "100%",
-                    background: `linear-gradient(90deg, ${AMBER}, ${CRIMSON})`,
-                  }}
-                />
+              <div style={{ width: "100%", height: 18, background: "#1E293B", borderRadius: 9, overflow: "hidden", display: "flex" }}>
+                <div style={{ width: `${hud.barLeftPct}%`, height: "100%", background: PRIMARY }} />
+                <div style={{ width: `${100 - hud.barLeftPct}%`, height: "100%", background: `linear-gradient(90deg, ${SECONDARY}, ${DANGER})` }} />
               </div>
             </div>
           </div>
         )}
 
-        {/* ================= STAGE 3: THE 3-RULE PLAYBOOK ================= */}
+        {/* ================= STAGE 3: 3-RULE PROTOCOL (VARIED CARD LAYOUTS) ================= */}
         {isStage3 && (
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              gap: 20,
-            }}
-          >
+          <div style={{ display: "flex", flexDirection: "column", gap: 18 }}>
             <div
               style={{
-                background: "rgba(15,23,42,0.92)",
-                border: `1.5px solid rgba(16,185,129,0.4)`,
+                background: "rgba(13,18,30,0.92)",
+                border: `1.5px solid ${PRIMARY}66`,
                 borderRadius: 20,
-                padding: "18px 28px",
+                padding: "16px 26px",
                 display: "flex",
                 justifyContent: "space-between",
                 alignItems: "center",
               }}
             >
-              <span
-                style={{
-                  fontFamily: "'JetBrains Mono', monospace",
-                  fontSize: 18,
-                  fontWeight: 800,
-                  color: EMERALD_LIGHT,
-                  letterSpacing: 1.5,
-                }}
-              >
+              <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 17, fontWeight: 800, color: PRIMARY, letterSpacing: 1.5 }}>
                 {hud.stage3Header}
               </span>
-              <span
-                style={{
-                  fontFamily: "'JetBrains Mono', monospace",
-                  fontSize: 15,
-                  color: STEEL_WHITE,
-                  background: "rgba(255,255,255,0.08)",
-                  padding: "5px 14px",
-                  borderRadius: 8,
-                }}
-              >
-                3 NON-NEGOTIABLE RULES
+              <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 14, color: STEEL_WHITE, background: "rgba(255,255,255,0.08)", padding: "5px 14px", borderRadius: 8 }}>
+                VERIFIED PROTOCOL
               </span>
             </div>
 
-            {(() => {
-              const active1 = currentTime >= r1Start;
-              return (
+            {[
+              { active: currentTime >= r1Start, tag: hud.rule1Tag, badge: hud.rule1Badge, text: hud.rule1Text, col: PRIMARY, num: "01" },
+              { active: currentTime >= r2Start, tag: hud.rule2Tag, badge: hud.rule2Badge, text: hud.rule2Text, col: SECONDARY, num: "02" },
+              { active: currentTime >= r3Start, tag: hud.rule3Tag, badge: hud.rule3Badge, text: hud.rule3Text, col: DANGER, num: "03" },
+            ].map((r, rIdx) => (
+              <div
+                key={rIdx}
+                style={{
+                  background: r.active
+                    ? "linear-gradient(90deg, rgba(15,23,42,0.96) 0%, rgba(8,12,22,0.98) 100%)"
+                    : "rgba(8,12,22,0.62)",
+                  border: r.active ? `2px solid ${r.col}` : "1.5px solid rgba(255,255,255,0.08)",
+                  borderLeft: r.active ? `10px solid ${r.col}` : "1.5px solid rgba(255,255,255,0.08)",
+                  borderRadius: 20,
+                  padding: "22px 28px",
+                  opacity: r.active ? 1 : 0.42,
+                  display: "flex",
+                  alignItems: "center",
+                  gap: 22,
+                  boxShadow: r.active ? `0 18px 45px rgba(0,0,0,0.75), 0 0 30px ${r.col}22` : "none",
+                }}
+              >
                 <div
                   style={{
-                    background: active1
-                      ? "linear-gradient(180deg, rgba(17,24,39,0.96) 0%, rgba(9,13,22,0.98) 100%)"
-                      : "rgba(9,13,22,0.65)",
-                    border: active1
-                      ? `2px solid ${EMERALD}`
-                      : "1.5px solid rgba(255,255,255,0.08)",
-                    borderRadius: 22,
-                    padding: "24px 30px",
-                    opacity: active1 ? 1 : 0.45,
-                    boxShadow: active1
-                      ? "0 20px 50px rgba(0,0,0,0.75)"
-                      : "none",
+                    fontFamily: "'Space Grotesk', sans-serif",
+                    fontSize: 38,
+                    fontWeight: 800,
+                    color: r.col,
+                    minWidth: 58,
+                    textAlign: "center",
                   }}
                 >
-                  <div
-                    style={{
-                      display: "flex",
-                      justifyContent: "space-between",
-                      alignItems: "center",
-                      marginBottom: 8,
-                    }}
-                  >
-                    <span
-                      style={{
-                        fontFamily: "'JetBrains Mono', monospace",
-                        fontSize: 16,
-                        fontWeight: 800,
-                        color: EMERALD_LIGHT,
-                      }}
-                    >
-                      {hud.rule1Tag}
+                  {r.num}
+                </div>
+                <div style={{ flex: 1 }}>
+                  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 6 }}>
+                    <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 15, fontWeight: 800, color: r.col }}>
+                      {r.tag}
                     </span>
-                    <span
-                      style={{
-                        fontFamily: "'JetBrains Mono', monospace",
-                        fontSize: 14,
-                        fontWeight: 800,
-                        color: CRIMSON,
-                        background: "rgba(244,63,94,0.15)",
-                        padding: "4px 12px",
-                        borderRadius: 6,
-                      }}
-                    >
-                      {hud.rule1Badge}
+                    <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 13, fontWeight: 800, color: "#FFFFFF", background: `${r.col}33`, border: `1px solid ${r.col}77`, padding: "3px 12px", borderRadius: 6 }}>
+                      {r.badge}
                     </span>
                   </div>
-                  <div
-                    style={{
-                      fontSize: 26,
-                      fontWeight: 700,
-                      color: STEEL_WHITE,
-                    }}
-                  >
-                    {hud.rule1Text}
+                  <div style={{ fontSize: 25, fontWeight: 700, color: STEEL_WHITE, lineHeight: 1.25 }}>
+                    {r.text}
                   </div>
                 </div>
-              );
-            })()}
-
-            {(() => {
-              const active2 = currentTime >= r2Start;
-              return (
-                <div
-                  style={{
-                    background: active2
-                      ? "linear-gradient(180deg, rgba(17,24,39,0.96) 0%, rgba(9,13,22,0.98) 100%)"
-                      : "rgba(9,13,22,0.65)",
-                    border: active2
-                      ? `2px solid ${AMBER}`
-                      : "1.5px solid rgba(255,255,255,0.08)",
-                    borderRadius: 22,
-                    padding: "24px 30px",
-                    opacity: active2 ? 1 : 0.45,
-                    boxShadow: active2
-                      ? "0 20px 50px rgba(0,0,0,0.75)"
-                      : "none",
-                  }}
-                >
-                  <div
-                    style={{
-                      display: "flex",
-                      justifyContent: "space-between",
-                      alignItems: "center",
-                      marginBottom: 8,
-                    }}
-                  >
-                    <span
-                      style={{
-                        fontFamily: "'JetBrains Mono', monospace",
-                        fontSize: 16,
-                        fontWeight: 800,
-                        color: AMBER,
-                      }}
-                    >
-                      {hud.rule2Tag}
-                    </span>
-                    <span
-                      style={{
-                        fontFamily: "'JetBrains Mono', monospace",
-                        fontSize: 14,
-                        fontWeight: 800,
-                        color: AMBER,
-                        background: "rgba(245,158,11,0.15)",
-                        padding: "4px 12px",
-                        borderRadius: 6,
-                      }}
-                    >
-                      {hud.rule2Badge}
-                    </span>
-                  </div>
-                  <div
-                    style={{
-                      fontSize: 26,
-                      fontWeight: 700,
-                      color: STEEL_WHITE,
-                    }}
-                  >
-                    {hud.rule2Text}
-                  </div>
-                </div>
-              );
-            })()}
-
-            {(() => {
-              const active3 = currentTime >= r3Start;
-              return (
-                <div
-                  style={{
-                    background: active3
-                      ? "linear-gradient(180deg, rgba(17,24,39,0.96) 0%, rgba(9,13,22,0.98) 100%)"
-                      : "rgba(9,13,22,0.65)",
-                    border: active3
-                      ? `2px solid ${EMERALD}`
-                      : "1.5px solid rgba(255,255,255,0.08)",
-                    borderRadius: 22,
-                    padding: "24px 30px",
-                    opacity: active3 ? 1 : 0.45,
-                    boxShadow: active3
-                      ? "0 20px 50px rgba(0,0,0,0.75)"
-                      : "none",
-                  }}
-                >
-                  <div
-                    style={{
-                      display: "flex",
-                      justifyContent: "space-between",
-                      alignItems: "center",
-                      marginBottom: 8,
-                    }}
-                  >
-                    <span
-                      style={{
-                        fontFamily: "'JetBrains Mono', monospace",
-                        fontSize: 16,
-                        fontWeight: 800,
-                        color: EMERALD_LIGHT,
-                      }}
-                    >
-                      {hud.rule3Tag}
-                    </span>
-                    <span
-                      style={{
-                        fontFamily: "'JetBrains Mono', monospace",
-                        fontSize: 14,
-                        fontWeight: 800,
-                        color: EMERALD_LIGHT,
-                        background: "rgba(16,185,129,0.15)",
-                        padding: "4px 12px",
-                        borderRadius: 6,
-                      }}
-                    >
-                      {hud.rule3Badge}
-                    </span>
-                  </div>
-                  <div
-                    style={{
-                      fontSize: 26,
-                      fontWeight: 700,
-                      color: STEEL_WHITE,
-                    }}
-                  >
-                    {hud.rule3Text}
-                  </div>
-                </div>
-              );
-            })()}
+              </div>
+            ))}
           </div>
         )}
 
@@ -1119,58 +859,59 @@ export const OnChainVaultShort: React.FC<OnChainVaultProps> = ({
           <div
             style={{
               background:
-                "linear-gradient(180deg, rgba(15,23,42,0.95) 0%, rgba(9,13,22,0.98) 100%)",
-              border: `2.5px solid ${EMERALD}`,
+                "linear-gradient(180deg, rgba(13,18,30,0.96) 0%, rgba(7,10,18,0.99) 100%)",
+              border: `2.5px solid ${PRIMARY}`,
               borderRadius: 28,
-              padding: "44px 40px",
-              boxShadow:
-                "0 35px 90px rgba(0,0,0,0.9), 0 0 80px rgba(16,185,129,0.18)",
+              padding: "42px 38px",
+              boxShadow: `0 35px 90px rgba(0,0,0,0.92), 0 0 75px ${PRIMARY}28`,
               display: "flex",
               flexDirection: "column",
               alignItems: "center",
               textAlign: "center",
-              gap: 24,
+              gap: 22,
             }}
           >
-            <VaultCubeIcon size={88} />
+            <VaultCubeIcon size={84} primary={PRIMARY} secondary={SECONDARY} />
             <div
               style={{
                 fontFamily: "'JetBrains Mono', monospace",
-                fontSize: 17,
+                fontSize: 16,
                 fontWeight: 800,
-                color: EMERALD_LIGHT,
-                letterSpacing: 2.5,
-                background: "rgba(16,185,129,0.14)",
-                border: "1px solid rgba(16,185,129,0.35)",
+                color: PRIMARY,
+                letterSpacing: 2.2,
+                background: `${PRIMARY}20`,
+                border: `1px solid ${PRIMARY}66`,
                 padding: "8px 22px",
                 borderRadius: 999,
               }}
             >
-              ● SAVE THIS 60-SECOND CHECKLIST
+              ● INSTITUTIONAL TELEMETRY VERIFIED
             </div>
 
             <div
               style={{
                 fontFamily: "'Space Grotesk', sans-serif",
-                fontSize: 48,
+                fontSize: 46,
                 fontWeight: 700,
                 color: "#FFFFFF",
                 lineHeight: 1.15,
                 letterSpacing: "-1px",
               }}
             >
-              DON&apos;T WATCH THE HYPE.
+              {hud.verdictHeadline || "DON'T WATCH THE HYPE."}
               <br />
-              <span style={{ color: EMERALD_LIGHT }}>TRACK THE WALLETS.</span>
+              <span style={{ color: PRIMARY }}>
+                {hud.verdictSubline || "TRACK THE WALLETS."}
+              </span>
             </div>
 
             <div
               style={{
                 display: "flex",
-                gap: 14,
+                gap: 12,
                 fontFamily: "'JetBrains Mono', monospace",
-                fontSize: 16,
-                color: "#CBD5E1",
+                fontSize: 15,
+                color: "#E2E8F0",
               }}
             >
               {hud.verdictPills.map((pill, idx) => (
@@ -1178,6 +919,7 @@ export const OnChainVaultShort: React.FC<OnChainVaultProps> = ({
                   key={idx}
                   style={{
                     background: "rgba(255,255,255,0.07)",
+                    border: `1px solid ${SECONDARY}55`,
                     padding: "10px 16px",
                     borderRadius: 10,
                   }}
@@ -1189,13 +931,13 @@ export const OnChainVaultShort: React.FC<OnChainVaultProps> = ({
 
             <div
               style={{
-                marginTop: 8,
+                marginTop: 6,
                 fontFamily: "'JetBrains Mono', monospace",
-                fontSize: 22,
+                fontSize: 21,
                 fontWeight: 800,
                 color: STEEL_WHITE,
-                background: "rgba(16,185,129,0.2)",
-                border: `1.5px solid ${EMERALD}`,
+                background: `${PRIMARY}28`,
+                border: `1.5px solid ${PRIMARY}`,
                 padding: "14px 34px",
                 borderRadius: 14,
               }}
@@ -1211,26 +953,26 @@ export const OnChainVaultShort: React.FC<OnChainVaultProps> = ({
         <div
           style={{
             position: "absolute",
-            bottom: 300,
-            left: 56,
-            right: 56,
+            bottom: 295,
+            left: 52,
+            right: 52,
             display: "flex",
             justifyContent: "center",
           }}
         >
           <div
             style={{
-              background: "rgba(6, 8, 12, 0.90)",
-              border: "1.5px solid rgba(255, 255, 255, 0.14)",
+              background: "rgba(5, 7, 11, 0.92)",
+              border: `1.5px solid ${PRIMARY}44`,
               borderRadius: 22,
-              padding: "22px 32px",
-              boxShadow: "0 25px 60px rgba(0,0,0,0.85)",
+              padding: "20px 30px",
+              boxShadow: "0 25px 60px rgba(0,0,0,0.88)",
               display: "flex",
               flexWrap: "wrap",
               justifyContent: "center",
               alignItems: "center",
-              gap: "12px 16px",
-              minHeight: 110,
+              gap: "10px 15px",
+              minHeight: 108,
             }}
           >
             {(() => {
@@ -1245,25 +987,25 @@ export const OnChainVaultShort: React.FC<OnChainVaultProps> = ({
                 const clean = w.word.toLowerCase().replace(/[^a-z0-9%$]/g, "");
                 const isAlert = [
                   "dumped",
-                  "64",
-                  "64%",
-                  "$485",
-                  "$485m",
-                  "$48m",
+                  "liquidation",
+                  "liquidated",
                   "unlock",
                   "exit",
                   "liquidity",
                   "never",
-                  "5x",
                   "spoofing",
                   "honeypot",
                   "trap",
                   "crash",
                   "dump",
                   "sybil",
+                  "exploit",
+                  "drain",
+                  "rug",
+                  "fake",
+                  "wash",
                 ].includes(clean);
                 const isAlpha = [
-                  "0x71c89a2",
                   "smart",
                   "money",
                   "rule",
@@ -1276,14 +1018,18 @@ export const OnChainVaultShort: React.FC<OnChainVaultProps> = ({
                   "airdrop",
                   "inflow",
                   "minted",
+                  "alpha",
+                  "audit",
+                  "vault",
+                  "oracle",
+                  "staking",
                 ].includes(clean);
 
                 const activeBg = isAlert
-                  ? CRIMSON
+                  ? DANGER
                   : isAlpha
-                  ? EMERALD
+                  ? PRIMARY
                   : "#FFFFFF";
-                const activeColor = "#06080C";
 
                 return (
                   <span
@@ -1291,18 +1037,18 @@ export const OnChainVaultShort: React.FC<OnChainVaultProps> = ({
                     style={{
                       fontFamily:
                         "'Space Grotesk', 'Inter', system-ui, sans-serif",
-                      fontSize: 44,
+                      fontSize: 43,
                       fontWeight: 700,
                       letterSpacing: "-0.8px",
                       padding: isSpoken ? "4px 16px" : "4px 6px",
                       borderRadius: 10,
                       backgroundColor: isSpoken ? activeBg : "transparent",
                       color: isSpoken
-                        ? activeColor
+                        ? "#05070B"
                         : isAlert
                         ? "#FDA4AF"
                         : isAlpha
-                        ? "#6EE7B7"
+                        ? PRIMARY
                         : "#F1F5F9",
                       transform: isSpoken ? "scale(1.06)" : "scale(1.0)",
                     }}
