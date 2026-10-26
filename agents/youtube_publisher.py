@@ -119,8 +119,9 @@ def publish_video(
                     now_utc = datetime.now(timezone.utc)
                     elapsed_mins = (now_utc - last_pub).total_seconds() / 60.0
                     if elapsed_mins < 120:
-                        print(f"🛑 [MÜKERRER PAYLAŞIM KİLİDİ] Son video {elapsed_mins:.1f} dakika önce yayınlanmış! İptal edildi.")
-                        return False
+                        print(f"🛑 [MÜKERRER PAYLAŞIM KİLİDİ] Son video {elapsed_mins:.1f} dakika önce yayınlanmış!")
+                        print(f"✅ Bu pencerenin paylaşımı zaten yapıldığı için işlem güvenle tamamlandı (kuyruk korundu).")
+                        return True
             except Exception as e:
                 print(f"⚠️ [Deduplication Kontrol Uyarısı]: {e}")
 
